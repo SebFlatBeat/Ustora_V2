@@ -1,0 +1,31 @@
+2020-04-15 01:33:11.745  INFO [user,,,] 16700 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9101
+2020-04-15 01:33:13.147  INFO [user,,,] 16700 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=user, profiles=[default], label=null, version=fc976e353d551a0a0ea7a51737bf5dfb54c16f2f, state=null
+2020-04-15 01:33:13.151  INFO [user,,,] 16700 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/SebFlatBeat/bibliotheque-config-repo.git/user.properties'}]
+2020-04-15 01:33:13.314  INFO [user,,,] 16700 --- [main] com.Ustora.user.UserApplicationTests     : No active profile set, falling back to default profiles: default
+2020-04-15 01:33:18.063  INFO [user,,,] 16700 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-15 01:33:18.981  INFO [user,,,] 16700 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 894ms. Found 1 JPA repository interfaces.
+2020-04-15 01:33:20.083  WARN [user,,,] 16700 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-04-15 01:33:21.656  INFO [user,,,] 16700 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=04619aa7-d493-300e-8688-2792e05feee4
+2020-04-15 01:33:25.945  INFO [user,,,] 16700 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-15 01:33:26.154  INFO [user,,,] 16700 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-15 01:33:26.444  INFO [user,,,] 16700 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-15 01:33:26.899  INFO [user,,,] 16700 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-15 01:33:27.166  INFO [user,,,] 16700 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-15 01:33:27.211  INFO [user,,,] 16700 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-04-15 01:33:31.006  INFO [user,,,] 16700 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-15 01:33:31.025  INFO [user,,,] 16700 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-15 01:33:36.624  WARN [user,,,] 16700 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-04-15 01:33:36.628  INFO [user,,,] 16700 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-15 01:33:36.648  WARN [user,,,] 16700 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-04-15 01:33:36.652  INFO [user,,,] 16700 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-15 01:33:37.125  WARN [user,,,] 16700 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-15 01:33:38.725  INFO [user,,,] 16700 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-15 01:33:44.678  WARN [user,,,] 16700 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-04-15 01:33:47.346  INFO [user,,,] 16700 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2020-04-15 01:33:47.686  INFO [user,,,] 16700 --- [main] com.Ustora.user.UserApplicationTests     : Started UserApplicationTests in 38.72 seconds (JVM running for 41.578)
+2020-04-15 01:33:48.367  INFO [user,,,] 16700 --- [SpringContextShutdownHook] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-04-15 01:33:48.400  INFO [user,,,] 16700 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USER with eureka with status DOWN
+2020-04-15 01:33:48.493  INFO [user,,,] 16700 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-15 01:33:48.504  INFO [user,,,] 16700 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-15 01:33:48.516  INFO [user,,,] 16700 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-04-15 01:33:48.535  INFO [user,,,] 16700 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

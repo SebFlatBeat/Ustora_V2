@@ -1,0 +1,73 @@
+2020-04-15 01:34:06.337  INFO [clientui,,,] 12188 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9101
+2020-04-15 01:34:08.059  INFO [clientui,,,] 12188 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=clientui, profiles=[default], label=null, version=fc976e353d551a0a0ea7a51737bf5dfb54c16f2f, state=null
+2020-04-15 01:34:08.062  INFO [clientui,,,] 12188 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/SebFlatBeat/bibliotheque-config-repo.git/clientui.properties'}]
+2020-04-15 01:34:08.181  INFO [clientui,,,] 12188 --- [main] c.U.clientui.ClientuiApplicationTests    : No active profile set, falling back to default profiles: default
+2020-04-15 01:34:11.246  WARN [clientui,,,] 12188 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-04-15 01:34:12.141  INFO [clientui,,,] 12188 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f5bbb9d8-d3ef-3c9f-9c1b-e9a17ae8c81e
+2020-04-15 01:34:15.733  WARN [clientui,,,] 12188 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-04-15 01:34:15.764  INFO [clientui,,,] 12188 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-15 01:34:15.938  INFO [clientui,,,] 12188 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@679d0be8
+2020-04-15 01:34:18.239  INFO [clientui,,,] 12188 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/chosen/**'], []
+2020-04-15 01:34:18.241  INFO [clientui,,,] 12188 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2020-04-15 01:34:18.242  INFO [clientui,,,] 12188 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/cssLogin/**'], []
+2020-04-15 01:34:18.242  INFO [clientui,,,] 12188 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/fonts/**'], []
+2020-04-15 01:34:18.244  INFO [clientui,,,] 12188 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/fontsLogin/**'], []
+2020-04-15 01:34:18.244  INFO [clientui,,,] 12188 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/iconsLogin/**'], []
+2020-04-15 01:34:18.247  INFO [clientui,,,] 12188 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/img/**'], []
+2020-04-15 01:34:18.248  INFO [clientui,,,] 12188 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/scripts/**'], []
+2020-04-15 01:34:18.249  INFO [clientui,,,] 12188 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/images/**'], []
+2020-04-15 01:34:18.249  INFO [clientui,,,] 12188 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2020-04-15 01:34:18.251  INFO [clientui,,,] 12188 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/jsLogin/**'], []
+2020-04-15 01:34:18.252  INFO [clientui,,,] 12188 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/vendorLogin/**'], []
+2020-04-15 01:34:18.252  INFO [clientui,,,] 12188 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/META-INF.resources/**'], []
+2020-04-15 01:34:18.252  INFO [clientui,,,] 12188 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/ext/*/api/**'], []
+2020-04-15 01:34:18.253  INFO [clientui,,,] 12188 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/**', OPTIONS], []
+2020-04-15 01:34:18.253  INFO [clientui,,,] 12188 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/app/**/*.{js,html}'], []
+2020-04-15 01:34:19.925  INFO [clientui,,,] 12188 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@610fbe1c, org.springframework.security.web.context.SecurityContextPersistenceFilter@41a16eb3, org.springframework.security.web.header.HeaderWriterFilter@7d401cdc, org.springframework.security.web.authentication.logout.LogoutFilter@240a2619, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7f5ce33e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5873f3f0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5a3cf878, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@46d0f89c, org.springframework.security.web.session.SessionManagementFilter@389a5022, org.springframework.security.web.access.ExceptionTranslationFilter@9281d19, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@221b77d7]
+2020-04-15 01:34:19.951  WARN [clientui,,,] 12188 --- [main] o.s.s.c.a.web.builders.WebSecurity       : 
+
+********************************************************************
+**********        Security debugging is enabled.       *************
+**********    This may include sensitive information.  *************
+**********      Do not use in a production system!     *************
+********************************************************************
+
+
+2020-04-15 01:34:21.720  WARN [clientui,,,] 12188 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-04-15 01:34:21.731  INFO [clientui,,,] 12188 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-15 01:34:24.935  INFO [clientui,,,] 12188 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-15 01:34:25.714  INFO [clientui,,,] 12188 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-15 01:34:31.378  WARN [clientui,,,] 12188 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-04-15 01:34:34.222  INFO [clientui,,,] 12188 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-04-15 01:34:34.783  INFO [clientui,,,] 12188 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-04-15 01:34:35.551  INFO [clientui,,,] 12188 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-04-15 01:34:37.042  INFO [clientui,,,] 12188 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-04-15 01:34:37.087  INFO [clientui,,,] 12188 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-04-15 01:34:38.159  INFO [clientui,,,] 12188 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-04-15 01:34:38.165  INFO [clientui,,,] 12188 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-04-15 01:34:39.506  INFO [clientui,,,] 12188 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-15 01:34:40.267  INFO [clientui,,,] 12188 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-04-15 01:34:40.270  INFO [clientui,,,] 12188 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-04-15 01:34:40.271  INFO [clientui,,,] 12188 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-04-15 01:34:40.273  INFO [clientui,,,] 12188 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-04-15 01:34:40.275  INFO [clientui,,,] 12188 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-04-15 01:34:40.277  INFO [clientui,,,] 12188 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-04-15 01:34:40.279  INFO [clientui,,,] 12188 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-04-15 01:34:41.138  INFO [clientui,,,] 12188 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-04-15 01:34:41.161  INFO [clientui,,,] 12188 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-04-15 01:34:41.168  INFO [clientui,,,] 12188 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-04-15 01:34:41.177  INFO [clientui,,,] 12188 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1586907281175 with initial instances count: 3
+2020-04-15 01:34:41.234  INFO [clientui,,,] 12188 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CLIENTUI with eureka with status UP
+2020-04-15 01:34:41.236  INFO [clientui,,,] 12188 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1586907281236, current=UP, previous=STARTING]
+2020-04-15 01:34:41.260  INFO [clientui,,,] 12188 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLIENTUI/LAPTOP-R62TREJ2.home:clientui:8090: registering service...
+2020-04-15 01:34:41.401  INFO [clientui,,,] 12188 --- [main] c.U.clientui.ClientuiApplicationTests    : Started ClientuiApplicationTests in 38.188 seconds (JVM running for 40.93)
+2020-04-15 01:34:41.501  INFO [clientui,,,] 12188 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLIENTUI/LAPTOP-R62TREJ2.home:clientui:8090 - registration status: 204
+2020-04-15 01:34:42.807  INFO [clientui,,,] 12188 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CLIENTUI with eureka with status DOWN
+2020-04-15 01:34:42.810  WARN [clientui,,,] 12188 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1586907282810, current=DOWN, previous=UP]
+2020-04-15 01:34:42.812  INFO [clientui,,,] 12188 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLIENTUI/LAPTOP-R62TREJ2.home:clientui:8090: registering service...
+2020-04-15 01:34:42.820  INFO [clientui,,,] 12188 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLIENTUI/LAPTOP-R62TREJ2.home:clientui:8090 - registration status: 204
+2020-04-15 01:34:43.010  INFO [clientui,,,] 12188 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-15 01:34:43.021  INFO [clientui,,,] 12188 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-04-15 01:34:46.026  INFO [clientui,,,] 12188 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-04-15 01:34:46.041  INFO [clientui,,,] 12188 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLIENTUI/LAPTOP-R62TREJ2.home:clientui:8090 - deregister  status: 200
+2020-04-15 01:34:46.061  INFO [clientui,,,] 12188 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
