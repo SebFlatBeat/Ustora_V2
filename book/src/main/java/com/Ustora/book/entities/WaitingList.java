@@ -17,6 +17,8 @@ public class WaitingList implements Serializable {
     private Long id;
     private Long userBookId;
     private Date dateOfDemand;
+    private boolean readyToTake;
+    private boolean timeout;
 
     @ManyToOne
     @Cascade(org.hibernate.annotations.CascadeType.DETACH)
@@ -30,14 +32,21 @@ public class WaitingList implements Serializable {
 
     /**
      * Instantiates a new WaitingList
+     *
      * @param id
      * @param userBookId
      * @param dateOfDemand
+     * @param readyToTake
+     * @param timeout
+     * @param book
      */
-    public WaitingList(Long id, Long userBookId, Date dateOfDemand) {
+    public WaitingList(Long id, Long userBookId, Date dateOfDemand, boolean readyToTake, boolean timeout, Book book) {
         this.id = id;
         this.userBookId = userBookId;
         this.dateOfDemand = dateOfDemand;
+        this.readyToTake = readyToTake;
+        this.timeout = timeout;
+        this.book = book;
     }
 
     /**
@@ -77,7 +86,7 @@ public class WaitingList implements Serializable {
     }
 
     /**
-     * Gets date of Demandd
+     * Gets date of Demand
      *
      * @return date of demand
      */
@@ -86,12 +95,48 @@ public class WaitingList implements Serializable {
     }
 
     /**
-     * Sets dateOfDemande
+     * Sets date of Demand
      *
-     * @return dateOfDemand
+     * @return date df demand
      */
     public void setDateOfDemand(Date dateOfDemand) {
         this.dateOfDemand = dateOfDemand;
+    }
+
+    /**
+     * Gets ready to take
+     *
+     * @return ready to take
+     */
+    public boolean isReadyToTake() {
+        return readyToTake;
+    }
+
+    /**
+     * Sets ready to take
+     *
+     * @return ready to take
+     */
+    public void setReadyToTake(boolean readyToTake) {
+        this.readyToTake = readyToTake;
+    }
+
+    /**
+     * Gets timeout
+     *
+     * @return timeout
+     */
+    public boolean isTimeout() {
+        return timeout;
+    }
+
+    /**
+     * Sets timeout
+     *
+     * @return timeout
+     */
+    public void setTimeout(boolean timeout) {
+        this.timeout = timeout;
     }
 
     /**
@@ -116,6 +161,9 @@ public class WaitingList implements Serializable {
     public String toString() {
         return "WaitingList  [id=" + id +
                 ", userBookId=" + userBookId +
-                ", dateOfDemand=" + dateOfDemand + "]";
+                ", dateOfDemand=" + dateOfDemand +
+                ", readyToTake=" + readyToTake +
+                ", timeout=" + timeout +
+                "]";
     }
 }
