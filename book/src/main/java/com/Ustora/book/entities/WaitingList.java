@@ -17,7 +17,7 @@ public class WaitingList implements Serializable {
     private Long id;
     private Long userBookId;
     private Date dateOfDemand;
-    private boolean readyToTake;
+    private boolean waiting;
     private boolean timeout;
 
     @ManyToOne
@@ -36,15 +36,15 @@ public class WaitingList implements Serializable {
      * @param id
      * @param userBookId
      * @param dateOfDemand
-     * @param readyToTake
+     * @param waiting
      * @param timeout
      * @param book
      */
-    public WaitingList(Long id, Long userBookId, Date dateOfDemand, boolean readyToTake, boolean timeout, Book book) {
+    public WaitingList(Long id, Long userBookId, Date dateOfDemand, boolean waiting, boolean timeout, Book book) {
         this.id = id;
         this.userBookId = userBookId;
         this.dateOfDemand = dateOfDemand;
-        this.readyToTake = readyToTake;
+        this.waiting = waiting;
         this.timeout = timeout;
         this.book = book;
     }
@@ -104,21 +104,21 @@ public class WaitingList implements Serializable {
     }
 
     /**
-     * Gets ready to take
+     * Gets waiting
      *
-     * @return ready to take
+     * @return waiting
      */
-    public boolean isReadyToTake() {
-        return readyToTake;
+    public boolean isWaiting() {
+        return waiting;
     }
 
     /**
-     * Sets ready to take
+     * Sets waiting
      *
-     * @return ready to take
+     * @return waiting
      */
-    public void setReadyToTake(boolean readyToTake) {
-        this.readyToTake = readyToTake;
+    public void setWaiting(boolean waiting) {
+        this.waiting = waiting;
     }
 
     /**
@@ -162,7 +162,7 @@ public class WaitingList implements Serializable {
         return "WaitingList  [id=" + id +
                 ", userBookId=" + userBookId +
                 ", dateOfDemand=" + dateOfDemand +
-                ", readyToTake=" + readyToTake +
+                ", waiting=" + waiting +
                 ", timeout=" + timeout +
                 "]";
     }
