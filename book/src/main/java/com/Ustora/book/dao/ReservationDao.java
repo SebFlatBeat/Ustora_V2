@@ -20,7 +20,7 @@ public interface ReservationDao extends JpaRepository<Reservation, Long> {
      * @param userId the user id
      * @return the list
      */
-    List<Reservation> findReservationsByUserBookId ( Long userId);
+    List<Reservation> findReservationsByUserBookId (Long userId);
 
     Optional<Reservation> findById(Long id);
 

@@ -147,4 +147,5 @@ public interface BookDao extends PagingAndSortingRepository<Book, Long> {
     List<Book> findByIsbn(@Param("isbn") String isbn, @Param("listBook")List<Book> bookList);
 
     Book save(Book book);
+
 }
