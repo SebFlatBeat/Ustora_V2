@@ -2,10 +2,7 @@ package com.Ustora.book.entities;
 
 import org.hibernate.annotations.Cascade;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -17,8 +14,11 @@ public class WaitingList implements Serializable {
     private Long id;
     private Long userBookId;
     private Date dateOfDemand;
-    private boolean waiting;
-    private boolean timeout;
+    private Integer positionInList;
+    private boolean mailSend;
+
+    @Enumerated
+    private Status status;
 
     @ManyToOne
     @Cascade(org.hibernate.annotations.CascadeType.DETACH)
@@ -31,21 +31,22 @@ public class WaitingList implements Serializable {
     }
 
     /**
-     * Instantiates a new WaitingList
      *
      * @param id
      * @param userBookId
      * @param dateOfDemand
-     * @param waiting
-     * @param timeout
+     * @param positionInList
+     * @param mailSend
+     * @param status
      * @param book
      */
-    public WaitingList(Long id, Long userBookId, Date dateOfDemand, boolean waiting, boolean timeout, Book book) {
+    public WaitingList(Long id, Long userBookId, Date dateOfDemand,Integer positionInList, boolean mailSend,Status status, Book book) {
         this.id = id;
         this.userBookId = userBookId;
         this.dateOfDemand = dateOfDemand;
-        this.waiting = waiting;
-        this.timeout = timeout;
+        this.positionInList = positionInList;
+        this.mailSend = mailSend;
+        this.status = status;
         this.book = book;
     }
 
@@ -104,39 +105,51 @@ public class WaitingList implements Serializable {
     }
 
     /**
-     * Gets waiting
      *
-     * @return waiting
+     * @return
      */
-    public boolean isWaiting() {
-        return waiting;
+    public Integer getPositionInList() {
+        return positionInList;
     }
 
     /**
-     * Sets waiting
      *
-     * @return waiting
+     * @param positionInList
      */
-    public void setWaiting(boolean waiting) {
-        this.waiting = waiting;
+    public void setPositionInList(Integer positionInList) {
+        this.positionInList = positionInList;
     }
 
     /**
-     * Gets timeout
      *
-     * @return timeout
+     * @return
      */
-    public boolean isTimeout() {
-        return timeout;
+    public boolean isMailSend() {
+        return mailSend;
     }
 
     /**
-     * Sets timeout
      *
-     * @return timeout
+     * @param mailSend
      */
-    public void setTimeout(boolean timeout) {
-        this.timeout = timeout;
+    public void setMailSend(boolean mailSend) {
+        this.mailSend = mailSend;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public Status getStatus() {
+        return status;
+    }
+
+    /**
+     *
+     * @param status
+     */
+    public void setStatus(Status status) {
+        this.status = status;
     }
 
     /**
@@ -162,8 +175,8 @@ public class WaitingList implements Serializable {
         return "WaitingList  [id=" + id +
                 ", userBookId=" + userBookId +
                 ", dateOfDemand=" + dateOfDemand +
-                ", waiting=" + waiting +
-                ", timeout=" + timeout +
+                ", positionInList=" + positionInList +
+                ", mailSend=" + mailSend +
                 "]";
     }
 }

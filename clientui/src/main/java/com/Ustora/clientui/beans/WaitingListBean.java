@@ -6,20 +6,20 @@ public class WaitingListBean {
     private Long id;
     private Long userBookId;
     private Date dateOfDemand;
-    private boolean waiting;
-    private boolean timeout;
+    private Integer positionInList;
+    private boolean mailSend;
 
     private BookBean book;
 
     public WaitingListBean() {
     }
 
-    public WaitingListBean(Long id, Long userBookId, Date dateOfDemand, boolean waiting, boolean timeout, BookBean book) {
+    public WaitingListBean(Long id, Long userBookId, Date dateOfDemand, Integer positionInList, boolean mailSend, BookBean book) {
         this.id = id;
         this.userBookId = userBookId;
         this.dateOfDemand = dateOfDemand;
-        this.waiting = waiting;
-        this.timeout = timeout;
+        this.positionInList = positionInList;
+        this.mailSend = mailSend;
         this.book = book;
     }
 
@@ -77,40 +77,20 @@ public class WaitingListBean {
         this.dateOfDemand = dateOfDemand;
     }
 
-    /**
-     * Gets waiting
-     *
-     * @return waiting
-     */
-    public boolean isWaiting() {
-        return waiting;
+    public Integer getPositionInList() {
+        return positionInList;
     }
 
-    /**
-     * Sets waiting
-     *
-     * @return waiting
-     */
-    public void setWaiting(boolean waiting) {
-        this.waiting = waiting;
+    public void setPositionInList(Integer positionInList) {
+        this.positionInList = positionInList;
     }
 
-    /**
-     * Gets timeout
-     *
-     * @return timeout
-     */
-    public boolean isTimeout() {
-        return timeout;
+    public boolean isMailSend() {
+        return mailSend;
     }
 
-    /**
-     * Sets timeout
-     *
-     * @return timeout
-     */
-    public void setTimeout(boolean timeout) {
-        this.timeout = timeout;
+    public void setMailSend(boolean mailSend) {
+        this.mailSend = mailSend;
     }
 
     /**
@@ -136,8 +116,8 @@ public class WaitingListBean {
         return "WaitingListBean  [id=" + id +
                 ", userBookId=" + userBookId +
                 ", dateOfDemand=" + dateOfDemand +
-                ", waiting=" + waiting +
-                ", timeout=" + timeout +
+                ", positionInList=" + positionInList +
+                ", mailSend=" + mailSend +
                 "]";
     }
 

@@ -12,6 +12,9 @@ import java.util.List;
 @FeignClient(name = "zuul-server", contextId="waitingListProxy", configuration= FeignConfig.class, url = "http://localhost:9004")
 public interface WaitingListProxy {
 
+    @GetMapping(value = "/waitingList/allWaitingList")
+    List<WaitingListBean> waitingList();
+
     @GetMapping(value = "/waitingList/userWaitingList")
     List<WaitingListBean> waitingList(@RequestParam Long userId);
 }

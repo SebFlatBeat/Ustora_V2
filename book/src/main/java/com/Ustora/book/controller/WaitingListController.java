@@ -23,7 +23,7 @@ public class WaitingListController {
     @Autowired
     private WaitingListService waitingListService;
 
-    @GetMapping
+    @GetMapping("/allWaitingList")
     public List<WaitingList> listWaitingListAll (){
         return waitingListService.findAll();
     }
