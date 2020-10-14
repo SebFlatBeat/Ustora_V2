@@ -51,4 +51,13 @@ public class WaitingListService {
     public List<WaitingList> findAll(){
         return waitingListDao.findAll();
     }
+
+    /**
+     *
+     * @param userBookId
+     * @return
+     */
+    public List<WaitingList> findByUserBookId(Long userBookId){return  waitingListDao.findByUserBookId(userBookId);}
+
+
 }
