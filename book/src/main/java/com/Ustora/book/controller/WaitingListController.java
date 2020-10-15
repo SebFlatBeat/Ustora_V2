@@ -1,5 +1,6 @@
 package com.Ustora.book.controller;
 
+import com.Ustora.book.beans.WaitingListBean;
 import com.Ustora.book.entities.WaitingList;
 import com.Ustora.book.service.BookService;
 import com.Ustora.book.service.ReservationService;
@@ -31,5 +32,10 @@ public class WaitingListController {
     @GetMapping("/userWaitingList")
     public List<WaitingList> userBookWaitingList(@RequestParam Long userBookId){
         return waitingListService.findByUserBookId(userBookId);
+    }
+
+    @GetMapping("/allUserWaitingList/{id}")
+    public List<WaitingListBean> afficherLesReservations(@PathVariable("id") Long id , @RequestParam Long userBookId){
+    return waitingListService.afficherLesReservation(id);
     }
 }
