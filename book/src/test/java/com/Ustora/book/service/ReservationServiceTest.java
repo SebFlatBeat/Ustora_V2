@@ -57,7 +57,7 @@ class ReservationServiceTest {
         final Date result = reservationServiceUnderTest.add4Weeks(new GregorianCalendar(2019, Calendar.JANUARY, 1).getTime());
 
         // Verify the results
-        assertEquals(new GregorianCalendar(2019, Calendar.JANUARY, 1).getTime(), result);
+        assertEquals(new GregorianCalendar(2019, Calendar.JANUARY, 29).getTime(), result);
     }
 
     @Test
@@ -68,7 +68,7 @@ class ReservationServiceTest {
         final Date result = reservationServiceUnderTest.add8Weeks(new GregorianCalendar(2019, Calendar.JANUARY, 1).getTime());
 
         // Verify the results
-        assertEquals(new GregorianCalendar(2019, Calendar.JANUARY, 1).getTime(), result);
+        assertEquals(new GregorianCalendar(2019, Calendar.FEBRUARY, 26).getTime(), result);
     }
 
     @Test

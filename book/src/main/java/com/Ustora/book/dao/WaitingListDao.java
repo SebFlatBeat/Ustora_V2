@@ -23,8 +23,11 @@ public interface WaitingListDao extends JpaRepository<WaitingList, Long> {
     //Supprimer une reservation
     void deleteById(Long id);
 
-    //Trouver toutes les reservations pour un user et ranger par date de la demande
+    //Trouver les reservations pour un user et ranger par date de la demande
     List<WaitingList> findByUserBookIdAndStatusOrderByDateOfDemandAsc(Long userBookId, Status status);
+
+    //Trouver toutes les reservations pour un user et ranger par date de la demande
+    List<WaitingList> findAllByUserBookIdAndStatusOrderByDateOfDemandAsc(Long userBookId, Status status);
 
     //Trouver toutes les reservations d'un livre
     List<WaitingList> findAllByBookAndStatusOrderByDateOfDemandDateAsc(Book book, Status status);

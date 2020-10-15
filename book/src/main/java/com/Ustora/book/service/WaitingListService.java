@@ -1,5 +1,6 @@
 package com.Ustora.book.service;
 
+import com.Ustora.book.beans.WaitingListBean;
 import com.Ustora.book.dao.BookDao;
 import com.Ustora.book.dao.ReservationDao;
 import com.Ustora.book.dao.WaitingListDao;
@@ -12,8 +13,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 
 
 @Service
@@ -56,11 +59,21 @@ public class WaitingListService {
     }
 
     /**
-     * Find all user waitingList
+     *
      * @param userBookId
-     * @return user waiting list
+     * @param status
+     * @return
      */
     public List<WaitingList> findByUserBookIdAndStatusOrderByDateOfDemandAsc(Long userBookId, Status status){return  waitingListDao.findByUserBookIdAndStatusOrderByDateOfDemandAsc(userBookId, status);}
+
+    /**
+     *
+     * @param userBookId
+     * @param status
+     * @return
+     */
+    public List<WaitingList> findAllByUserBookIdAndStatusOrderByDateOfDemandAsc(Long userBookId, Status status){return  waitingListDao.findByUserBookIdAndStatusOrderByDateOfDemandAsc(userBookId, status);}
+
 
     /**
      *
@@ -70,6 +83,11 @@ public class WaitingListService {
     public List<WaitingList> findByUserBookId(Long userBookId){return  waitingListDao.findByUserBookId(userBookId);}
 
 
+    /**
+     *
+     * @param id
+     * @param userBookId
+     */
     public void waitingListReservation(Long id, Long userBookId){
 
         Date date = new Date();
@@ -102,6 +120,47 @@ public class WaitingListService {
         }
         waitingListDao.save(waitingList);
         logger.info("Réservation demander du livre");
+    }
+
+    /**
+     * Annuler la reservation
+     * @param id
+     * @param userBookId
+     */
+    public void cancel(Long id, Long userBookId){
+        Optional<WaitingList> waitingList = waitingListDao.findById(id);
+        WaitingList waitingListCancel = waitingList.get();
+        waitingListCancel.setStatus(Status.rejete);
+        waitingListCancel.setPositionInList(null);
+        waitingListDao.save(waitingListCancel);
+        logger.info("L'utilisateur numéro " + userBookId + " a annuler sa reservation pour le livre " + waitingListCancel.getBook().getTitre());
+    }
+
+    public List<WaitingListBean> afficherLesReservation(Long id){
+
+        List<WaitingList> waitingLists = waitingListDao.findAllByUserBookIdAndStatusOrderByDateOfDemandAsc(id, Status.enCours);
+        List<WaitingListBean> waitingListBeans = new ArrayList<>();
+
+        for(WaitingList w : waitingLists){
+            WaitingListBean listBean = new WaitingListBean();
+            listBean.setWaitingList(w);
+            Optional<Reservation> reservation = reservationDao.findById(w.getBook().getId());
+            listBean.setReservation(reservation);
+            Optional<Book> book = bookDao.findById(w.getBook().getId());
+            listBean.setBook(book);
+
+            //Solution plus simple?
+            List<Date> dates = new ArrayList<>();
+            List<Reservation> reservations = reservationDao.findAllByBookIdOrderByEndBorrowingAsc(book.get().getId());
+            for (Reservation r :reservations){
+                if (reservations.size()>0){
+                    dates.add(reservations.get(0).getEndBorrowing());
+                }
+            }
+
+        }
+        logger.info(" liste des réservations pour un utilisateur");
+        return waitingListBeans;
     }
 
 }
