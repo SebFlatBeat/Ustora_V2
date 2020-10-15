@@ -16,6 +16,7 @@ public class WaitingList implements Serializable {
     private Date dateOfDemand;
     private Integer positionInList;
     private boolean mailSend;
+    private Date dateMailSent;
 
     @Enumerated
     private Status status;
@@ -40,12 +41,13 @@ public class WaitingList implements Serializable {
      * @param status
      * @param book
      */
-    public WaitingList(Long id, Long userBookId, Date dateOfDemand,Integer positionInList, boolean mailSend,Status status, Book book) {
+    public WaitingList(Long id, Long userBookId, Date dateOfDemand,Integer positionInList, boolean mailSend, Date dateMailSent, Status status, Book book) {
         this.id = id;
         this.userBookId = userBookId;
         this.dateOfDemand = dateOfDemand;
         this.positionInList = positionInList;
         this.mailSend = mailSend;
+        this.dateMailSent = dateMailSent;
         this.status = status;
         this.book = book;
     }
@@ -134,6 +136,14 @@ public class WaitingList implements Serializable {
      */
     public void setMailSend(boolean mailSend) {
         this.mailSend = mailSend;
+    }
+
+    public Date getDateMailSent() {
+        return dateMailSent;
+    }
+
+    public void setDateMailSent(Date dateMailSent) {
+        this.dateMailSent = dateMailSent;
     }
 
     /**

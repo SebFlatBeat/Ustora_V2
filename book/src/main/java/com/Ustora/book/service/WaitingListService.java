@@ -174,8 +174,8 @@ public class WaitingListService {
      *Afficher les reservations dont l'email a été envoyé
      * @return waitingLists la liste des reservations
      */
-    public List<WaitingList> pendinAndMailSent(){
-        List<WaitingList> waitingLists = waitingListDao.findByMailSendAndStatus(true,Status.enCours);
+    public List<WaitingList> pendingAndMailSent(){
+        List<WaitingList> waitingLists = waitingListDao.findByMailSendAndStatus(true,Status.enAttente);
         return waitingLists;
     }
 

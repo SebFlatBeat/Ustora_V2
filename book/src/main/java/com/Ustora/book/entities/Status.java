@@ -4,6 +4,6 @@ public enum Status {
     enCours,
     enAttente,
     rejete,
-    effectue,
+    valide,
     emprunte
 }

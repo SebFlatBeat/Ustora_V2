@@ -6,10 +6,7 @@ import com.Ustora.book.service.BookService;
 import com.Ustora.book.service.ReservationService;
 import com.Ustora.book.service.WaitingListService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -37,5 +34,20 @@ public class WaitingListController {
     @GetMapping("/allUserWaitingList/{id}")
     public List<WaitingListBean> afficherLesReservations(@PathVariable("id") Long id , @RequestParam Long userBookId){
     return waitingListService.afficherLesReservation(id);
+    }
+
+    @GetMapping("/pendingWaitingList")
+    public List<WaitingList> pendingAndMailSent(){
+        return waitingListService.pendingAndMailSent();
+    }
+
+    @PostMapping("/waitingListAdd/{id}")
+    public void demandeDeReservation(@PathVariable("id") Long id, @RequestParam Long userBookId){
+        waitingListService.waitingListReservation(id,userBookId);
+    }
+
+    @PostMapping("/cancel/{id}")
+    public void cancelReservation(@PathVariable("id") Long id,@RequestParam Long userBookId){
+        waitingListService.cancel(id,userBookId);
     }
 }
