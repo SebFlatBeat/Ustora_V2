@@ -35,7 +35,6 @@ public class WaitingListService {
 
     /**
      * Save
-     *
      * @param waitingList
      */
     public void save (WaitingList waitingList){
@@ -84,8 +83,8 @@ public class WaitingListService {
 
 
     /**
-     *
-     * @param id
+     *Permet de faire une réservation
+     * @param id du livre
      * @param userBookId
      */
     public void waitingListReservation(Long id, Long userBookId){
@@ -126,7 +125,7 @@ public class WaitingListService {
 
     /**
      * Annuler la reservation
-     * @param id
+     * @param id de la reservation
      * @param userBookId
      */
     public void cancel(Long id, Long userBookId){
@@ -139,9 +138,9 @@ public class WaitingListService {
     }
 
     /**
-     *
-     * @param id
-     * @return
+     *Afficher les reservations d'un utilisateur
+     * @param id de l'utilisateur
+     * @return waitingListBeans la liste des reservations de l'utilisateur
      */
     public List<WaitingListBean> afficherLesReservation(Long id){
 
@@ -169,6 +168,15 @@ public class WaitingListService {
         }
         logger.info(" liste des réservations pour un utilisateur");
         return waitingListBeans;
+    }
+
+    /**
+     *Afficher les reservations dont l'email a été envoyé
+     * @return waitingLists la liste des reservations
+     */
+    public List<WaitingList> pendinAndMailSent(){
+        List<WaitingList> waitingLists = waitingListDao.findByMailSendAndStatus(true,Status.enCours);
+        return waitingLists;
     }
 
 }
