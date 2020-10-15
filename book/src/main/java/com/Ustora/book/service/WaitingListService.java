@@ -111,12 +111,14 @@ public class WaitingListService {
         List<Reservation> reservationList = reservationDao.findReservationsByUserBookId(userBookId);
         for(Reservation reservation : reservationList){
             if(reservation.getBook().getId().equals(waitingList.getBook().getId())){
-
+                //TODO ajouter ma propre exception
+            throw new IllegalArgumentException();
             }
         }
         //Verification de la place restante dans la liste
         if(waitingLists.size()<=nbreMax){
-
+            //TODO ajouter ma propre exception
+            throw new IllegalArgumentException();
         }
         waitingListDao.save(waitingList);
         logger.info("Réservation demander du livre");
@@ -136,6 +138,11 @@ public class WaitingListService {
         logger.info("L'utilisateur numéro " + userBookId + " a annuler sa reservation pour le livre " + waitingListCancel.getBook().getTitre());
     }
 
+    /**
+     *
+     * @param id
+     * @return
+     */
     public List<WaitingListBean> afficherLesReservation(Long id){
 
         List<WaitingList> waitingLists = waitingListDao.findAllByUserBookIdAndStatusOrderByDateOfDemandAsc(id, Status.enCours);
@@ -149,15 +156,16 @@ public class WaitingListService {
             Optional<Book> book = bookDao.findById(w.getBook().getId());
             listBean.setBook(book);
 
-            //Solution plus simple?
-            List<Date> dates = new ArrayList<>();
             List<Reservation> reservations = reservationDao.findAllByBookIdOrderByEndBorrowingAsc(book.get().getId());
-            for (Reservation r :reservations){
-                if (reservations.size()>0){
-                    dates.add(reservations.get(0).getEndBorrowing());
+            listBean.setDateDeRetour(reservations.get(0).getEndBorrowing());
+
+            List<WaitingList> positionWaiting = waitingListDao.findAllByBookAndStatusOrderByDateOfDemandDateAsc(book.get(), Status.enCours);
+            for(int i = 0; i< positionWaiting.size(); i++){
+                if(positionWaiting.get(i).getUserBookId() == id){
+                    listBean.setPositionInList(i + 1);
                 }
             }
-
+            waitingListBeans.add(listBean);
         }
         logger.info(" liste des réservations pour un utilisateur");
         return waitingListBeans;

@@ -4,12 +4,14 @@ import com.Ustora.book.entities.Book;
 import com.Ustora.book.entities.Reservation;
 import com.Ustora.book.entities.WaitingList;
 
+import java.util.Date;
 import java.util.Optional;
 
 public class WaitingListBean {
     private Optional<Book> book;
     private Optional<Reservation> reservation;
     private WaitingList waitingList;
+    private Date dateDeRetour;
     private Integer positionInList;
     private String status;
 
@@ -35,6 +37,14 @@ public class WaitingListBean {
 
     public void setWaitingList(WaitingList waitingList) {
         this.waitingList = waitingList;
+    }
+
+    public Date getDateDeRetour() {
+        return dateDeRetour;
+    }
+
+    public void setDateDeRetour(Date dateDeRetour) {
+        this.dateDeRetour = dateDeRetour;
     }
 
     public Integer getPositionInList() {
