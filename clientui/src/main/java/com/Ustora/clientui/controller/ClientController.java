@@ -1,13 +1,11 @@
 package com.Ustora.clientui.controller;
 
-import com.Ustora.clientui.beans.BookBean;
-import com.Ustora.clientui.beans.ReservationBean;
-import com.Ustora.clientui.beans.UserBean;
-import com.Ustora.clientui.beans.UserRole;
+import com.Ustora.clientui.beans.*;
 import com.Ustora.clientui.dto.RestResponsePage;
 import com.Ustora.clientui.proxies.BookProxy;
 import com.Ustora.clientui.proxies.ReservationProxy;
 import com.Ustora.clientui.proxies.UserProxy;
+import com.Ustora.clientui.proxies.WaitingListProxy;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,6 +32,9 @@ public class ClientController {
 
     @Autowired
     private ReservationProxy reservationProxy;
+
+    @Autowired
+    private WaitingListProxy waitingListProxy;
 
     Logger logger = LoggerFactory.getLogger(this.getClass());
 
@@ -145,10 +146,12 @@ public class ClientController {
      * @return
      */
     @GetMapping(value = "/espacePerso")
-    public String espacePerso( Model modelUserReservation){
+    public String espacePerso( Model modelUserReservation, Model modelUserWaitingList){
         UserBean currentUser = userProxy.find(SecurityContextHolder.getContext().getAuthentication().getName());
         List<ReservationBean> userReservation = reservationProxy.reservationList(currentUser.getId());
         modelUserReservation.addAttribute("userReservation",userReservation);
+        List<WaitingListBean> userWaitingList = waitingListProxy.afficherLesReservations(currentUser.getId());
+        modelUserWaitingList.addAttribute("userWaitingList",userWaitingList);
         logger.info("Affichage de l'espace personnel");
         return "espacePerso";
     }

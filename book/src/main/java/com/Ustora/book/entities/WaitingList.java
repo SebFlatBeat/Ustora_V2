@@ -38,6 +38,7 @@ public class WaitingList implements Serializable {
      * @param dateOfDemand
      * @param positionInList
      * @param mailSend
+     * @param dateMailSent
      * @param status
      * @param book
      */
@@ -107,14 +108,16 @@ public class WaitingList implements Serializable {
     }
 
     /**
+     *Gets position in list
      *
-     * @return
+     * @return position in list
      */
     public Integer getPositionInList() {
         return positionInList;
     }
 
     /**
+     *Sets position in list
      *
      * @param positionInList
      */
@@ -123,38 +126,49 @@ public class WaitingList implements Serializable {
     }
 
     /**
+     *Gets mail send
      *
-     * @return
+     * @return mail send
      */
     public boolean isMailSend() {
         return mailSend;
     }
 
     /**
-     *
+     *Sets mail send
      * @param mailSend
      */
     public void setMailSend(boolean mailSend) {
         this.mailSend = mailSend;
     }
 
+    /**
+     * Gets date mail sent
+     * @return date mail sent
+     */
     public Date getDateMailSent() {
         return dateMailSent;
     }
 
+    /**
+     * Sets date mail sent
+     * @param dateMailSent
+     */
     public void setDateMailSent(Date dateMailSent) {
         this.dateMailSent = dateMailSent;
     }
 
     /**
+     * Gets Status
      *
-     * @return
+     * @return status
      */
     public Status getStatus() {
         return status;
     }
 
     /**
+     * Sets status
      *
      * @param status
      */
@@ -187,6 +201,7 @@ public class WaitingList implements Serializable {
                 ", dateOfDemand=" + dateOfDemand +
                 ", positionInList=" + positionInList +
                 ", mailSend=" + mailSend +
+                ", dateMailSent=" + dateMailSent +
                 "]";
     }
 }

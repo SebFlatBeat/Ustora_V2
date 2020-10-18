@@ -5,21 +5,20 @@ import java.util.Date;
 public class WaitingListBean {
     private Long id;
     private Long userBookId;
-    private Date dateOfDemand;
+    private Date dateDeRetour;
     private Integer positionInList;
-    private boolean mailSend;
+    private String status;
 
     private BookBean book;
 
     public WaitingListBean() {
     }
 
-    public WaitingListBean(Long id, Long userBookId, Date dateOfDemand, Integer positionInList, boolean mailSend, BookBean book) {
+    public WaitingListBean(Long id, Long userBookId, Date dateDeRetour, Integer positionInList, BookBean book) {
         this.id = id;
         this.userBookId = userBookId;
-        this.dateOfDemand = dateOfDemand;
+        this.dateDeRetour = dateDeRetour;
         this.positionInList = positionInList;
-        this.mailSend = mailSend;
         this.book = book;
     }
 
@@ -64,8 +63,8 @@ public class WaitingListBean {
      *
      * @return date of demand
      */
-    public Date getDateOfDemand() {
-        return dateOfDemand;
+    public Date getDateDeRetour() {
+        return dateDeRetour;
     }
 
     /**
@@ -73,8 +72,8 @@ public class WaitingListBean {
      *
      * @return date df demand
      */
-    public void setDateOfDemand(Date dateOfDemand) {
-        this.dateOfDemand = dateOfDemand;
+    public void setDateDeRetour(Date dateDeRetour) {
+        this.dateDeRetour = dateDeRetour;
     }
 
     public Integer getPositionInList() {
@@ -85,13 +84,6 @@ public class WaitingListBean {
         this.positionInList = positionInList;
     }
 
-    public boolean isMailSend() {
-        return mailSend;
-    }
-
-    public void setMailSend(boolean mailSend) {
-        this.mailSend = mailSend;
-    }
 
     /**
      * Gets book.
@@ -115,9 +107,8 @@ public class WaitingListBean {
     public String toString() {
         return "WaitingListBean  [id=" + id +
                 ", userBookId=" + userBookId +
-                ", dateOfDemand=" + dateOfDemand +
+                ", dateDeRetour=" + dateDeRetour +
                 ", positionInList=" + positionInList +
-                ", mailSend=" + mailSend +
                 "]";
     }
 
