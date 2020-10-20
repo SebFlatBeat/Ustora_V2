@@ -12,9 +12,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.*;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 
 import java.util.List;
@@ -152,7 +154,6 @@ public class ClientController {
         modelUserReservation.addAttribute("userReservation",userReservation);
         List<WaitingListBean> userWaitingList = waitingListProxy.afficherLesReservations(currentUser.getId());
         modelUserWaitingList.addAttribute("userWaitingList",userWaitingList);
-        logger.info("Affichage de l'espace personnel");
         return "espacePerso";
     }
 
@@ -199,10 +200,10 @@ public class ClientController {
         ReservationBean newReservation = reservationProxy.newReservation(bookId, userId.getId());
         if (newReservation ==null){
             logger.info("Livre déjà en la possession de l'utilisateur");
-            return "redirect:/reservationNotDone";
+            return "redirect:/loanNotDone";
         }else {
             logger.info("Nouvelle reservation de livre enregitrée");
-            return "redirect:/reservationSuccess";
+            return "redirect:/loanSuccess";
         }
     }
 
@@ -246,6 +247,67 @@ public class ClientController {
     @GetMapping(value = "reservationNotDone")
     public String reservationNotDone(){
         return "reservationNotDone";
+    }
+
+    /**
+     *
+     * @return
+     */
+    @GetMapping(value = "loanNotDone")
+    public String loanNotDone(){return "loanNotDone";}
+
+    /**
+     *
+     * @return
+     */
+    @GetMapping(value = "loanSuccess")
+    public String loanSucces(){return "loanSuccess";}
+
+    /**
+     *
+     * @param bookId
+     * @param modelBook
+     * @return
+     */
+    @GetMapping(value = "/bookDetail/{id}")
+    public String bookDetail(@PathVariable("id") Long bookId, Model modelBook){
+        Optional<BookBean> bookBean = bookProxy.findById(bookId);
+        modelBook.addAttribute("book",bookBean.get());
+        return "bookDetail";
+    }
+
+    /**
+     *
+     * @param model
+     * @param bookId
+     * @return
+     */
+    @PostMapping("/waitingList")
+    public String demandeDeReservation(Model model, @RequestParam Long bookId) {
+
+        UserDetails userDetails = (UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        UserBean userBean = userProxy.find(userDetails.getUsername());
+        model.addAttribute("userBean", userBean);
+
+        Optional<BookBean> bookBean = bookProxy.findById(bookId);
+        model.addAttribute("bookBean", bookBean.get());
+
+        waitingListProxy.demandeDeReservation(bookBean.get().getId(), userBean.getId());
+        logger.info("l'utilisateur : " + userBean.getUsername() + " id : " + userBean.getId() + " fait une demande de réservtion pour le livre : " + bookBean.get().getTitre());
+        return "redirect:/reservationSuccess";
+    }
+
+    /**
+     *
+     * @param id
+     * @return
+     */
+    @PostMapping("/cancel")
+    public String cancelReservation(@RequestParam Long id){
+        UserDetails userDetails = (UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        UserBean userBean = userProxy.find(userDetails.getUsername());
+        waitingListProxy.cancelReservation(id,userBean.getId());
+        return "redirect:/espacePerso";
     }
 
 }

@@ -3,6 +3,7 @@ package com.Ustora.book.entities;
 import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -13,17 +14,18 @@ public class WaitingList implements Serializable {
     @GeneratedValue
     private Long id;
     private Long userBookId;
+    @NotNull
     private Date dateOfDemand;
     private Integer positionInList;
     private boolean mailSend;
     private Date dateMailSent;
 
-    @Enumerated
-    private Status status;
-
     @ManyToOne
     @Cascade(org.hibernate.annotations.CascadeType.DETACH)
     private Book book;
+
+    @Enumerated(EnumType.STRING)
+    private Status status;
 
     /**
      * Instantiates a new WaitingList

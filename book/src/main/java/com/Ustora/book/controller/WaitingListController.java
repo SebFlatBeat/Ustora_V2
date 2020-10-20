@@ -31,9 +31,9 @@ public class WaitingListController {
         return waitingListService.findByUserBookId(userBookId);
     }
 
-    @GetMapping("/allUserWaitingList/{id}")
-    public List<WaitingListBean> afficherLesReservations(@PathVariable("id") Long id , @RequestParam Long userBookId){
-    return waitingListService.afficherLesReservation(id);
+    @GetMapping("/allUserWaitingList")
+    public List<WaitingListBean> afficherLesReservations( @RequestParam Long userBookId){
+    return waitingListService.afficherLesReservation(userBookId);
     }
 
     @GetMapping("/pendingWaitingList")
@@ -41,13 +41,13 @@ public class WaitingListController {
         return waitingListService.pendingAndMailSent();
     }
 
-    @PostMapping("/waitingListAdd/{id}")
-    public void demandeDeReservation(@PathVariable("id") Long id, @RequestParam Long userBookId){
-        waitingListService.waitingListReservation(id,userBookId);
+    @PostMapping("/waitingListAdd")
+    public void demandeDeReservation(@RequestParam Long bookId, @RequestParam Long userBookId){
+        waitingListService.waitingListReservation(bookId,userBookId);
     }
 
-    @PostMapping("/cancel/{id}")
-    public void cancelReservation(@PathVariable("id") Long id,@RequestParam Long userBookId){
+    @PostMapping("/cancel")
+    public void cancelReservation(@RequestParam Long id,@RequestParam Long userBookId){
         waitingListService.cancel(id,userBookId);
     }
 }

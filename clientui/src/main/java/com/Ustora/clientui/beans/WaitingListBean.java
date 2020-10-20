@@ -14,12 +14,13 @@ public class WaitingListBean {
     public WaitingListBean() {
     }
 
-    public WaitingListBean(Long id, Long userBookId, Date dateDeRetour, Integer positionInList, BookBean book) {
+    public WaitingListBean(Long id, Long userBookId, Date dateDeRetour, Integer positionInList, BookBean book, String status) {
         this.id = id;
         this.userBookId = userBookId;
         this.dateDeRetour = dateDeRetour;
         this.positionInList = positionInList;
         this.book = book;
+        this.status = status;
     }
 
     /**
@@ -59,27 +60,37 @@ public class WaitingListBean {
     }
 
     /**
-     * Gets date of Demand
+     * Gets date de retour
      *
-     * @return date of demand
+     * @return date de retour
      */
     public Date getDateDeRetour() {
         return dateDeRetour;
     }
 
     /**
-     * Sets date of Demand
+     * Sets date de retour
      *
-     * @return date df demand
+     * @return date de retour
      */
     public void setDateDeRetour(Date dateDeRetour) {
         this.dateDeRetour = dateDeRetour;
     }
 
+    /**
+     * get the position in list
+     *
+     * @return position in list
+     */
     public Integer getPositionInList() {
         return positionInList;
     }
 
+    /**
+     * Set position in list
+     *
+     * @param positionInList
+     */
     public void setPositionInList(Integer positionInList) {
         this.positionInList = positionInList;
     }
@@ -92,6 +103,24 @@ public class WaitingListBean {
      */
     public BookBean getBook() {
         return book;
+    }
+
+    /**
+     * Get status
+     *
+     * @return status
+     */
+    public String getStatus() {
+        return status;
+    }
+
+    /**
+     * Set status
+     *
+     * @param status
+     */
+    public void setStatus(String status) {
+        this.status = status;
     }
 
     /**
@@ -109,6 +138,7 @@ public class WaitingListBean {
                 ", userBookId=" + userBookId +
                 ", dateDeRetour=" + dateDeRetour +
                 ", positionInList=" + positionInList +
+                ", status=" + status +
                 "]";
     }
 

@@ -41,6 +41,18 @@
 <link rel="icon" type="image/png" href="../../img/book-24px.png" />
 
 <body>
+<div>
+<img src="../../img/indispo.png">
+
+<form action="/save/reservation" method="post">
+    <input type="hidden" name="bookId" id="bookId" value="${book.id}"/>
+    <button class="btn btn-outline-success">Emprunter</button>
+</form>
+<form action="/waitingList" method="post">
+    <input type="hidden" name="bookId" id="bookId" value="${book.id}"/>
+    <button class="btn btn-outline-warning">Réserver</button>
+</form>
+</div>
 
 <!-- Latest jQuery form server -->
 <script src="https://code.jquery.com/jquery.min.js"></script>

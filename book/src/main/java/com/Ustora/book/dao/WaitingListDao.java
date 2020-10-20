@@ -30,7 +30,7 @@ public interface WaitingListDao extends JpaRepository<WaitingList, Long> {
     List<WaitingList> findAllByUserBookIdAndStatusOrderByDateOfDemandAsc(Long userBookId, Status status);
 
     //Trouver toutes les reservations d'un livre
-    List<WaitingList> findAllByBookAndStatusOrderByDateOfDemandDateAsc(Book book, Status status);
+    List<WaitingList> findAllByBookAndStatusOrderByDateOfDemandAsc(Book book, Status status);
 
     //Trouver une reservation pour un livre
     List<WaitingList> findByBookAndStatusOrderByDateOfDemandAsc(Book book, Status status);

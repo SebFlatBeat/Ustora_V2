@@ -11,6 +11,7 @@ public class WaitingListBean {
     private Optional<Book> book;
     private Optional<Reservation> reservation;
     private WaitingList waitingList;
+    private Long id;
     private Date dateDeRetour;
     private Integer positionInList;
     private String status;
@@ -33,6 +34,14 @@ public class WaitingListBean {
 
     public WaitingList getWaitingList() {
         return waitingList;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public void setWaitingList(WaitingList waitingList) {

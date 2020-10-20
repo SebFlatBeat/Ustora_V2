@@ -13,10 +13,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 
 @Service
@@ -84,14 +81,14 @@ public class WaitingListService {
 
     /**
      *Permet de faire une réservation
-     * @param id du livre
+     * @param bookId du livre
      * @param userBookId
      */
-    public void waitingListReservation(Long id, Long userBookId){
+    public void waitingListReservation(Long bookId, Long userBookId){
 
         Date date = new Date();
         WaitingList waitingList = new WaitingList();
-        waitingList.setBook(bookDao.findById(id).get());
+        waitingList.setBook(bookDao.findById(bookId).get());
         waitingList.setDateOfDemand(date);
         waitingList.setUserBookId(userBookId);
         waitingList.setStatus(Status.enCours);
@@ -103,8 +100,8 @@ public class WaitingListService {
             waitingList.setPositionInList(place);
         }
         //Détermine le nombre maximum dans une liste de reservation
-        Book book = new Book();
-        Integer nbreMax = book.getNbreExemplaireTotal()*2;
+        Optional<Book> book = bookDao.findById(bookId);
+        Integer nbreMax = book.get().getNbreExemplaireTotal()*2;
 
         //Verifie que l'utilisateur n'a pas déjà le livre en emprunt
         List<Reservation> reservationList = reservationDao.findReservationsByUserBookId(userBookId);
@@ -115,7 +112,7 @@ public class WaitingListService {
             }
         }
         //Verification de la place restante dans la liste
-        if(waitingLists.size()<=nbreMax){
+        if(waitingLists.size()>=nbreMax){
             //TODO ajouter ma propre exception
             throw new IllegalArgumentException();
         }
@@ -155,15 +152,28 @@ public class WaitingListService {
             Optional<Book> book = bookDao.findById(w.getBook().getId());
             listBean.setBook(book);
 
-            List<Reservation> reservations = reservationDao.findAllByBookIdOrderByEndBorrowingAsc(book.get().getId());
-            listBean.setDateDeRetour(reservations.get(0).getEndBorrowing());
+            List<Date> dates = new ArrayList<>();
+            List<Reservation> reservations = reservationDao.findAll();
+            for(Reservation r : reservations) {
+                List<Reservation> reservationList = reservationDao.findAllByBookIdOrderByEndBorrowingAsc(book.get().getId());
+                if (reservationList.size() > 0) {
+                    Reservation resa = reservationList.get(0);
+                    dates.add(resa.getEndBorrowing());
+                }
+            }
+            Collections.sort(dates);
+            if(dates.size()>0){
+            Date soonerDate = dates.get(0);
+            listBean.setDateDeRetour(soonerDate);
+            }
 
-            List<WaitingList> positionWaiting = waitingListDao.findAllByBookAndStatusOrderByDateOfDemandDateAsc(book.get(), Status.enCours);
+            List<WaitingList> positionWaiting = waitingListDao.findAllByBookAndStatusOrderByDateOfDemandAsc(book.get(), Status.enCours);
             for(int i = 0; i< positionWaiting.size(); i++){
                 if(positionWaiting.get(i).getUserBookId() == id){
                     listBean.setPositionInList(i + 1);
                 }
             }
+            listBean.setId(w.getId());
             waitingListBeans.add(listBean);
         }
         logger.info(" liste des réservations pour un utilisateur");

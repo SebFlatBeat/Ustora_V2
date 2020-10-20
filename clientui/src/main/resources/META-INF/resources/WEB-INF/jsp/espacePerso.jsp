@@ -157,17 +157,17 @@
             </tr>
             </thead>
             <tbody>
-            <c:forEach var="available" items="${userWaitingList}">
+            <c:forEach var="reservation" items="${userWaitingList}">
                 <tr>
-                    <td class="text-center" scope="row">${available.id}</td>
-                    <td class="text-center" scope="row">${available.positionInList}</td>
-                    <td class="text-center" scope="row">${available.book.titre}</td>
+                    <td class="text-center" scope="row">${reservation.id}</td>
+                    <td class="text-center" scope="row">${reservation.positionInList}</td>
+                    <td class="text-center" scope="row">${reservation.book.titre}</td>
                     <td class="text-center" scope="row">
-                        <fmt:formatDate value="${available.dateOfDemand}" type="date" pattern="dd.MM.yyyy" />
+                        <fmt:formatDate value="${reservation.dateDeRetour}" type="date" pattern="dd.MM.yyyy" />
                     </td>
                     <td class="text-center" scope="row">
-                        <form method="post" action="/cancel/{id}">
-                            <button class="btn btn-outline-primary" name="id" id="id" value="${available.id}">Annuler</button>
+                        <form method="post" action="/cancel">
+                            <button class="btn btn-outline-danger" name="id" id="id" value="${reservation.id}">Annuler</button>
                         </form>
                     </td>
                 </tr>
