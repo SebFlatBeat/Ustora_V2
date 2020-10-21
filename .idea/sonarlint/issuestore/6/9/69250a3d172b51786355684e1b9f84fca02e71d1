@@ -1,0 +1,12 @@
+
+I
+java:S3655F"3Call "book.isPresent()" before accessing the value.(“ñÍ
+S
+java:S1155<">Use isEmpty() to check whether the collection is empty or not.(ÓÆ¶]
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÄÇô—
+W
+java:S3655g":Call "reservation.isPresent()" before accessing the value.(¾±é¢8ÕÿŒàÔ.
+U
+java:S3655W":Call "reservation.isPresent()" before accessing the value.(¿œâ„úÿÿÿÿ
+I
+java:S3655X"3Call "book.isPresent()" before accessing the value.(œæ¬ñ

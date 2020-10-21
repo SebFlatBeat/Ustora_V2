@@ -53,9 +53,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8b7f698-af99-4ed3-889c-f994cced6562" name="Default Changelist" comment="Implementation front de bookDetail">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/e/2e3b358c480165447c340cb5eccef5e528703274" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/0/30a0e4005ccaab31c57389192028c7846a076c47" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/0/30f428f04913bd558ce1a35dc4f7699762244c5b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/448d00999117b10b95d6708d142a41ad53c90a20" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/9/69250a3d172b51786355684e1b9f84fca02e71d1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/e/7ed9982afe8a3ddeeb9907a74bb80ca19e16efea" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/3/939999e389b1b054e5d5194cf47ad159d779c79e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/2/a2f9618c8ad821b143a07a29a9805fcb0b2df470" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/5/b5aa843524f5813d789502fd42e3b080ca499533" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/6/c64f735c861953d98b81464956936572224c14cf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/d/cdfe2e323fad8b1bcfe52f68e21783f120cd711e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/e/ce0e7119e059f07c3d04023d3fc7ce1e23bf2a41" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/c/dcc08c1c35c705fd552febefc613abc6209ca2bb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/6/e692e19b1ac9affd2e2947b1f386167d118fca0b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/ReservationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/ReservationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/exceptions/NoExtendIfEndBorrowingExceedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/exceptions/NoExtendIfEndBorrowingExceedException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/espacePerso.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/espacePerso.jsp" afterDir="false" />
     </list>
@@ -160,6 +175,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="database.data.extractors.current.export.id" value="Comma-separated (CSV)_id" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/zuul-server" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -220,6 +236,17 @@
     </option>
   </component>
   <component name="RunManager" selected="JAR Application.zipkin-server-2.6.1-exec.jar">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="generated-requests#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -338,9 +365,9 @@
       <item itemvalue="JUnit.cover-tests-run-book" />
       <item itemvalue="JUnit.cover-tests-run-user" />
       <item itemvalue="JUnit.cover-tests-run-zuul-server" />
+      <item itemvalue="Spring Boot.EurekaApplication" />
       <item itemvalue="Spring Boot.BookApplication (9002)" />
       <item itemvalue="Spring Boot.ConfigServerApplication" />
-      <item itemvalue="Spring Boot.EurekaApplication" />
       <item itemvalue="Spring Boot.SpringAdminApplication" />
       <item itemvalue="Spring Boot.UserApplication (9003)" />
       <item itemvalue="Spring Boot.UserApplication (9033)" />
@@ -385,7 +412,8 @@
       <workItem from="1602751782003" duration="29264000" />
       <workItem from="1603146961779" duration="24774000" />
       <workItem from="1603233307566" duration="23675000" />
-      <workItem from="1603295616774" duration="3834000" />
+      <workItem from="1603295616774" duration="4430000" />
+      <workItem from="1603304289129" duration="7458000" />
     </task>
     <task id="LOCAL-00001" summary="Add unversionned files">
       <created>1601445594038</created>
@@ -534,7 +562,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603297725901</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Refactoring Implémentation de la classe NoExtendIfEndBorrowingExceedException dans le mauvais module // Implementation du message dans espacePerso">
+      <created>1603304156845</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1603304156845</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -587,7 +622,8 @@
     <MESSAGE value="Correction des pom / Creation du package exceptions et de la classe NoExtendIfEndBorrowingExceed" />
     <MESSAGE value="Refactor de la classe NoExtendIfEndBorrowingExceedException" />
     <MESSAGE value="Implémentation de la classe NoExtendIfEndBorrowingExceedException" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implémentation de la classe NoExtendIfEndBorrowingExceedException" />
+    <MESSAGE value="Refactoring Implémentation de la classe NoExtendIfEndBorrowingExceedException dans le mauvais module // Implementation du message dans espacePerso" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring Implémentation de la classe NoExtendIfEndBorrowingExceedException dans le mauvais module // Implementation du message dans espacePerso" />
   </component>
   <component name="WindowStateProjectService">
     <state x="267" y="19" key="#Inspections" timestamp="1603144174219">
@@ -606,10 +642,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="96" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1601558139728" />
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603110403390">
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603309013439">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1603110403390" />
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1603309013439" />
     <state x="421" y="45" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1603094246939">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -654,38 +690,38 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="348" y="82" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1603293090406" />
-    <state width="1237" height="339" key="GridCell.Tab.0.bottom" timestamp="1603295544010">
+    <state width="948" height="280" key="GridCell.Tab.0.bottom" timestamp="1603313548436">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="339" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603295544010" />
-    <state width="1237" height="339" key="GridCell.Tab.0.center" timestamp="1603295544010">
+    <state width="948" height="280" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603313548436" />
+    <state width="948" height="280" key="GridCell.Tab.0.center" timestamp="1603313548435">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="339" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1603295544010" />
-    <state width="1237" height="339" key="GridCell.Tab.0.left" timestamp="1603295544010">
+    <state width="948" height="280" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1603313548435" />
+    <state width="948" height="280" key="GridCell.Tab.0.left" timestamp="1603313548435">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="339" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1603295544010" />
-    <state width="1237" height="339" key="GridCell.Tab.0.right" timestamp="1603295544010">
+    <state width="948" height="280" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1603313548435" />
+    <state width="948" height="280" key="GridCell.Tab.0.right" timestamp="1603313548436">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="339" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1603295544010" />
-    <state width="948" height="343" key="GridCell.Tab.1.bottom" timestamp="1603295544007">
+    <state width="948" height="280" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1603313548435" />
+    <state width="948" height="280" key="GridCell.Tab.1.bottom" timestamp="1603313548436">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="343" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603295544007" />
-    <state width="948" height="343" key="GridCell.Tab.1.center" timestamp="1603295544007">
+    <state width="948" height="280" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603313548436" />
+    <state width="948" height="280" key="GridCell.Tab.1.center" timestamp="1603313548436">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="343" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1603295544007" />
-    <state width="948" height="343" key="GridCell.Tab.1.left" timestamp="1603295544007">
+    <state width="948" height="280" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1603313548436" />
+    <state width="948" height="280" key="GridCell.Tab.1.left" timestamp="1603313548436">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="343" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1603295544007" />
-    <state width="948" height="343" key="GridCell.Tab.1.right" timestamp="1603295544007">
+    <state width="948" height="280" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1603313548436" />
+    <state width="948" height="280" key="GridCell.Tab.1.right" timestamp="1603313548436">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="343" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1603295544007" />
+    <state width="948" height="280" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1603313548436" />
     <state width="948" height="343" key="GridCell.Tab.2.bottom" timestamp="1603295543555">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -722,14 +758,18 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="423" y="0" key="SpringBootCustomization/0.0.1280.680@0.0.1280.680" timestamp="1600975482655" />
-    <state x="233" y="55" key="Vcs.Push.Dialog.v2" timestamp="1603297740870">
+    <state x="233" y="55" key="Vcs.Push.Dialog.v2" timestamp="1603304160624">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="55" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1603297740870" />
+    <state x="233" y="55" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1603304160624" />
     <state x="516" y="212" width="307" height="262" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1603093273652">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="516" y="212" width="307" height="262" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1280.680@0.0.1280.680" timestamp="1603093273652" />
+    <state x="371" y="146" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1603309141575">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="146" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/0.0.1280.680@0.0.1280.680" timestamp="1603309141575" />
     <state x="375" y="229" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1603284711928">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

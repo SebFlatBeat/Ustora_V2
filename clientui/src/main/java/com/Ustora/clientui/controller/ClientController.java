@@ -20,6 +20,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -146,10 +147,12 @@ public class ClientController {
      * @return
      */
     @GetMapping(value = "/espacePerso")
-    public String espacePerso( Model modelUserReservation){
+    public String espacePerso( Model modelUserReservation,Model modelDate){
         UserBean currentUser = userProxy.find(SecurityContextHolder.getContext().getAuthentication().getName());
         List<ReservationBean> userReservation = reservationProxy.reservationList(currentUser.getId());
         modelUserReservation.addAttribute("userReservation",userReservation);
+        Date date = new Date();
+        modelDate.addAttribute("dateDuJour",date);
         logger.info("Affichage de l'espace personnel");
         return "espacePerso";
     }
