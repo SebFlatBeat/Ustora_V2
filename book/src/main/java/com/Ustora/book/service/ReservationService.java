@@ -6,6 +6,7 @@ import com.Ustora.book.entities.Reservation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -107,6 +108,10 @@ public class ReservationService {
      */
     public List<Reservation> findByEndBorrowingAfter(@Param("endBorrowing") Date endBorrowing){
        return reservationDao.findByEndBorrowingAfter(endBorrowing);
+    }
+
+    public List<Reservation> findAllByBookId(@RequestParam Long bookId) {
+        return reservationDao.findAllByBookIdOrderByEndBorrowingAsc(bookId);
     }
 }
 

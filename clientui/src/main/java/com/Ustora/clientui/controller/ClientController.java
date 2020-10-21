@@ -270,9 +270,13 @@ public class ClientController {
      * @return
      */
     @GetMapping(value = "/bookDetail/{id}")
-    public String bookDetail(@PathVariable("id") Long bookId, Model modelBook){
+    public String bookDetail(@PathVariable("id") Long bookId, Model modelBook, Model modelReservation, Model modelWaitingList){
         Optional<BookBean> bookBean = bookProxy.findById(bookId);
         modelBook.addAttribute("book",bookBean.get());
+        List<ReservationBean> reservationBeans = reservationProxy.allReservation(bookId);
+        modelReservation.addAttribute("reservation", reservationBeans);
+        List<WaitingListBean> waitingListBeans = waitingListProxy.waitingListByBookId(bookId);
+        modelWaitingList.addAttribute("waitingList",waitingListBeans);
         return "bookDetail";
     }
 

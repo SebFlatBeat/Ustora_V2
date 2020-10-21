@@ -32,4 +32,7 @@ public interface WaitingListProxy {
 
     @PostMapping(value = "/book/cancel")
     void cancelReservation(@RequestParam Long id, @RequestParam Long userBookId);
+
+    @GetMapping(value = "/book/waitingList/book")
+    List<WaitingListBean> waitingListByBookId(@RequestParam Long bookId);
 }

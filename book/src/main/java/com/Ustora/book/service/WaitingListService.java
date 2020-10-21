@@ -12,6 +12,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.*;
 
@@ -189,4 +190,35 @@ public class WaitingListService {
         return waitingLists;
     }
 
+
+    public List<WaitingListBean> findByBookId(@RequestParam Long bookId) {
+        List<WaitingList> waitingLists = waitingListDao.findByBookId(bookId);
+        List<WaitingListBean> waitingListBeans = new ArrayList<>();
+        for(WaitingList w : waitingLists){
+            WaitingListBean listBean = new WaitingListBean();
+            listBean.setWaitingList(w);
+            Optional<Reservation> reservation = reservationDao.findById(w.getBook().getId());
+            listBean.setReservation(reservation);
+            Optional<Book> book = bookDao.findById(w.getBook().getId());
+            listBean.setBook(book);
+
+            List<Date> dates = new ArrayList<>();
+            List<Reservation> reservations = reservationDao.findAll();
+            for(Reservation r : reservations) {
+                List<Reservation> reservationList = reservationDao.findAllByBookIdOrderByEndBorrowingAsc(book.get().getId());
+                if (reservationList.size() > 0) {
+                    Reservation resa = reservationList.get(0);
+                    dates.add(resa.getEndBorrowing());
+                }
+            }
+            Collections.sort(dates);
+            if(dates.size()>0){
+                Date soonerDate = dates.get(0);
+                listBean.setDateDeRetour(soonerDate);
+            }
+            listBean.setId(w.getId());
+            waitingListBeans.add(listBean);
+        }
+        return waitingListBeans;
+    }
 }

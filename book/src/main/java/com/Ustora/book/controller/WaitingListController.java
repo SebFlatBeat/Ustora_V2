@@ -50,4 +50,9 @@ public class WaitingListController {
     public void cancelReservation(@RequestParam Long id,@RequestParam Long userBookId){
         waitingListService.cancel(id,userBookId);
     }
+
+    @GetMapping("/waitingList/book")
+    public List<WaitingListBean> waitingListByBookId(@RequestParam Long bookId){
+        return  waitingListService.findByBookId(bookId);
+    }
 }

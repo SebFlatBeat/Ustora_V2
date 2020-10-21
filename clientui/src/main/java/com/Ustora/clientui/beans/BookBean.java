@@ -19,6 +19,8 @@ public class BookBean {
 
     private int nbreExemplaire;
 
+    private int nbreExemplaireTotal;
+
     public BookBean() {
     }
 
@@ -94,6 +96,14 @@ public class BookBean {
         this.nbreExemplaire = nbreExemplaire;
     }
 
+    public int getNbreExemplaireTotal() {
+        return nbreExemplaireTotal;
+    }
+
+    public void setNbreExemplaireTotal(int nbreExemplaireTotal) {
+        this.nbreExemplaireTotal = nbreExemplaireTotal;
+    }
+
     @Override
     public String toString() {
         return "BookBean{" +
@@ -106,6 +116,7 @@ public class BookBean {
                 ", anneeEdition='" + anneeEdition + '\'' +
                 ", section='" + section + '\'' +
                 ", nbreExemplaire=" + nbreExemplaire +
+                ", nbreExemplaireTotal=" + nbreExemplaireTotal +
                 '}';
     }
 }

@@ -237,10 +237,6 @@ URL: https://www.freshdesignweb.com/ustora/
                                 <div class="single-product">
                                     <sec:authorize access="hasAnyAuthority('USER', 'ADMIN')">
                                     <a class="btn btn-outline-info" href="<c:url value="/bookDetail/${bookAll.id}"/>">Détails</a>
-                                        <form action="/save/reservation" method="post">
-                                            <input type="hidden" name="bookId" id="bookId" value="${bookAll.id}"/>
-                                            <button class="btn btn-outline-success">Emprunter</button>
-                                        </form>
                                     </sec:authorize>
                                 </div>
                             </td>
@@ -262,10 +258,6 @@ URL: https://www.freshdesignweb.com/ustora/
                                 <div class="single-product">
                                     <sec:authorize access="hasAnyAuthority('USER', 'ADMIN')">
                                         <a class="btn btn-outline-info" href="<c:url value="/bookDetail"/>">Détails</a>
-                                        <form action="/save/reservation" method="post">
-                                            <input type="hidden" name="bookId" id="bookId" value="${bookAll.id}"/>
-                                            <button class="btn btn-outline-success">Emprunter</button>
-                                        </form>
                                     </sec:authorize>
                                 </div>
                             </td>

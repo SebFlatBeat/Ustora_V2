@@ -107,4 +107,10 @@ public class ReservationController {
         logger.info("Prolongation de la reservation de l'utilisateur");
         return reservation;
     }
+
+    @GetMapping("/reservation/id")
+    public List<Reservation> findAllReservation(@RequestParam Long bookId){
+        List<Reservation> reservations = reservationService.findAllByBookId(bookId);
+        return reservations;
+    }
 }
