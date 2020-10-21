@@ -16,6 +16,11 @@
       </path>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:prod" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
       <path>
@@ -28,6 +33,12 @@
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:prod" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
     <select>
@@ -35,13 +46,23 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/feature/reservation-ouvrage" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:prod" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/prod/bug" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8b7f698-af99-4ed3-889c-f994cced6562" name="Default Changelist" comment="" />
+    <list default="true" id="d8b7f698-af99-4ed3-889c-f994cced6562" name="Default Changelist" comment="Implementation front de bookDetail">
+      <change afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/exceptions/NoExtendIfEndBorrowingExceed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-admin/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zuul-server/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,6 +99,10 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
+                    <option name="branchName" value="prod/bug" />
+                    <option name="lastUsedInstant" value="1603294110" />
+                  </RecentBranch>
+                  <RecentBranch>
                     <option name="branchName" value="master" />
                     <option name="lastUsedInstant" value="1603280967" />
                   </RecentBranch>
@@ -112,7 +137,7 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1hwr8tRMIzAUpkM8WCzqB8ULxxo" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -123,25 +148,28 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/zuul-server" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="liveEdit" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Background" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="ReactorSettings">
@@ -192,19 +220,6 @@
     </option>
   </component>
   <component name="RunManager" selected="JAR Application.zipkin-server-2.6.1-exec.jar">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="generated-requests#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -318,11 +333,11 @@
       <item itemvalue="HTTP Request.generated-requests#1" />
       <item itemvalue="HTTP Request.generated-requests#2" />
       <item itemvalue="HTTP Request.generated-requests#3" />
+      <item itemvalue="JAR Application.jstl-1.2.jar" />
+      <item itemvalue="JAR Application.zipkin-server-2.6.1-exec.jar" />
       <item itemvalue="JUnit.cover-tests-run-book" />
       <item itemvalue="JUnit.cover-tests-run-user" />
       <item itemvalue="JUnit.cover-tests-run-zuul-server" />
-      <item itemvalue="JAR Application.jstl-1.2.jar" />
-      <item itemvalue="JAR Application.zipkin-server-2.6.1-exec.jar" />
       <item itemvalue="Spring Boot.BookApplication (9002)" />
       <item itemvalue="Spring Boot.ConfigServerApplication" />
       <item itemvalue="Spring Boot.EurekaApplication" />
@@ -369,7 +384,7 @@
       <workItem from="1602624923203" duration="23853000" />
       <workItem from="1602751782003" duration="29264000" />
       <workItem from="1603146961779" duration="24774000" />
-      <workItem from="1603233307566" duration="18157000" />
+      <workItem from="1603233307566" duration="23675000" />
     </task>
     <task id="LOCAL-00001" summary="Add unversionned files">
       <created>1601445594038</created>
@@ -514,7 +529,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/feature/reservation-ouvrage" />
+                        <option value="origin/prod/bug" />
                       </list>
                     </value>
                   </entry>
@@ -606,58 +621,58 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="385" y="150" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.680@0.0.1280.680" timestamp="1602683147735" />
-    <state x="348" y="82" key="FileChooserDialogImpl" timestamp="1602623786207">
+    <state x="348" y="82" key="FileChooserDialogImpl" timestamp="1603293090406">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="348" y="82" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1602623786207" />
-    <state width="948" height="343" key="GridCell.Tab.0.bottom" timestamp="1603281223771">
+    <state x="348" y="82" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1603293090406" />
+    <state width="1237" height="339" key="GridCell.Tab.0.bottom" timestamp="1603295544010">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="343" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603281223771" />
-    <state width="948" height="343" key="GridCell.Tab.0.center" timestamp="1603281223770">
+    <state width="1237" height="339" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603295544010" />
+    <state width="1237" height="339" key="GridCell.Tab.0.center" timestamp="1603295544010">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="343" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1603281223770" />
-    <state width="948" height="343" key="GridCell.Tab.0.left" timestamp="1603281223770">
+    <state width="1237" height="339" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1603295544010" />
+    <state width="1237" height="339" key="GridCell.Tab.0.left" timestamp="1603295544010">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="343" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1603281223770" />
-    <state width="948" height="343" key="GridCell.Tab.0.right" timestamp="1603281223771">
+    <state width="1237" height="339" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1603295544010" />
+    <state width="1237" height="339" key="GridCell.Tab.0.right" timestamp="1603295544010">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="343" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1603281223771" />
-    <state width="948" height="343" key="GridCell.Tab.1.bottom" timestamp="1603281223771">
+    <state width="1237" height="339" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1603295544010" />
+    <state width="948" height="343" key="GridCell.Tab.1.bottom" timestamp="1603295544007">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="343" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603281223771" />
-    <state width="948" height="343" key="GridCell.Tab.1.center" timestamp="1603281223771">
+    <state width="948" height="343" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603295544007" />
+    <state width="948" height="343" key="GridCell.Tab.1.center" timestamp="1603295544007">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="343" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1603281223771" />
-    <state width="948" height="343" key="GridCell.Tab.1.left" timestamp="1603281223771">
+    <state width="948" height="343" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1603295544007" />
+    <state width="948" height="343" key="GridCell.Tab.1.left" timestamp="1603295544007">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="343" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1603281223771" />
-    <state width="948" height="343" key="GridCell.Tab.1.right" timestamp="1603281223771">
+    <state width="948" height="343" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1603295544007" />
+    <state width="948" height="343" key="GridCell.Tab.1.right" timestamp="1603295544007">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="343" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1603281223771" />
-    <state width="948" height="343" key="GridCell.Tab.2.bottom" timestamp="1603271218393">
+    <state width="948" height="343" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1603295544007" />
+    <state width="948" height="343" key="GridCell.Tab.2.bottom" timestamp="1603295543555">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="343" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603271218393" />
-    <state width="948" height="343" key="GridCell.Tab.2.center" timestamp="1603271218393">
+    <state width="948" height="343" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603295543555" />
+    <state width="948" height="343" key="GridCell.Tab.2.center" timestamp="1603295543554">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="343" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1603271218393" />
-    <state width="948" height="343" key="GridCell.Tab.2.left" timestamp="1603271218393">
+    <state width="948" height="343" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1603295543554" />
+    <state width="948" height="343" key="GridCell.Tab.2.left" timestamp="1603295543554">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="343" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1603271218393" />
-    <state width="948" height="343" key="GridCell.Tab.2.right" timestamp="1603271218393">
+    <state width="948" height="343" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1603295543554" />
+    <state width="948" height="343" key="GridCell.Tab.2.right" timestamp="1603295543555">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="343" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1603271218393" />
+    <state width="948" height="343" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1603295543555" />
     <state x="221" y="84" key="IDE.errors.dialog" timestamp="1602058491751">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -666,22 +681,34 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="171" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.680@0.0.1280.680" timestamp="1602628001950" />
-    <state x="121" y="0" key="SettingsEditor" timestamp="1603233431491">
+    <state x="314" y="0" key="NewModule_or_Project.wizard" timestamp="1603293092323">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1603233431491" />
+    <state x="314" y="0" key="NewModule_or_Project.wizard/0.0.1280.680@0.0.1280.680" timestamp="1603293092323" />
+    <state x="121" y="0" key="SettingsEditor" timestamp="1603295435455">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1603295435455" />
     <state x="423" y="0" key="SpringBootCustomization" timestamp="1600975482655">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="423" y="0" key="SpringBootCustomization/0.0.1280.680@0.0.1280.680" timestamp="1600975482655" />
-    <state x="233" y="55" key="Vcs.Push.Dialog.v2" timestamp="1603280840795">
+    <state x="233" y="55" key="Vcs.Push.Dialog.v2" timestamp="1603294679137">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="55" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1603280840795" />
+    <state x="233" y="55" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1603294679137" />
     <state x="516" y="212" width="307" height="262" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1603093273652">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="516" y="212" width="307" height="262" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1280.680@0.0.1280.680" timestamp="1603093273652" />
+    <state x="375" y="229" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1603284711928">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="375" y="229" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1280.680@0.0.1280.680" timestamp="1603284711928" />
+    <state x="459" y="251" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603294932613">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="459" y="251" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1603294932613" />
     <state x="412" y="0" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1602624453557">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -694,17 +721,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1602711614826" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java</url>
-          <line>245</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="321" y="0" key="spring file set editor" timestamp="1603292631078">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="321" y="0" key="spring file set editor/0.0.1280.680@0.0.1280.680" timestamp="1603292631078" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/config_server$EmailConfigTest.ic" NAME="EmailConfigTest Coverage Results" MODIFIED="1602660198381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
