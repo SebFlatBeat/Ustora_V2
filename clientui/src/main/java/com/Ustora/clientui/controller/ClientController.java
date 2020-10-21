@@ -5,6 +5,7 @@ import com.Ustora.clientui.beans.ReservationBean;
 import com.Ustora.clientui.beans.UserBean;
 import com.Ustora.clientui.beans.UserRole;
 import com.Ustora.clientui.dto.RestResponsePage;
+import com.Ustora.clientui.exceptions.NoExtendIfEndBorrowingExceedException;
 import com.Ustora.clientui.proxies.BookProxy;
 import com.Ustora.clientui.proxies.ReservationProxy;
 import com.Ustora.clientui.proxies.UserProxy;
@@ -19,6 +20,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -145,10 +147,12 @@ public class ClientController {
      * @return
      */
     @GetMapping(value = "/espacePerso")
-    public String espacePerso( Model modelUserReservation){
+    public String espacePerso( Model modelUserReservation,Model modelDate){
         UserBean currentUser = userProxy.find(SecurityContextHolder.getContext().getAuthentication().getName());
         List<ReservationBean> userReservation = reservationProxy.reservationList(currentUser.getId());
         modelUserReservation.addAttribute("userReservation",userReservation);
+        Date date = new Date();
+        modelDate.addAttribute("dateDuJour",date);
         logger.info("Affichage de l'espace personnel");
         return "espacePerso";
     }
@@ -221,9 +225,17 @@ public class ClientController {
      * @return
      */
     @PostMapping(value = "/extend/reservation")
-    public String extendReservation (@RequestParam Long id){
-        reservationProxy.updateReservation(id);
-        logger.info("Prolongement de la reservation");
+    public String extendReservation (@RequestParam Long id, Model modelError) {
+        try {
+            reservationProxy.updateReservation(id);
+        } catch (Exception exception) {
+            exception.printStackTrace();
+            if (exception instanceof NoExtendIfEndBorrowingExceedException) {
+                String message = exception.getMessage();
+                modelError.addAttribute("message", message);
+            }
+            logger.info("Prolongement de la reservation");
+        }
         return "redirect:/espacePerso";
     }
 

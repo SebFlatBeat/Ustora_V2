@@ -1,5 +1,5 @@
 <%@ taglib uri='http://java.sun.com/jsp/jstl/core' prefix='c'%>
-<%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%--
   Created by IntelliJ IDEA.
   User: I56852
@@ -118,18 +118,21 @@
                         <fmt:formatDate value="${available.endBorrowing}" type="date" pattern="dd.MM.yyyy" />
                     </td>
                     <td class="text-center" scope="row">
-                        <c:if test="${available.extend == false}">
-                        <form method="post" action="/extend/reservation">
+                        <c:if test="${available.extend == false && available.endBorrowing gt dateDuJour}">
+                            <form method="post" action="/extend/reservation">
                                 <button class="btn btn-outline-success" name="id" id="id" value="${available.id}">Renouveller</button>
-                        </form>
+                            </form>
                         </c:if>
-                        <c:if test="${available.extend == true}">
-                            <button class="btn btn-outline-danger disabled" name="id" id="id" value="${available.id}">Renouveller</button>
-                        </c:if>
+                           <c:if test="${available.extend == true && available.endBorrowing gt dateDuJour}">
+                            <button class="btn btn-outline-danger disabled" name="id" id="id" value="${available.id}">Déjà Renouvellé</button>
+                           </c:if>
+                            <c:if test="${dateDuJour gt available.endBorrowing}">
+                                <button class="btn btn-outline-danger disabled">Date de fin de prêt dépassé</button>
+                            </c:if>
                     </td>
-                        <td class="text-center" scope="row">
+                    <td class="text-center" scope="row">
                         <form method="post" action="/delete/reservation">
-                                <button class="btn btn-outline-primary" name="id" id="id" value="${available.id}">Rendre</button>
+                            <button class="btn btn-outline-primary" name="id" id="id" value="${available.id}">Rendre</button>
                         </form>
                     </td>
                 </tr>
