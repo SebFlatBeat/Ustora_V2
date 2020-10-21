@@ -53,9 +53,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8b7f698-af99-4ed3-889c-f994cced6562" name="Default Changelist" comment="Implementation front de bookDetail">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/exceptions/NoExtendIfEndBorrowingExceedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/exceptions/NoExtendIfEndBorrowingExceedException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/ReservationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/ReservationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/exceptions/NoExtendIfEndBorrowingExceedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/exceptions/NoExtendIfEndBorrowingExceedException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/espacePerso.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/espacePerso.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,6 +175,9 @@
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.Ustora.book.service" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.Ustora.clientui.exceptions" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -380,7 +385,7 @@
       <workItem from="1602751782003" duration="29264000" />
       <workItem from="1603146961779" duration="24774000" />
       <workItem from="1603233307566" duration="23675000" />
-      <workItem from="1603295616774" duration="1253000" />
+      <workItem from="1603295616774" duration="3834000" />
     </task>
     <task id="LOCAL-00001" summary="Add unversionned files">
       <created>1601445594038</created>
@@ -522,7 +527,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603296031661</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Implémentation de la classe NoExtendIfEndBorrowingExceedException">
+      <created>1603297725901</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1603297725901</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -574,7 +586,8 @@
     <MESSAGE value="Implementation front de bookDetail" />
     <MESSAGE value="Correction des pom / Creation du package exceptions et de la classe NoExtendIfEndBorrowingExceed" />
     <MESSAGE value="Refactor de la classe NoExtendIfEndBorrowingExceedException" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor de la classe NoExtendIfEndBorrowingExceedException" />
+    <MESSAGE value="Implémentation de la classe NoExtendIfEndBorrowingExceedException" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implémentation de la classe NoExtendIfEndBorrowingExceedException" />
   </component>
   <component name="WindowStateProjectService">
     <state x="267" y="19" key="#Inspections" timestamp="1603144174219">
@@ -617,6 +630,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="321" y="77" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.680@0.0.1280.680" timestamp="1602321244327" />
+    <state x="386" y="196" width="609" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1603303465153">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="386" y="196" width="609" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1603303465153" />
     <state x="406" y="158" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1603266188097">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -705,10 +722,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="423" y="0" key="SpringBootCustomization/0.0.1280.680@0.0.1280.680" timestamp="1600975482655" />
-    <state x="233" y="55" key="Vcs.Push.Dialog.v2" timestamp="1603296035581">
+    <state x="233" y="55" key="Vcs.Push.Dialog.v2" timestamp="1603297740870">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="55" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1603296035581" />
+    <state x="233" y="55" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1603297740870" />
     <state x="516" y="212" width="307" height="262" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1603093273652">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

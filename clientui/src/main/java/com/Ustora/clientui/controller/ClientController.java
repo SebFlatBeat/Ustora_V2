@@ -5,6 +5,7 @@ import com.Ustora.clientui.beans.ReservationBean;
 import com.Ustora.clientui.beans.UserBean;
 import com.Ustora.clientui.beans.UserRole;
 import com.Ustora.clientui.dto.RestResponsePage;
+import com.Ustora.clientui.exceptions.NoExtendIfEndBorrowingExceedException;
 import com.Ustora.clientui.proxies.BookProxy;
 import com.Ustora.clientui.proxies.ReservationProxy;
 import com.Ustora.clientui.proxies.UserProxy;
@@ -221,9 +222,17 @@ public class ClientController {
      * @return
      */
     @PostMapping(value = "/extend/reservation")
-    public String extendReservation (@RequestParam Long id){
-        reservationProxy.updateReservation(id);
-        logger.info("Prolongement de la reservation");
+    public String extendReservation (@RequestParam Long id, Model modelError) {
+        try {
+            reservationProxy.updateReservation(id);
+        } catch (Exception exception) {
+            exception.printStackTrace();
+            if (exception instanceof NoExtendIfEndBorrowingExceedException) {
+                String message = exception.getMessage();
+                modelError.addAttribute("message", message);
+            }
+            logger.info("Prolongement de la reservation");
+        }
         return "redirect:/espacePerso";
     }
 

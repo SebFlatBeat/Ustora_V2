@@ -1,5 +1,6 @@
 <%@ taglib uri='http://java.sun.com/jsp/jstl/core' prefix='c'%>
-<%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<jsp:useBean id="now" class="java.util.Date" />
 <%--
   Created by IntelliJ IDEA.
   User: I56852
@@ -120,6 +121,12 @@
                     <td class="text-center" scope="row">
                         <c:if test="${available.extend == false}">
                         <form method="post" action="/extend/reservation">
+                               <div>
+                                   <fmt:formatDate var="dateDuJour" value="${now}" pattern="dd.MM.yyyy" />
+                                   <c:if test="${available.endBorrowing>dateDuJour}">
+                                    <span>${message}</span>
+                                   </c:if>
+                               </div>
                                 <button class="btn btn-outline-success" name="id" id="id" value="${available.id}">Renouveller</button>
                         </form>
                         </c:if>

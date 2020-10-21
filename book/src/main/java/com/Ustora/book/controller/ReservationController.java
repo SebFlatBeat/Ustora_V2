@@ -2,7 +2,6 @@ package com.Ustora.book.controller;
 
 import com.Ustora.book.entities.Book;
 import com.Ustora.book.entities.Reservation;
-import com.Ustora.book.proxies.UserProxy;
 import com.Ustora.book.service.BookService;
 import com.Ustora.book.service.ReservationService;
 import org.slf4j.Logger;
@@ -101,10 +100,10 @@ public class ReservationController {
     @PostMapping(value = "/extend/reservation")
     public Optional<Reservation> updateReservation (@RequestParam Long id){
         Optional<Reservation> reservation = reservationService.findById(id);
-        reservation.get().setEndBorrowing(reservationService.add8Weeks(reservation.get().getBorrowing()));
-        reservation.get().setExtend(true);
-        reservationService.save(reservation.get());
-        logger.info("Prolongation de la reservation de l'utilisateur");
-        return reservation;
+           reservation.get().setEndBorrowing(reservationService.add8Weeks(reservation.get().getBorrowing()));
+           reservation.get().setExtend(true);
+           reservationService.save(reservation.get());
+           logger.info("Prolongation de la reservation de l'utilisateur");
+       return reservation;
     }
 }
