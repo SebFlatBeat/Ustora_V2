@@ -53,15 +53,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8b7f698-af99-4ed3-889c-f994cced6562" name="Default Changelist" comment="Implementation front de bookDetail">
-      <change afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/exceptions/NoExtendIfEndBorrowingExceed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientui/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-admin/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zuul-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/exceptions/NoExtendIfEndBorrowingExceedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/exceptions/NoExtendIfEndBorrowingExceedException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,6 +152,7 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -385,6 +380,7 @@
       <workItem from="1602751782003" duration="29264000" />
       <workItem from="1603146961779" duration="24774000" />
       <workItem from="1603233307566" duration="23675000" />
+      <workItem from="1603295616774" duration="1253000" />
     </task>
     <task id="LOCAL-00001" summary="Add unversionned files">
       <created>1601445594038</created>
@@ -512,7 +508,21 @@
       <option name="project" value="LOCAL" />
       <updated>1603280837809</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Correction des pom / Creation du package exceptions et de la classe NoExtendIfEndBorrowingExceed">
+      <created>1603295764101</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1603295764101</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Refactor de la classe NoExtendIfEndBorrowingExceedException">
+      <created>1603296031661</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1603296031661</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -562,7 +572,9 @@
     <MESSAGE value="Afficher les reservations de l'utilisateur dans son espacePerso.jsp + création des pages loanNotDone.jsp et loanSuccess.jsp" />
     <MESSAGE value="Correction methode / implementation des JSP / Ajout d'une image dans le dossier de ressource" />
     <MESSAGE value="Implementation front de bookDetail" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementation front de bookDetail" />
+    <MESSAGE value="Correction des pom / Creation du package exceptions et de la classe NoExtendIfEndBorrowingExceed" />
+    <MESSAGE value="Refactor de la classe NoExtendIfEndBorrowingExceedException" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor de la classe NoExtendIfEndBorrowingExceedException" />
   </component>
   <component name="WindowStateProjectService">
     <state x="267" y="19" key="#Inspections" timestamp="1603144174219">
@@ -693,10 +705,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="423" y="0" key="SpringBootCustomization/0.0.1280.680@0.0.1280.680" timestamp="1600975482655" />
-    <state x="233" y="55" key="Vcs.Push.Dialog.v2" timestamp="1603294679137">
+    <state x="233" y="55" key="Vcs.Push.Dialog.v2" timestamp="1603296035581">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="55" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1603294679137" />
+    <state x="233" y="55" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1603296035581" />
     <state x="516" y="212" width="307" height="262" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1603093273652">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
