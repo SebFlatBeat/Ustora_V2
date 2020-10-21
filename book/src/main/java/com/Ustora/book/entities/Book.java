@@ -40,6 +40,8 @@ public class Book {
 
     private int nbreExemplaire;
 
+    private int nbreExemplaireTotal;
+
 
     /**
      * Instantiates a new Book.
@@ -60,6 +62,7 @@ public class Book {
      * @param anneeEdition          the annee edition
      * @param section               the section
      * @param nbreExemplaire        the nbre exemplaire
+     * @param nbreExemplaireTotal   the nbre exemplaire total
      */
     public Book(Long id,
                 @Size( max = 100, min = 3, message = "Le nom du livre doit contenir entre 3 et 50 charactères." )
@@ -77,7 +80,8 @@ public class Book {
                         Date anneeEdition,
                 @NotNull
                         String section,
-                int nbreExemplaire){
+                int nbreExemplaire,
+                int nbreExemplaireTotal){
 
     }
 
@@ -243,6 +247,14 @@ public class Book {
         this.nbreExemplaire = nbreExemplaire;
     }
 
+    public int getNbreExemplaireTotal() {
+        return nbreExemplaireTotal;
+    }
+
+    public void setNbreExemplaireTotal(int nbreExemplaireTotal) {
+        this.nbreExemplaireTotal = nbreExemplaireTotal;
+    }
+
     @Override
     public String toString() {
         return "Book [id=" + id +
@@ -253,6 +265,8 @@ public class Book {
                 ", editeur=" + editeur +
                 ", anneeEdition=" + anneeEdition +
                 ", section=" + section +
-                ", nbreExemplaire=" + nbreExemplaire + "]";
+                ", nbreExemplaire=" + nbreExemplaire +
+                ", nbreExemplaireTotal=" + nbreExemplaireTotal +
+                "]";
     }
 }

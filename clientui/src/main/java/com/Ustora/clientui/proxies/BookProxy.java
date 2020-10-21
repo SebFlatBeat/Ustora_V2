@@ -8,6 +8,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 
 @FeignClient(name = "zuul-server", contextId="bookProxy", configuration= FeignConfig.class, url = "http://localhost:9004")
@@ -21,6 +22,9 @@ public interface BookProxy {
      */
     @GetMapping(value = "/book/allBook")
     RestResponsePage <BookBean> allBook(@RequestParam int page);
+
+    @GetMapping(value = "/book/find/id")
+    Optional<BookBean> findById(@RequestParam Long bookId);
 
     /**
      *

@@ -1,3 +1,6 @@
+<%@ taglib uri='http://java.sun.com/jsp/jstl/core' prefix='c'%>
+<%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%--
   Created by IntelliJ IDEA.
   User: I56852
@@ -8,8 +11,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Détail du Livre</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Détails du livre ${book.titre}</title>
 
+    <!-- FavIcon -->
+    <link rel="icon" type="image/png" href="../../img/book-24px.png" />
 
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'/>
@@ -41,6 +49,108 @@
 <link rel="icon" type="image/png" href="../../img/book-24px.png" />
 
 <body>
+<div class="header-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mr-auto">
+                <div class="logo ml-auto">
+                    <h1><a href="<c:url value="/index"/>"><img src="../../img/logo.png"/></a></h1>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="user-menu text-right">
+                    <ul class="navbar-brand">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-user"></i>${pageContext.request.userPrincipal.name}</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="<c:url value="/index"/>">Acceuil</a>
+                                <a class="dropdown-item" href="<c:url value="/espacePerso"/>">Espace Perso</a>
+                                <a class="dropdown-item" href="<c:url value="/logout"/>">Déconnexion</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End header area -->
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+                <a class="nav-link"  href="<c:url value="/index"/>">Accueil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<c:url value="/espacePerso"/>">Mon espace Perso</a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+<!-- End nav area -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2>${book.titre}</h2>
+            <img src="../../img/indispo.png">
+            <h3>${book.auteurPrincipalNom} ${book.auteurPrincipalPrenom}</h3>
+        </div>
+        <div class="service-box team boxed-grey col-md-12 ml-auto mr-auto">
+            <h3 class="text-center">Informations</h3>
+            <table class="table table-responsive-lg table-striped table-hover">
+                <thead class="thead-dark">
+                <tr class="bg-primary">
+                    <th class="text-center" scope="col">Nbre d'exemplaire</th>
+                    <th class="text-center" scope="col">Date de retour prévue</th>
+                    <th class="text-center" scope="col">Nbre de reservation demandée</th>
+                    <th class="text-center" scope="col">Nbre de reservation maximum</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                    <td class="text-center" scope="row">${book.nbreExemplaire}</td>
+                    <td class="text-center" scope="row">
+                        <fmt:formatDate value="${waitingList[0].dateDeRetour}" type="date" pattern="dd.MM.yyyy" />
+                    </td>
+                    <td class="text-center" scope="row">${fn:length(waitingList)}</td>
+                    <td class="text-center" scope="row">${book.nbreExemplaireTotal*2}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-12">
+            <div class="btn-group-justified">
+            <form action="/save/reservation" method="post">
+                <input type="hidden" name="bookId" id="bookId" value="${book.id}"/>
+                <c:if test="${book.nbreExemplaire!=0}">
+                <button class="btn btn-outline-success btn-lg aligncenter ml-auto mr-auto">Emprunter</button>
+                </c:if>
+                <c:if test="${book.nbreExemplaire==0}">
+                    <button class="btn btn-outline-dark btn-lg disabled aligncenter ml-auto mr-auto">Emprunter</button>
+                </c:if>
+            </form>
+            <form action="/waitingList" method="post">
+                <input type="hidden" name="bookId" id="bookId" value="${book.id}"/>
+                <c:if test="${book.nbreExemplaire==0}">
+                <button class="btn btn-outline-warning btn-lg aligncenter ml-auto mr-auto">Réserver</button>
+                </c:if>
+                <c:if test="${book.nbreExemplaire!=0}">
+                    <button class="btn btn-outline-dark disabled btn-lg aligncenter ml-auto mr-auto">Réserver</button>
+                </c:if>
+                <c:if test="${book.nbreExemplaireTotal*2==fn:length(waitingList)}">
+                    <button class="btn btn-outline-dark disabled btn-lg aligncente rml-auto mr-auto">Réserver</button>
+                </c:if>
+            </form>
+                <button class="btn btn-outline-primary btn-lg aligncenter ml-auto mr-auto"><a href="<c:url value="/index"/>">Retour</a></button>
+        </div>
+    </div>
+</div>
 
 <!-- Latest jQuery form server -->
 <script src="https://code.jquery.com/jquery.min.js"></script>

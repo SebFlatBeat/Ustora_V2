@@ -20,7 +20,7 @@ public interface ReservationDao extends JpaRepository<Reservation, Long> {
      * @param userId the user id
      * @return the list
      */
-    List<Reservation> findReservationsByUserBookId ( Long userId);
+    List<Reservation> findReservationsByUserBookId (Long userId);
 
     Optional<Reservation> findById(Long id);
 
@@ -36,4 +36,6 @@ public interface ReservationDao extends JpaRepository<Reservation, Long> {
      */
     @Query("select reservation from Reservation reservation where reservation.endBorrowing>=:endBorrowing")
     List<Reservation> findByEndBorrowingAfter(@Param("endBorrowing")Date endBorrowing);
+
+    List<Reservation> findAllByBookIdOrderByEndBorrowingAsc(Long bookId);
 }

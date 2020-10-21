@@ -13,6 +13,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 
 /**
@@ -55,6 +56,12 @@ public class BookController {
         List<Book> books = bookService.findAll();
         logger.info("Renvoi de tous les livres");
         return books;
+    }
+
+    @GetMapping(value = "/find/id")
+    public Optional<Book> findById(@RequestParam Long bookId){
+        Optional<Book> book = bookService.findById(bookId);
+        return book;
     }
 
     /**

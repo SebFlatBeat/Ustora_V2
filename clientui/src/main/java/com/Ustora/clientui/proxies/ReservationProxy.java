@@ -49,4 +49,12 @@ public interface ReservationProxy {
     @PostMapping(value = "/book/extend/reservation")
     ReservationBean updateReservation(@RequestParam Long id);
 
+    /**
+     *
+     * @param bookId
+     * @return
+     */
+    @GetMapping(value = "book/reservation/id")
+    List<ReservationBean> allReservation(@RequestParam Long bookId);
+
 }

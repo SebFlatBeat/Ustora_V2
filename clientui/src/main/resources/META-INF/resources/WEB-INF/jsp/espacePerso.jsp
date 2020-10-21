@@ -84,6 +84,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="<c:url value="/espacePerso#prets"/>">Mes prêts</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<c:url value="/espacePerso#reservation"/>">Mes reservations</a>
+            </li>
         </ul>
     </div>
 </nav>
@@ -98,8 +101,8 @@
         <table class="table table-responsive-lg table-striped table-hover">
             <thead class="thead-dark">
             <tr class="bg-primary">
-                <th class="text-center" scope="col"> Numéro de réservation</th>
-                <th class="text-center" scope="col"> Nom du Livre</th>
+                <th class="text-center" scope="col">Numéro d'emprunt</th>
+                <th class="text-center" scope="col">Nom du Livre</th>
                 <th class="text-center" scope="col">Date d'emprunt</th>
                 <th class="text-center" scope="col">Date de fin de prêt</th>
                 <th class="text-center" scope="col"></th>
@@ -143,8 +146,38 @@
 </section>
 <!-- End section prets area -->
 
-<section id="account">
-
+<section id="reservation">
+    <div class="service-box team boxed-grey col-md-10 ml-auto mr-auto">
+        <h3 class="text-center">Mes réservations</h3>
+        <table class="table table-responsive-lg table-striped table-hover">
+            <thead class="thead-dark">
+            <tr class="bg-primary">
+                <th class="text-center" scope="col">Numéro de réservation</th>
+                <th class="text-center" scope="col">Position dans la liste d'attente</th>
+                <th class="text-center" scope="col">Nom du Livre</th>
+                <th class="text-center" scope="col">Date de retour prévue</th>
+                <th class="text-center" scope="col"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <c:forEach var="reservation" items="${userWaitingList}">
+                <tr>
+                    <td class="text-center" scope="row">${reservation.id}</td>
+                    <td class="text-center" scope="row">${reservation.positionInList}</td>
+                    <td class="text-center" scope="row">${reservation.book.titre}</td>
+                    <td class="text-center" scope="row">
+                        <fmt:formatDate value="${reservation.dateDeRetour}" type="date" pattern="dd.MM.yyyy" />
+                    </td>
+                    <td class="text-center" scope="row">
+                        <form method="post" action="/cancel">
+                            <button class="btn btn-outline-danger" name="id" id="id" value="${reservation.id}">Annuler</button>
+                        </form>
+                    </td>
+                </tr>
+            </c:forEach>
+            </tbody>
+        </table>
+    </div>
 </section>
 <!-- End section account area -->
 
