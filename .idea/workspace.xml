@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/feature/reservation-ouvrage" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d8b7f698-af99-4ed3-889c-f994cced6562" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1603280967" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="feature/reservation-ouvrage" />
+                    <option name="lastUsedInstant" value="1603280966" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/SebFlatBeat/Ustora_V2" />
+      </set>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.1.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1hwr8tRMIzAUpkM8WCzqB8ULxxo" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="liveEdit" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.Ustora.book.service" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sebas\IdeaProjects\Ustora_V2\clientui\src\main\resources\META-INF\resources\WEB-INF\jsp" />
+    </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:9004/user/find/sebastien" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:9004/user/sebastien/login" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+      <command value="mvn dependency:tree" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="JAR Application.zipkin-server-2.6.1-exec.jar">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="generated-requests#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="cover-tests-run-book" type="JUnit" factoryName="JUnit">
+      <module name="book" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cover-tests-run-user" type="JUnit" factoryName="JUnit">
+      <module name="user" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cover-tests-run-zuul-server" type="JUnit" factoryName="JUnit">
+      <module name="zuul-server" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="jstl-1.2.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/lib/jstl-1.2.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="zipkin-server-2.6.1-exec.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/zipkin-server-2.6.1-exec.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="BookApplication (9002)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="book" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.Ustora.book.BookApplication" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=9002" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookApplication (9022)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="book" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.Ustora.book.BookApplication" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=9022" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientuiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="clientui" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.Ustora.clientui.ClientuiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="config-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.Ustora.configserver.ConfigServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.Ustora.eureka.EurekaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringAdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-admin" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.Ustora.springadmin.SpringAdminApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplication (9003)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="user" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.Ustora.user.UserApplication" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=9003" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplication (9033)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="user" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.Ustora.user.UserApplication" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=9033" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZuulServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="zuul-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.Ustora.zuulserver.ZuulServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="HTTP Request.generated-requests#1" />
+      <item itemvalue="HTTP Request.generated-requests#2" />
+      <item itemvalue="HTTP Request.generated-requests#3" />
+      <item itemvalue="JUnit.cover-tests-run-book" />
+      <item itemvalue="JUnit.cover-tests-run-user" />
+      <item itemvalue="JUnit.cover-tests-run-zuul-server" />
+      <item itemvalue="JAR Application.jstl-1.2.jar" />
+      <item itemvalue="JAR Application.zipkin-server-2.6.1-exec.jar" />
+      <item itemvalue="Spring Boot.BookApplication (9002)" />
+      <item itemvalue="Spring Boot.ConfigServerApplication" />
+      <item itemvalue="Spring Boot.EurekaApplication" />
+      <item itemvalue="Spring Boot.SpringAdminApplication" />
+      <item itemvalue="Spring Boot.UserApplication (9003)" />
+      <item itemvalue="Spring Boot.UserApplication (9033)" />
+      <item itemvalue="Spring Boot.ZuulServerApplication" />
+      <item itemvalue="Spring Boot.ClientuiApplication" />
+      <item itemvalue="Spring Boot.BookApplication (9022)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JAR Application.zipkin-server-2.6.1-exec.jar" />
+        <item itemvalue="JAR Application.jstl-1.2.jar" />
+        <item itemvalue="HTTP Request.generated-requests#3" />
+        <item itemvalue="HTTP Request.generated-requests#2" />
+        <item itemvalue="HTTP Request.generated-requests#1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d8b7f698-af99-4ed3-889c-f994cced6562" name="Default Changelist" comment="" />
+      <created>1600932840431</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600932840431</updated>
+      <workItem from="1600932841652" duration="7971000" />
+      <workItem from="1600974644769" duration="1744000" />
+      <workItem from="1601018450658" duration="8257000" />
+      <workItem from="1601552127247" duration="337000" />
+      <workItem from="1601552569908" duration="4272000" />
+      <workItem from="1601623267137" duration="9227000" />
+      <workItem from="1601716480309" duration="3155000" />
+      <workItem from="1601826874181" duration="599000" />
+      <workItem from="1601827544687" duration="2367000" />
+      <workItem from="1601830022106" duration="329000" />
+      <workItem from="1602056546954" duration="10896000" />
+      <workItem from="1602321407315" duration="4028000" />
+      <workItem from="1602575487682" duration="5277000" />
+      <workItem from="1602623850303" duration="283000" />
+      <workItem from="1602624228861" duration="582000" />
+      <workItem from="1602624923203" duration="23853000" />
+      <workItem from="1602751782003" duration="29264000" />
+      <workItem from="1603146961779" duration="24774000" />
+      <workItem from="1603233307566" duration="18157000" />
+    </task>
+    <task id="LOCAL-00001" summary="Add unversionned files">
+      <created>1601445594038</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601445594038</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Update Project">
+      <created>1601445705620</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601445705620</updated>
+    </task>
+    <task id="LOCAL-00003" summary="DiffBlue update / WaitingList entities created">
+      <created>1601558569900</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1601558569900</updated>
+    </task>
+    <task id="LOCAL-00004" summary="DiffBlue files">
+      <created>1601623356877</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1601623356877</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add booleans">
+      <created>1601624050832</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601624050832</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Changed variable name">
+      <created>1601624284418</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1601624284418</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Implements WaitingListDao, WaitingListService, WaitingListController. Create ReservationServiceTest">
+      <created>1602490301714</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1602490301714</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Implementation de WaitingListController, WaitingListService. Creation de WaitingListBean et des differentes classes de Test">
+      <created>1602663276701</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1602663276701</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Ajout de Status et implementation de la couche métier">
+      <created>1602682823329</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1602682823329</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Creation du bean WaitingListBean et ajout de methode dans les dao">
+      <created>1602720492054</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1602720492054</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Implementation de la methode afficherLesReservation dans WaitingListService">
+      <created>1602776288715</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1602776288715</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Implementation de la methode pendingAndMailSent dans WaitingListService">
+      <created>1602787588214</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1602787588214</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Implementation de la methode afficherLesReservations">
+      <created>1602788563743</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1602788563743</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Implementation des methodes dans les couches metiers / Ajout d'une date dans l'entite WaitingList et modification d'un enum dans Status">
+      <created>1602790605781</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1602790605781</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Afficher les reservations de l'utilisateur dans son espacePerso.jsp + création des pages loanNotDone.jsp et loanSuccess.jsp">
+      <created>1603049363759</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1603049363759</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Correction methode / implementation des JSP / Ajout d'une image dans le dossier de ressource">
+      <created>1603231392696</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1603231392697</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Implementation front de bookDetail">
+      <created>1603277364868</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1603277364868</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Implementation front de bookDetail">
+      <created>1603280837809</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1603280837809</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/feature/reservation-ouvrage" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Add unversionned files" />
+    <MESSAGE value="Update Project" />
+    <MESSAGE value="DiffBlue update / WaitingList entities created" />
+    <MESSAGE value="DiffBlue files" />
+    <MESSAGE value="Add booleans" />
+    <MESSAGE value="Changed variable name" />
+    <MESSAGE value="Implements WaitingListDao, WaitingListService, WaitingListController. Create ReservationServiceTest" />
+    <MESSAGE value="Implementation de WaitingListController, WaitingListService. Creation de WaitingListBean et des differentes classes de Test" />
+    <MESSAGE value="Ajout de Status et implementation de la couche métier" />
+    <MESSAGE value="Creation du bean WaitingListBean et ajout de methode dans les dao" />
+    <MESSAGE value="Implementation de la methode afficherLesReservation dans WaitingListService" />
+    <MESSAGE value="Implementation de la methode pendingAndMailSent dans WaitingListService" />
+    <MESSAGE value="Implementation de la methode afficherLesReservations" />
+    <MESSAGE value="Implementation des methodes dans les couches meties / Ajout d'une date dans l'entite WaitingList et modification d'un enum dans Status" />
+    <MESSAGE value="Implementation des methodes dans les couches metiers / Ajout d'une date dans l'entite WaitingList et modification d'un enum dans Status" />
+    <MESSAGE value="Afficher les reservations de l'utilisateur dans son espacePerso.jsp + création des pages loanNotDone.jsp et loanSuccess.jsp" />
+    <MESSAGE value="Correction methode / implementation des JSP / Ajout d'une image dans le dossier de ressource" />
+    <MESSAGE value="Implementation front de bookDetail" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementation front de bookDetail" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="267" y="19" key="#Inspections" timestamp="1603144174219">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="267" y="19" key="#Inspections/0.0.1280.680@0.0.1280.680" timestamp="1603144174219" />
+    <state x="393" y="161" key="#Notifications" timestamp="1601827985596">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="393" y="161" key="#Notifications/0.0.1280.680@0.0.1280.680" timestamp="1601827985596" />
+    <state x="233" y="0" key="#Plugins" timestamp="1602321429038">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="0" key="#Plugins/0.0.1280.680@0.0.1280.680" timestamp="1602321429038" />
+    <state x="371" y="96" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1601558139728">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="96" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1601558139728" />
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603110403390">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1603110403390" />
+    <state x="421" y="45" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1603094246939">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="45" key="#com.intellij.ide.macro.MacrosDialog/0.0.1280.680@0.0.1280.680" timestamp="1603094246939" />
+    <state x="446" y="33" key="#com.intellij.ide.util.MemberChooser" timestamp="1603271698799">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="446" y="33" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1603271698799" />
+    <state x="371" y="116" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1602624446449">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="116" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1280.680@0.0.1280.680" timestamp="1602624446449" />
+    <state x="471" y="0" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1600940139963">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="471" y="0" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1280.680@0.0.1280.680" timestamp="1600940139963" />
+    <state x="321" y="77" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1602321244327">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="321" y="77" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.680@0.0.1280.680" timestamp="1602321244327" />
+    <state x="406" y="158" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1603266188097">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="406" y="158" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.0.1280.680@0.0.1280.680" timestamp="1603266188097" />
+    <state x="371" y="95" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1601019835357">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="95" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1280.680@0.0.1280.680" timestamp="1601019835357" />
+    <state x="396" y="0" key="#xdebugger.evaluate" timestamp="1603268322773">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="396" y="0" key="#xdebugger.evaluate/0.0.1280.680@0.0.1280.680" timestamp="1603268322773" />
+    <state x="385" y="150" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1602683147735">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="385" y="150" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.680@0.0.1280.680" timestamp="1602683147735" />
+    <state x="348" y="82" key="FileChooserDialogImpl" timestamp="1602623786207">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="348" y="82" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1602623786207" />
+    <state width="948" height="343" key="GridCell.Tab.0.bottom" timestamp="1603281223771">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="948" height="343" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603281223771" />
+    <state width="948" height="343" key="GridCell.Tab.0.center" timestamp="1603281223770">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="948" height="343" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1603281223770" />
+    <state width="948" height="343" key="GridCell.Tab.0.left" timestamp="1603281223770">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="948" height="343" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1603281223770" />
+    <state width="948" height="343" key="GridCell.Tab.0.right" timestamp="1603281223771">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="948" height="343" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1603281223771" />
+    <state width="948" height="343" key="GridCell.Tab.1.bottom" timestamp="1603281223771">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="948" height="343" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603281223771" />
+    <state width="948" height="343" key="GridCell.Tab.1.center" timestamp="1603281223771">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="948" height="343" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1603281223771" />
+    <state width="948" height="343" key="GridCell.Tab.1.left" timestamp="1603281223771">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="948" height="343" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1603281223771" />
+    <state width="948" height="343" key="GridCell.Tab.1.right" timestamp="1603281223771">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="948" height="343" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1603281223771" />
+    <state width="948" height="343" key="GridCell.Tab.2.bottom" timestamp="1603271218393">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="948" height="343" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603271218393" />
+    <state width="948" height="343" key="GridCell.Tab.2.center" timestamp="1603271218393">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="948" height="343" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1603271218393" />
+    <state width="948" height="343" key="GridCell.Tab.2.left" timestamp="1603271218393">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="948" height="343" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1603271218393" />
+    <state width="948" height="343" key="GridCell.Tab.2.right" timestamp="1603271218393">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="948" height="343" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1603271218393" />
+    <state x="221" y="84" key="IDE.errors.dialog" timestamp="1602058491751">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="221" y="84" key="IDE.errors.dialog/0.0.1280.680@0.0.1280.680" timestamp="1602058491751" />
+    <state x="171" y="0" key="Maven.ArtifactSearchDialog" timestamp="1602628001950">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="171" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.680@0.0.1280.680" timestamp="1602628001950" />
+    <state x="121" y="0" key="SettingsEditor" timestamp="1603233431491">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1603233431491" />
+    <state x="423" y="0" key="SpringBootCustomization" timestamp="1600975482655">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="423" y="0" key="SpringBootCustomization/0.0.1280.680@0.0.1280.680" timestamp="1600975482655" />
+    <state x="233" y="55" key="Vcs.Push.Dialog.v2" timestamp="1603280840795">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="55" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1603280840795" />
+    <state x="516" y="212" width="307" height="262" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1603093273652">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="516" y="212" width="307" height="262" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1280.680@0.0.1280.680" timestamp="1603093273652" />
+    <state x="412" y="0" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1602624453557">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="412" y="0" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.680@0.0.1280.680" timestamp="1602624453557" />
+    <state x="297" y="151" width="672" height="677" key="run.anything.popup" timestamp="1603190436685">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="297" y="151" width="672" height="677" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1603190436685" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1602711614826">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1602711614826" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java</url>
+          <line>245</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/config_server$EmailConfigTest.ic" NAME="EmailConfigTest Coverage Results" MODIFIED="1602660198381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.Ustora.book.configurations.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/config_server$UserBeanTest.ic" NAME="UserBeanTest Coverage Results" MODIFIED="1602663425713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.Ustora.book.beans.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/config_server$ReservationServiceTest_testAdd4Weeks_and_1_more.ic" NAME="ReservationServiceTest,testAdd4Weeks and 1 more Coverage Results" MODIFIED="1602662305695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/config_server$BookServiceTest.ic" NAME="BookServiceTest Coverage Results" MODIFIED="1602660132612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.Ustora.book.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/config_server$ReservationControllerTest.ic" NAME="ReservationControllerTest Coverage Results" MODIFIED="1602660404987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.Ustora.book.controller.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/config_server$ReservationTest.ic" NAME="ReservationTest Coverage Results" MODIFIED="1602662589240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.Ustora.book.entities.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/config_server$BatchTest.ic" NAME="BatchTest Coverage Results" MODIFIED="1602662382702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.Ustora.book.utils.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/config_server$SleuthConfigTest.ic" NAME="SleuthConfigTest Coverage Results" MODIFIED="1602660258114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.Ustora.book.configurations.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/config_server$BookControllerTest.ic" NAME="BookControllerTest Coverage Results" MODIFIED="1602660370245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.Ustora.book.controller.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/config_server$BookTest.ic" NAME="BookTest Coverage Results" MODIFIED="1602662531604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.Ustora.book.entities.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/config_server$FeignConfigTest.ic" NAME="FeignConfigTest Coverage Results" MODIFIED="1602660232841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.Ustora.book.configurations.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/config_server$MailTest.ic" NAME="MailTest Coverage Results" MODIFIED="1602662441379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.Ustora.book.utils.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/config_server$BookApplicationTests.ic" NAME="BookApplicationTests Coverage Results" MODIFIED="1602662170971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.Ustora.book.*</FILTER>
+    </SUITE>
+  </component>
+</project>
