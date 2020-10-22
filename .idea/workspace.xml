@@ -30,7 +30,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8b7f698-af99-4ed3-889c-f994cced6562" name="Default Changelist" comment="Implementation front de bookDetail">
+      <change afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/exceptions/AddReservationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/exceptions/AddWaitingListException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/exceptions/AddBorrowingException.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/exceptions/AddBorrowingException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/WaitingListService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/WaitingListService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/exceptions/UserNotFound.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/exceptions/UserNotFound.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -527,7 +532,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603304156845</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Creation de l'exception AddBoorowingException">
+      <created>1603367067002</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1603367067002</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -581,7 +593,8 @@
     <MESSAGE value="Refactor de la classe NoExtendIfEndBorrowingExceedException" />
     <MESSAGE value="Implémentation de la classe NoExtendIfEndBorrowingExceedException" />
     <MESSAGE value="Refactoring Implémentation de la classe NoExtendIfEndBorrowingExceedException dans le mauvais module // Implementation du message dans espacePerso" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring Implémentation de la classe NoExtendIfEndBorrowingExceedException dans le mauvais module // Implementation du message dans espacePerso" />
+    <MESSAGE value="Creation de l'exception AddBoorowingException" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creation de l'exception AddBoorowingException" />
   </component>
   <component name="WindowStateProjectService">
     <state x="267" y="19" key="#Inspections" timestamp="1603144174219">
@@ -648,22 +661,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="348" y="82" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1603293090406" />
-    <state width="948" height="280" key="GridCell.Tab.0.bottom" timestamp="1603313548436">
+    <state width="948" height="280" key="GridCell.Tab.0.bottom" timestamp="1603396470089">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="280" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603313548436" />
-    <state width="948" height="280" key="GridCell.Tab.0.center" timestamp="1603313548435">
+    <state width="948" height="280" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603396470089" />
+    <state width="948" height="280" key="GridCell.Tab.0.center" timestamp="1603396470089">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="280" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1603313548435" />
-    <state width="948" height="280" key="GridCell.Tab.0.left" timestamp="1603313548435">
+    <state width="948" height="280" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1603396470089" />
+    <state width="948" height="280" key="GridCell.Tab.0.left" timestamp="1603396470089">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="280" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1603313548435" />
-    <state width="948" height="280" key="GridCell.Tab.0.right" timestamp="1603313548436">
+    <state width="948" height="280" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1603396470089" />
+    <state width="948" height="280" key="GridCell.Tab.0.right" timestamp="1603396470089">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="280" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1603313548435" />
+    <state width="948" height="280" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1603396470089" />
     <state width="948" height="280" key="GridCell.Tab.1.bottom" timestamp="1603313548436">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -716,10 +729,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="423" y="0" key="SpringBootCustomization/0.0.1280.680@0.0.1280.680" timestamp="1600975482655" />
-    <state x="233" y="55" key="Vcs.Push.Dialog.v2" timestamp="1603304160624">
+    <state x="233" y="55" key="Vcs.Push.Dialog.v2" timestamp="1603367076805">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="55" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1603304160624" />
+    <state x="233" y="55" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1603367076805" />
     <state x="516" y="212" width="307" height="262" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1603093273652">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

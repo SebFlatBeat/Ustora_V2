@@ -8,6 +8,9 @@ import com.Ustora.book.entities.Book;
 import com.Ustora.book.entities.Reservation;
 import com.Ustora.book.entities.Status;
 import com.Ustora.book.entities.WaitingList;
+import com.Ustora.book.exceptions.AddBorrowingException;
+import com.Ustora.book.exceptions.AddReservationException;
+import com.Ustora.book.exceptions.AddWaitingListException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -109,13 +112,21 @@ public class WaitingListService {
         for(Reservation reservation : reservationList){
             if(reservation.getBook().getId().equals(waitingList.getBook().getId())){
                 //TODO ajouter ma propre exception
-            throw new IllegalArgumentException();
+            throw new AddBorrowingException("Vous avez déjà un emprunt en cours pour ce livre");
+            }
+        }
+        //Verfie que l'utilisateur n'a pas déjà reservé le livre
+        List<WaitingList> waitingListsVerif = waitingListDao.findAllByUserBookIdAndStatusOrderByDateOfDemandAsc(userBookId,Status.enCours);
+        for(WaitingList w : waitingListsVerif){
+            if(w.getUserBookId().equals(waitingList.getUserBookId())){
+                //TODO ajouter ma propre exception
+                throw new AddReservationException("Vous avez déjà une reservation en cours pour ce livre");
             }
         }
         //Verification de la place restante dans la liste
         if(waitingLists.size()>=nbreMax){
             //TODO ajouter ma propre exception
-            throw new IllegalArgumentException();
+            throw new AddWaitingListException("La liste de réservation est complète pour ce livre");
         }
         waitingListDao.save(waitingList);
         logger.info("Réservation demander du livre");
