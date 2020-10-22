@@ -86,6 +86,6 @@ Ou depuis le panel gauche de IntelliJ, vous faites clique droit sur le fichier "
  Clique droit dessus et faites "Run"
   ```
   
-  Maintenant rendez-vous sur localhost:/8090 pour accèder au site web
+  Maintenant rendez-vous sur localhost:/8095 pour accèder au site web
   
 "# Ustora_V2" 
