@@ -307,8 +307,7 @@ public class ClientController {
 
         Optional<BookBean> bookBean = bookProxy.findById(bookId);
         model.addAttribute("bookBean", bookBean.get());
-
-        waitingListProxy.demandeDeReservation(bookBean.get().getId(), userBean.getId());
+                waitingListProxy.demandeDeReservation(bookBean.get().getId(), userBean.getId());
         logger.info("l'utilisateur : " + userBean.getUsername() + " id : " + userBean.getId() + " fait une demande de réservtion pour le livre : " + bookBean.get().getTitre());
         return "redirect:/reservationSuccess";
     }

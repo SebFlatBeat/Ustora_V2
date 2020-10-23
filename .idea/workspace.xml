@@ -30,15 +30,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8b7f698-af99-4ed3-889c-f994cced6562" name="Default Changelist" comment="Implementation front de bookDetail">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e947aee8-73cc-4765-80ee-6d99be6a65d9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e947aee8-73cc-4765-80ee-6d99be6a65d9/storage_v2/_src_/database/Bibliotheque.R4OgdQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e947aee8-73cc-4765-80ee-6d99be6a65d9/storage_v2/_src_/database/Bibliotheque.R4OgdQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e947aee8-73cc-4765-80ee-6d99be6a65d9/storage_v2/_src_/database/Bibliotheque.R4OgdQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e947aee8-73cc-4765-80ee-6d99be6a65d9/storage_v2/_src_/database/Bibliotheque.R4OgdQ/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/exceptions/AddBorrowingException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/exceptions/AddReservationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/exceptions/AddWaitingListException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/exceptions/ApiError.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/exceptions/AddBorrowingException.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/exceptions/AddBorrowingException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/bookDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/bookDetail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/exceptions/CustomErrorDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/exceptions/CustomErrorDecoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/exceptions/NoExtendIfEndBorrowingExceedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/exceptions/NoExtendIfEndBorrowingExceedException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +147,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Background" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="ReactorSettings">
@@ -159,6 +158,9 @@
       <recent name="com.Ustora.book.service" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.Ustora.clientui.exceptions" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.Ustora.clientui.exceptions" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -202,15 +204,13 @@
     </option>
   </component>
   <component name="RunManager" selected="JAR Application.zipkin-server-2.6.1-exec.jar">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -354,6 +354,9 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\sebas\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="d8b7f698-af99-4ed3-889c-f994cced6562" name="Default Changelist" comment="" />
@@ -382,7 +385,9 @@
       <workItem from="1603233307566" duration="23675000" />
       <workItem from="1603295616774" duration="4430000" />
       <workItem from="1603304289129" duration="7458000" />
-      <workItem from="1603440705666" duration="3511000" />
+      <workItem from="1603440705666" duration="3844000" />
+      <workItem from="1603445503555" duration="4647000" />
+      <workItem from="1603465380222" duration="4769000" />
     </task>
     <task id="LOCAL-00001" summary="Add unversionned files">
       <created>1601445594038</created>
@@ -552,7 +557,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603397854298</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Corection de la valeur HttpStatus et modification sur les boutons en front">
+      <created>1603445392763</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1603445392763</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -608,7 +620,8 @@
     <MESSAGE value="Refactoring Implémentation de la classe NoExtendIfEndBorrowingExceedException dans le mauvais module // Implementation du message dans espacePerso" />
     <MESSAGE value="Creation de l'exception AddBoorowingException" />
     <MESSAGE value="Creation des exceptions dans le module book, implementation des exceptions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creation des exceptions dans le module book, implementation des exceptions" />
+    <MESSAGE value="Corection de la valeur HttpStatus et modification sur les boutons en front" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corection de la valeur HttpStatus et modification sur les boutons en front" />
   </component>
   <component name="WindowStateProjectService">
     <state x="267" y="19" key="#Inspections" timestamp="1603144174219">
@@ -635,10 +648,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="45" key="#com.intellij.ide.macro.MacrosDialog/0.0.1280.680@0.0.1280.680" timestamp="1603094246939" />
-    <state x="446" y="33" key="#com.intellij.ide.util.MemberChooser" timestamp="1603271698799">
+    <state x="446" y="33" key="#com.intellij.ide.util.MemberChooser" timestamp="1603477389344">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="33" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1603271698799" />
+    <state x="446" y="33" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1603477389344" />
     <state x="371" y="116" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1602624446449">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -675,38 +688,38 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="348" y="82" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1603293090406" />
-    <state width="948" height="443" key="GridCell.Tab.0.bottom" timestamp="1603445058334">
+    <state width="948" height="224" key="GridCell.Tab.0.bottom" timestamp="1603478273117">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="443" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603445058334" />
-    <state width="948" height="443" key="GridCell.Tab.0.center" timestamp="1603445058334">
+    <state width="948" height="224" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603478273117" />
+    <state width="948" height="224" key="GridCell.Tab.0.center" timestamp="1603478273116">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="443" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1603445058334" />
-    <state width="948" height="443" key="GridCell.Tab.0.left" timestamp="1603445058333">
+    <state width="948" height="224" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1603478273116" />
+    <state width="948" height="224" key="GridCell.Tab.0.left" timestamp="1603478273116">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="443" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1603445058333" />
-    <state width="948" height="443" key="GridCell.Tab.0.right" timestamp="1603445058334">
+    <state width="948" height="224" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1603478273116" />
+    <state width="948" height="224" key="GridCell.Tab.0.right" timestamp="1603478273117">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="443" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1603445058334" />
-    <state width="948" height="218" key="GridCell.Tab.1.bottom" timestamp="1603445056537">
+    <state width="948" height="224" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1603478273117" />
+    <state width="948" height="224" key="GridCell.Tab.1.bottom" timestamp="1603466160587">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="218" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603445056537" />
-    <state width="948" height="218" key="GridCell.Tab.1.center" timestamp="1603445056537">
+    <state width="948" height="224" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603466160587" />
+    <state width="948" height="224" key="GridCell.Tab.1.center" timestamp="1603466160587">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="218" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1603445056537" />
-    <state width="948" height="218" key="GridCell.Tab.1.left" timestamp="1603445056537">
+    <state width="948" height="224" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1603466160587" />
+    <state width="948" height="224" key="GridCell.Tab.1.left" timestamp="1603466160586">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="218" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1603445056537" />
-    <state width="948" height="218" key="GridCell.Tab.1.right" timestamp="1603445056537">
+    <state width="948" height="224" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1603466160586" />
+    <state width="948" height="224" key="GridCell.Tab.1.right" timestamp="1603466160587">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="218" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1603445056537" />
+    <state width="948" height="224" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1603466160587" />
     <state width="948" height="218" key="GridCell.Tab.2.bottom" timestamp="1603444966557">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -735,18 +748,18 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="314" y="0" key="NewModule_or_Project.wizard/0.0.1280.680@0.0.1280.680" timestamp="1603293092323" />
-    <state x="121" y="0" key="SettingsEditor" timestamp="1603295435455">
+    <state x="121" y="0" key="SettingsEditor" timestamp="1603463746729">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1603295435455" />
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1603463746729" />
     <state x="423" y="0" key="SpringBootCustomization" timestamp="1600975482655">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="423" y="0" key="SpringBootCustomization/0.0.1280.680@0.0.1280.680" timestamp="1600975482655" />
-    <state x="233" y="55" key="Vcs.Push.Dialog.v2" timestamp="1603397858522">
+    <state x="233" y="55" key="Vcs.Push.Dialog.v2" timestamp="1603445399756">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="55" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1603397858522" />
+    <state x="233" y="55" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1603445399756" />
     <state x="420" y="185" key="cloudConfig.PluginsDialog" timestamp="1603440666259">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -789,48 +802,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java</url>
-          <line>310</line>
+          <line>314</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/WaitingListService.java</url>
-          <line>122</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/WaitingListService.java</url>
-          <line>120</line>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/WaitingListController.java</url>
           <line>45</line>
           <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/WaitingListService.java</url>
-          <line>114</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/WaitingListService.java</url>
-          <line>112</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/WaitingListService.java</url>
-          <line>118</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/WaitingListService.java</url>
-          <line>106</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/WaitingListService.java</url>
-          <line>97</line>
-          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
