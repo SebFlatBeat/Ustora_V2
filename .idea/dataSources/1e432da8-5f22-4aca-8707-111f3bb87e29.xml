@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="Bibliotheque">
+<dataSource name="Bibliotheque@localhost">
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.19">
     <root id="1">
       <ServerVersion>13.0</ServerVersion>
@@ -789,7 +789,7 @@ false Zulu
     <database id="2" parent="1" name="Bibliotheque">
       <ObjectId>16395</ObjectId>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>760</IntrospectionStateNumber>
+      <IntrospectionStateNumber>792</IntrospectionStateNumber>
       <Current>1</Current>
     </database>
     <database id="3" parent="1" name="postgres">
@@ -846,7 +846,7 @@ false Zulu
       <Comment>standard public schema</Comment>
       <StateNumber>287</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>761</IntrospectionStateNumber>
+      <IntrospectionStateNumber>793</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <access-method id="16" parent="2" name="heap">
@@ -944,9 +944,8 @@ false Zulu
     </table>
     <table id="33" parent="15" name="waiting_list">
       <ObjectId>16432</ObjectId>
-      <Outdated>1</Outdated>
       <Owner>postgres</Owner>
-      <StateNumber>753</StateNumber>
+      <StateNumber>763</StateNumber>
     </table>
     <column id="34" parent="29" name="id">
       <Position>1</Position>
@@ -1162,7 +1161,8 @@ false Zulu
     <column id="65" parent="33" name="date_of_demand">
       <Position>2</Position>
       <DataType>timestamp|0s</DataType>
-      <StateNumber>729</StateNumber>
+      <NotNull>1</NotNull>
+      <StateNumber>764</StateNumber>
       <TypeId>1114</TypeId>
     </column>
     <column id="66" parent="33" name="user_book_id">
@@ -1197,10 +1197,10 @@ false Zulu
       <TypeId>23</TypeId>
     </column>
     <column id="71" parent="33" name="status">
-      <Position>10</Position>
-      <DataType>integer|0s</DataType>
-      <StateNumber>753</StateNumber>
-      <TypeId>23</TypeId>
+      <Position>11</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>763</StateNumber>
+      <TypeId>1043</TypeId>
     </column>
     <index id="72" parent="33" name="waiting_list_pkey">
       <ObjectId>16435</ObjectId>

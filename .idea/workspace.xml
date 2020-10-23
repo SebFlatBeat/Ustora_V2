@@ -30,12 +30,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8b7f698-af99-4ed3-889c-f994cced6562" name="Default Changelist" comment="Implementation front de bookDetail">
-      <change afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/exceptions/AddReservationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/exceptions/AddWaitingListException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e947aee8-73cc-4765-80ee-6d99be6a65d9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e947aee8-73cc-4765-80ee-6d99be6a65d9/storage_v2/_src_/database/Bibliotheque.R4OgdQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e947aee8-73cc-4765-80ee-6d99be6a65d9/storage_v2/_src_/database/Bibliotheque.R4OgdQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e947aee8-73cc-4765-80ee-6d99be6a65d9/storage_v2/_src_/database/Bibliotheque.R4OgdQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e947aee8-73cc-4765-80ee-6d99be6a65d9/storage_v2/_src_/database/Bibliotheque.R4OgdQ/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/exceptions/AddBorrowingException.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/exceptions/AddBorrowingException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/WaitingListService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/WaitingListService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/exceptions/UserNotFound.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/exceptions/UserNotFound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/bookDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/bookDetail.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,13 +202,15 @@
     </option>
   </component>
   <component name="RunManager" selected="JAR Application.zipkin-server-2.6.1-exec.jar">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -332,10 +337,10 @@
       <item itemvalue="Spring Boot.BookApplication (9002)" />
       <item itemvalue="Spring Boot.ConfigServerApplication" />
       <item itemvalue="Spring Boot.SpringAdminApplication" />
+      <item itemvalue="Spring Boot.ClientuiApplication" />
       <item itemvalue="Spring Boot.UserApplication (9003)" />
       <item itemvalue="Spring Boot.UserApplication (9033)" />
       <item itemvalue="Spring Boot.ZuulServerApplication" />
-      <item itemvalue="Spring Boot.ClientuiApplication" />
       <item itemvalue="Spring Boot.BookApplication (9022)" />
     </list>
     <recent_temporary>
@@ -377,6 +382,7 @@
       <workItem from="1603233307566" duration="23675000" />
       <workItem from="1603295616774" duration="4430000" />
       <workItem from="1603304289129" duration="7458000" />
+      <workItem from="1603440705666" duration="3511000" />
     </task>
     <task id="LOCAL-00001" summary="Add unversionned files">
       <created>1601445594038</created>
@@ -539,7 +545,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603367067002</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Creation des exceptions dans le module book, implementation des exceptions">
+      <created>1603397854298</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1603397854298</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -594,7 +607,8 @@
     <MESSAGE value="Implémentation de la classe NoExtendIfEndBorrowingExceedException" />
     <MESSAGE value="Refactoring Implémentation de la classe NoExtendIfEndBorrowingExceedException dans le mauvais module // Implementation du message dans espacePerso" />
     <MESSAGE value="Creation de l'exception AddBoorowingException" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creation de l'exception AddBoorowingException" />
+    <MESSAGE value="Creation des exceptions dans le module book, implementation des exceptions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creation des exceptions dans le module book, implementation des exceptions" />
   </component>
   <component name="WindowStateProjectService">
     <state x="267" y="19" key="#Inspections" timestamp="1603144174219">
@@ -649,10 +663,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="95" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1280.680@0.0.1280.680" timestamp="1601019835357" />
-    <state x="396" y="0" key="#xdebugger.evaluate" timestamp="1603268322773">
+    <state x="396" y="0" width="879" height="680" key="#xdebugger.evaluate" timestamp="1603442556804">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="396" y="0" key="#xdebugger.evaluate/0.0.1280.680@0.0.1280.680" timestamp="1603268322773" />
+    <state x="396" y="0" width="879" height="680" key="#xdebugger.evaluate/0.0.1280.680@0.0.1280.680" timestamp="1603442556804" />
     <state x="385" y="150" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1602683147735">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -661,54 +675,54 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="348" y="82" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1603293090406" />
-    <state width="948" height="280" key="GridCell.Tab.0.bottom" timestamp="1603396470089">
+    <state width="948" height="443" key="GridCell.Tab.0.bottom" timestamp="1603445058334">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="280" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603396470089" />
-    <state width="948" height="280" key="GridCell.Tab.0.center" timestamp="1603396470089">
+    <state width="948" height="443" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603445058334" />
+    <state width="948" height="443" key="GridCell.Tab.0.center" timestamp="1603445058334">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="280" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1603396470089" />
-    <state width="948" height="280" key="GridCell.Tab.0.left" timestamp="1603396470089">
+    <state width="948" height="443" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1603445058334" />
+    <state width="948" height="443" key="GridCell.Tab.0.left" timestamp="1603445058333">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="280" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1603396470089" />
-    <state width="948" height="280" key="GridCell.Tab.0.right" timestamp="1603396470089">
+    <state width="948" height="443" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1603445058333" />
+    <state width="948" height="443" key="GridCell.Tab.0.right" timestamp="1603445058334">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="280" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1603396470089" />
-    <state width="948" height="280" key="GridCell.Tab.1.bottom" timestamp="1603313548436">
+    <state width="948" height="443" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1603445058334" />
+    <state width="948" height="218" key="GridCell.Tab.1.bottom" timestamp="1603445056537">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="280" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603313548436" />
-    <state width="948" height="280" key="GridCell.Tab.1.center" timestamp="1603313548436">
+    <state width="948" height="218" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603445056537" />
+    <state width="948" height="218" key="GridCell.Tab.1.center" timestamp="1603445056537">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="280" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1603313548436" />
-    <state width="948" height="280" key="GridCell.Tab.1.left" timestamp="1603313548436">
+    <state width="948" height="218" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1603445056537" />
+    <state width="948" height="218" key="GridCell.Tab.1.left" timestamp="1603445056537">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="280" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1603313548436" />
-    <state width="948" height="280" key="GridCell.Tab.1.right" timestamp="1603313548436">
+    <state width="948" height="218" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1603445056537" />
+    <state width="948" height="218" key="GridCell.Tab.1.right" timestamp="1603445056537">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="280" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1603313548436" />
-    <state width="948" height="343" key="GridCell.Tab.2.bottom" timestamp="1603295543555">
+    <state width="948" height="218" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1603445056537" />
+    <state width="948" height="218" key="GridCell.Tab.2.bottom" timestamp="1603444966557">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="343" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603295543555" />
-    <state width="948" height="343" key="GridCell.Tab.2.center" timestamp="1603295543554">
+    <state width="948" height="218" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603444966557" />
+    <state width="948" height="218" key="GridCell.Tab.2.center" timestamp="1603444966556">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="343" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1603295543554" />
-    <state width="948" height="343" key="GridCell.Tab.2.left" timestamp="1603295543554">
+    <state width="948" height="218" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1603444966556" />
+    <state width="948" height="218" key="GridCell.Tab.2.left" timestamp="1603444966556">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="343" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1603295543554" />
-    <state width="948" height="343" key="GridCell.Tab.2.right" timestamp="1603295543555">
+    <state width="948" height="218" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1603444966556" />
+    <state width="948" height="218" key="GridCell.Tab.2.right" timestamp="1603444966557">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="343" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1603295543555" />
+    <state width="948" height="218" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1603444966557" />
     <state x="221" y="84" key="IDE.errors.dialog" timestamp="1602058491751">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -729,10 +743,14 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="423" y="0" key="SpringBootCustomization/0.0.1280.680@0.0.1280.680" timestamp="1600975482655" />
-    <state x="233" y="55" key="Vcs.Push.Dialog.v2" timestamp="1603367076805">
+    <state x="233" y="55" key="Vcs.Push.Dialog.v2" timestamp="1603397858522">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="55" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1603367076805" />
+    <state x="233" y="55" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1603397858522" />
+    <state x="420" y="185" key="cloudConfig.PluginsDialog" timestamp="1603440666259">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="420" y="185" key="cloudConfig.PluginsDialog/0.0.1280.680@0.0.1280.680" timestamp="1603440666259" />
     <state x="516" y="212" width="307" height="262" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1603093273652">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -765,6 +783,57 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="321" y="0" key="spring file set editor/0.0.1280.680@0.0.1280.680" timestamp="1603292631078" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java</url>
+          <line>310</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/WaitingListService.java</url>
+          <line>122</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/WaitingListService.java</url>
+          <line>120</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/WaitingListController.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/WaitingListService.java</url>
+          <line>114</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/WaitingListService.java</url>
+          <line>112</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/WaitingListService.java</url>
+          <line>118</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/WaitingListService.java</url>
+          <line>106</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/WaitingListService.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/config_server$EmailConfigTest.ic" NAME="EmailConfigTest Coverage Results" MODIFIED="1602660198381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

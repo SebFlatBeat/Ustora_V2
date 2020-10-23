@@ -128,25 +128,26 @@
             <div class="btn-group-justified">
             <form action="/save/reservation" method="post">
                 <input type="hidden" name="bookId" id="bookId" value="${book.id}"/>
+            </form>
                 <c:if test="${book.nbreExemplaire!=0}">
                 <button class="btn btn-outline-success btn-lg aligncenter ml-auto mr-auto">Emprunter</button>
                 </c:if>
                 <c:if test="${book.nbreExemplaire==0}">
                     <button class="btn btn-outline-dark btn-lg disabled aligncenter ml-auto mr-auto">Emprunter</button>
                 </c:if>
-            </form>
+
             <form action="/waitingList" method="post">
                 <input type="hidden" name="bookId" id="bookId" value="${book.id}"/>
                 <c:if test="${book.nbreExemplaire==0}">
                 <button class="btn btn-outline-warning btn-lg aligncenter ml-auto mr-auto">Réserver</button>
                 </c:if>
+            </form>
                 <c:if test="${book.nbreExemplaire!=0}">
                     <button class="btn btn-outline-dark disabled btn-lg aligncenter ml-auto mr-auto">Réserver</button>
                 </c:if>
                 <c:if test="${book.nbreExemplaireTotal*2==fn:length(waitingList)}">
                     <button class="btn btn-outline-dark disabled btn-lg aligncente rml-auto mr-auto">Réserver</button>
                 </c:if>
-            </form>
                 <button class="btn btn-outline-primary btn-lg aligncenter ml-auto mr-auto"><a href="<c:url value="/index"/>">Retour</a></button>
         </div>
     </div>
