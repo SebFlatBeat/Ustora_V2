@@ -7,20 +7,22 @@ public class WaitingListBean {
     private Long userBookId;
     private Date dateDeRetour;
     private Integer positionInList;
-    private String status;
+    private Status status;
+    private Integer nbreDeDemande;
 
     private BookBean book;
 
     public WaitingListBean() {
     }
 
-    public WaitingListBean(Long id, Long userBookId, Date dateDeRetour, Integer positionInList, BookBean book, String status) {
+    public WaitingListBean(Long id, Long userBookId, Date dateDeRetour, Integer positionInList, BookBean book, Status status,Integer nbreDeDemande) {
         this.id = id;
         this.userBookId = userBookId;
         this.dateDeRetour = dateDeRetour;
         this.positionInList = positionInList;
         this.book = book;
         this.status = status;
+        this.nbreDeDemande = nbreDeDemande;
     }
 
     /**
@@ -110,7 +112,7 @@ public class WaitingListBean {
      *
      * @return status
      */
-    public String getStatus() {
+    public Status getStatus() {
         return status;
     }
 
@@ -119,7 +121,7 @@ public class WaitingListBean {
      *
      * @param status
      */
-    public void setStatus(String status) {
+    public void setStatus(Status status) {
         this.status = status;
     }
 
@@ -130,6 +132,14 @@ public class WaitingListBean {
      */
     public void setBook(BookBean book) {
         this.book = book;
+    }
+
+    public Integer getNbreDeDemande() {
+        return nbreDeDemande;
+    }
+
+    public void setNbreDeDemande(Integer nbreDeDemande) {
+        this.nbreDeDemande = nbreDeDemande;
     }
 
     @Override

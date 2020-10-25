@@ -43,4 +43,7 @@ public interface WaitingListDao extends JpaRepository<WaitingList, Long> {
 
     //Trouver les reservations par l'id du livre
     List<WaitingList> findByBookId(Long bookId);
+
+    //Trouver les reservations par l'id du livre et son status
+    List<WaitingList> findByBookIdAndStatus(Long bookId, Status status);
 }

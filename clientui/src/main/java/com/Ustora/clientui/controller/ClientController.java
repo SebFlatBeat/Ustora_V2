@@ -2,6 +2,9 @@ package com.Ustora.clientui.controller;
 
 import com.Ustora.clientui.beans.*;
 import com.Ustora.clientui.dto.RestResponsePage;
+import com.Ustora.clientui.exceptions.AddBorrowingException;
+import com.Ustora.clientui.exceptions.AddReservationException;
+import com.Ustora.clientui.exceptions.AddWaitingListException;
 import com.Ustora.clientui.exceptions.NoExtendIfEndBorrowingExceedException;
 import com.Ustora.clientui.proxies.BookProxy;
 import com.Ustora.clientui.proxies.ReservationProxy;
@@ -11,6 +14,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.*;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -307,9 +311,28 @@ public class ClientController {
 
         Optional<BookBean> bookBean = bookProxy.findById(bookId);
         model.addAttribute("bookBean", bookBean.get());
-                waitingListProxy.demandeDeReservation(bookBean.get().getId(), userBean.getId());
+        try{
+            waitingListProxy.demandeDeReservation(bookBean.get().getId(), userBean.getId());
+        }catch (Exception e){
+            e.printStackTrace();
+            if (e instanceof AddBorrowingException){
+                String message = e.getMessage();
+                model.addAttribute("errorMessage", message);
+            }
+            if (e instanceof AddReservationException){
+                String message = e.getMessage();
+                model.addAttribute("errorMessage", message);
+            }
+            if(e instanceof AddWaitingListException){
+                String message = e.getMessage();
+                model.addAttribute("errorMessage", message);
+            }
+        }
+        String message = "Votre demande de réservation s'est bien effectuée";
+        model.addAttribute("successMessage",message);
         logger.info("l'utilisateur : " + userBean.getUsername() + " id : " + userBean.getId() + " fait une demande de réservtion pour le livre : " + bookBean.get().getTitre());
-        return "redirect:/reservationSuccess";
+
+        return "redirect:/bookDetail/"+bookId;
     }
 
     /**

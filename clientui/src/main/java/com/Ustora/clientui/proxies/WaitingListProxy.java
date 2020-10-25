@@ -1,6 +1,7 @@
 package com.Ustora.clientui.proxies;
 
 
+import com.Ustora.clientui.beans.Status;
 import com.Ustora.clientui.beans.WaitingListBean;
 import com.Ustora.clientui.configurations.FeignConfig;
 import org.springframework.cloud.netflix.ribbon.RibbonClient;
@@ -35,4 +36,5 @@ public interface WaitingListProxy {
 
     @GetMapping(value = "/book/waitingList/book")
     List<WaitingListBean> waitingListByBookId(@RequestParam Long bookId);
+
 }

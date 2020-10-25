@@ -39,7 +39,7 @@ public class WaitingListService {
      * @param waitingList
      */
     public void save (WaitingList waitingList){
-    waitingListDao.save(waitingList);
+        waitingListDao.save(waitingList);
     }
 
     /**
@@ -50,7 +50,7 @@ public class WaitingListService {
         waitingListDao.deleteById(id);
     }
 
-     /**
+    /**
      * Find all list
      * @return all waiting list
      */
@@ -112,7 +112,7 @@ public class WaitingListService {
         for(Reservation reservation : reservationList){
             if(reservation.getBook().getId().equals(waitingList.getBook().getId())){
                 //TODO ajouter ma propre exception
-            throw new AddBorrowingException("Vous avez déjà un emprunt en cours pour ce livre");
+                throw new AddBorrowingException("AddBorrowingException");
             }
         }
         //Verfie que l'utilisateur n'a pas déjà reservé le livre
@@ -120,13 +120,13 @@ public class WaitingListService {
         for(WaitingList w : waitingListsVerif){
             if(w.getUserBookId().equals(waitingList.getUserBookId())){
                 //TODO ajouter ma propre exception
-                throw new AddReservationException("Vous avez déjà une reservation en cours pour ce livre");
+                throw new AddReservationException("AddReservationException");
             }
         }
         //Verification de la place restante dans la liste
         if(waitingLists.size()>=nbreMax){
             //TODO ajouter ma propre exception
-            throw new AddWaitingListException("La liste de réservation est complète pour ce livre");
+            throw new AddWaitingListException("AddWaitingListException");
         }
         waitingListDao.save(waitingList);
         logger.info("Réservation demander du livre");
@@ -175,8 +175,8 @@ public class WaitingListService {
             }
             Collections.sort(dates);
             if(dates.size()>0){
-            Date soonerDate = dates.get(0);
-            listBean.setDateDeRetour(soonerDate);
+                Date soonerDate = dates.get(0);
+                listBean.setDateDeRetour(soonerDate);
             }
 
             List<WaitingList> positionWaiting = waitingListDao.findAllByBookAndStatusOrderByDateOfDemandAsc(book.get(), Status.enCours);
@@ -205,9 +205,10 @@ public class WaitingListService {
     public List<WaitingListBean> findByBookId(@RequestParam Long bookId) {
         List<WaitingList> waitingLists = waitingListDao.findByBookId(bookId);
         List<WaitingListBean> waitingListBeans = new ArrayList<>();
-        for(WaitingList w : waitingLists){
+        for (WaitingList w : waitingLists) {
             WaitingListBean listBean = new WaitingListBean();
             listBean.setWaitingList(w);
+            listBean.setStatus(w.getStatus());
             Optional<Reservation> reservation = reservationDao.findById(w.getBook().getId());
             listBean.setReservation(reservation);
             Optional<Book> book = bookDao.findById(w.getBook().getId());
@@ -215,7 +216,7 @@ public class WaitingListService {
 
             List<Date> dates = new ArrayList<>();
             List<Reservation> reservations = reservationDao.findAll();
-            for(Reservation r : reservations) {
+            for (Reservation r : reservations) {
                 List<Reservation> reservationList = reservationDao.findAllByBookIdOrderByEndBorrowingAsc(book.get().getId());
                 if (reservationList.size() > 0) {
                     Reservation resa = reservationList.get(0);
@@ -223,11 +224,17 @@ public class WaitingListService {
                 }
             }
             Collections.sort(dates);
-            if(dates.size()>0){
+            if (dates.size() > 0) {
                 Date soonerDate = dates.get(0);
                 listBean.setDateDeRetour(soonerDate);
             }
-            listBean.setId(w.getId());
+            int nbreDeDemande = 0;
+            for(int i = 0; i<waitingLists.size();i++){
+                if(waitingLists.get(i).getStatus() == Status.enCours){
+                    nbreDeDemande++;
+                }
+            }
+            listBean.setNbreDeDemande(nbreDeDemande);
             waitingListBeans.add(listBean);
         }
         return waitingListBeans;
