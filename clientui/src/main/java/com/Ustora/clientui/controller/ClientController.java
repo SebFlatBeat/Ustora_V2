@@ -303,7 +303,7 @@ public class ClientController {
      * @return
      */
     @PostMapping("/waitingList")
-    public String demandeDeReservation(Model model, @RequestParam Long bookId) {
+    public String demandeDeReservation(Model model, @RequestParam Long bookId,  final RedirectAttributes redirectAttributes) {
 
         UserDetails userDetails = (UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         UserBean userBean = userProxy.find(userDetails.getUsername());
@@ -317,22 +317,22 @@ public class ClientController {
             e.printStackTrace();
             if (e instanceof AddBorrowingException){
                 String message = e.getMessage();
-                model.addAttribute("errorMessage", message);
+                redirectAttributes.addFlashAttribute("errorMessage", message);
             }
             if (e instanceof AddReservationException){
                 String message = e.getMessage();
-                model.addAttribute("errorMessage", message);
+                redirectAttributes.addFlashAttribute("errorMessage", message);
             }
             if(e instanceof AddWaitingListException){
                 String message = e.getMessage();
-                model.addAttribute("errorMessage", message);
+                redirectAttributes.addFlashAttribute("errorMessage", message);
             }
+            //return la vue courante
+            return "redirect:/bookDetail/"+bookId;
         }
-        String message = "Votre demande de réservation s'est bien effectuée";
-        model.addAttribute("successMessage",message);
         logger.info("l'utilisateur : " + userBean.getUsername() + " id : " + userBean.getId() + " fait une demande de réservtion pour le livre : " + bookBean.get().getTitre());
 
-        return "redirect:/bookDetail/"+bookId;
+        return "redirect:/reservationSuccess";
     }
 
     /**

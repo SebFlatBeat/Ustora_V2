@@ -111,7 +111,6 @@ public class WaitingListService {
         List<Reservation> reservationList = reservationDao.findReservationsByUserBookId(userBookId);
         for(Reservation reservation : reservationList){
             if(reservation.getBook().getId().equals(waitingList.getBook().getId())){
-                //TODO ajouter ma propre exception
                 throw new AddBorrowingException("AddBorrowingException");
             }
         }
@@ -119,13 +118,11 @@ public class WaitingListService {
         List<WaitingList> waitingListsVerif = waitingListDao.findAllByUserBookIdAndStatusOrderByDateOfDemandAsc(userBookId,Status.enCours);
         for(WaitingList w : waitingListsVerif){
             if(w.getUserBookId().equals(waitingList.getUserBookId())){
-                //TODO ajouter ma propre exception
                 throw new AddReservationException("AddReservationException");
             }
         }
         //Verification de la place restante dans la liste
         if(waitingLists.size()>=nbreMax){
-            //TODO ajouter ma propre exception
             throw new AddWaitingListException("AddWaitingListException");
         }
         waitingListDao.save(waitingList);

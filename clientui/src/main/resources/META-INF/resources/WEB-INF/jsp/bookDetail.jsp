@@ -2,7 +2,6 @@
 <%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
-<%@page import="com.Ustora.clientui.beans.Status" %>
 <%--
   Created by IntelliJ IDEA.
   User: I56852
@@ -128,7 +127,7 @@
         </div>
         <c:if test="${errorMessage != null}">
             <div class="alert alert-warning col-lg-12" role="alert">
-                <span>${errorMessage}</span>
+                <p>${errorMessage}</p>
             </div>
         </c:if>
         <div class="col-lg-12">

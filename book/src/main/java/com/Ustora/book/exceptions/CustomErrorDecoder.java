@@ -1,4 +1,4 @@
-package com.Ustora.clientui.exceptions;
+package com.Ustora.book.exceptions;
 
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
@@ -21,17 +21,13 @@ public class CustomErrorDecoder implements ErrorDecoder{
         try{
             ApiError error = objectMapper.readValue(response.body().asInputStream(),ApiError.class);
             switch (error.getMessage()){
-                case "UserException":
-                    return new UserNotFound("L'utilisateur n'existe pas");
                 case "AddBorrowingException":
-                    return new AddBorrowingException("Vous avez déjà un emprunt en cours pour ce livre");
+                    return new AddBorrowingException("AddBorrowingException");
                 case "AddReservationException":
-                    return new AddReservationException("Vous avez déjà une reservation en cours pour ce livre");
+                    return new AddReservationException("AddReservationException");
                 case "AddWaitingListException":
-                    return new AddWaitingListException("La liste de réservation est complète pour ce livre");
-                case "NoExtendIfEndBorrowingExceedException":
-                    return new NoExtendIfEndBorrowingExceedException("La date de retour est déjà dépassée, vous ne pouvez pas prolonger votre emprunt");
-                default: return defaultErrorDecoder.decode(methodKey, response);
+                    return new AddWaitingListException("AddWaitingListException");
+               default: return defaultErrorDecoder.decode(methodKey, response);
             }
         } catch (JsonParseException e) {
             e.printStackTrace();
