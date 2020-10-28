@@ -126,8 +126,8 @@
             </table>
         </div>
         <c:if test="${errorMessage != null}">
-            <div class="alert alert-warning col-lg-12" role="alert">
-                <p>${errorMessage}</p>
+            <div class="alert alert-warning col-lg-12 text-center" role="alert">
+                <p align="center">${errorMessage}</p>
             </div>
         </c:if>
         <div class="col-lg-12">

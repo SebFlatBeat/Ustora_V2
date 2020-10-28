@@ -46,6 +46,72 @@ public class ClientController {
 
     Logger logger = LoggerFactory.getLogger(this.getClass());
 
+
+
+    /**
+     *
+     * @return
+     */
+    @GetMapping(value = "reservationSuccess")
+    public String reservationSucces(){
+        return "reservationSuccess";
+    }
+
+    /**
+     *
+     * @return
+     */
+    @GetMapping(value = "reservationNotDone")
+    public String reservationNotDone(){
+        return "reservationNotDone";
+    }
+
+    /**
+     *
+     * @return
+     */
+    @GetMapping(value = "loanNotDone")
+    public String loanNotDone(){return "loanNotDone";}
+
+    /**
+     *
+     * @return
+     */
+    @GetMapping(value = "loanSuccess")
+    public String loanSucces(){return "loanSuccess";}
+
+
+    /**
+     *
+     * @return
+     */
+    @GetMapping(value = "/register")
+    public String register(){
+
+        return "register";
+    }
+
+    /**
+     *
+     * @param userBean
+     * @return
+     */
+    @PostMapping(value = "/registerPost")
+    public String registerPost(@ModelAttribute UserBean userBean){
+        userBean.grantAuthority(UserRole.USER);
+        userProxy.register(userBean);
+        return "redirect:/registerSuccess";
+    }
+
+    /**
+     *
+     * @return
+     */
+    @GetMapping(value = "/registerSuccess")
+    public String registerSuccess(){
+        return "registerSuccess";
+    }
+
     /**
      *
      * @param modelAllBook
@@ -167,37 +233,6 @@ public class ClientController {
 
     /**
      *
-     * @return
-     */
-    @GetMapping(value = "/register")
-    public String register(){
-
-        return "register";
-    }
-
-    /**
-     *
-     * @param userBean
-     * @return
-     */
-    @PostMapping(value = "/registerPost")
-    public String registerPost(@ModelAttribute UserBean userBean){
-        userBean.grantAuthority(UserRole.USER);
-        userProxy.register(userBean);
-        return "redirect:/registerSuccess";
-    }
-
-    /**
-     *
-     * @return
-     */
-    @GetMapping(value = "/registerSuccess")
-    public String registerSuccess(){
-        return "registerSuccess";
-    }
-
-    /**
-     *
      * @param bookId
      * @return
      */
@@ -236,48 +271,14 @@ public class ClientController {
     public String extendReservation (@RequestParam Long id, final RedirectAttributes redirectAttributes) {
         try {
             reservationProxy.updateReservation(id);
-        } catch (Exception exception) {
+        } catch (NoExtendIfEndBorrowingExceedException exception) {
             exception.printStackTrace();
-            if (exception instanceof NoExtendIfEndBorrowingExceedException) {
-                String message = exception.getMessage();
-                redirectAttributes.addFlashAttribute("errorMessageRenew", message);
-            }
-            logger.info("Prolongement de la reservation");
+            String message = exception.getMessage();
+            redirectAttributes.addFlashAttribute("errorMessageRenew", message);
         }
+        logger.info("Prolongement de la reservation");
         return "redirect:/espacePerso";
-    }
-
-    /**
-     *
-     * @return
-     */
-    @GetMapping(value = "reservationSuccess")
-    public String reservationSucces(){
-        return "reservationSuccess";
-    }
-
-    /**
-     *
-     * @return
-     */
-    @GetMapping(value = "reservationNotDone")
-    public String reservationNotDone(){
-        return "reservationNotDone";
-    }
-
-    /**
-     *
-     * @return
-     */
-    @GetMapping(value = "loanNotDone")
-    public String loanNotDone(){return "loanNotDone";}
-
-    /**
-     *
-     * @return
-     */
-    @GetMapping(value = "loanSuccess")
-    public String loanSucces(){return "loanSuccess";}
+}
 
     /**
      *
@@ -304,35 +305,21 @@ public class ClientController {
      */
     @PostMapping("/waitingList")
     public String demandeDeReservation(Model model, @RequestParam Long bookId, final RedirectAttributes redirectAttributes) {
-
         UserDetails userDetails = (UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         UserBean userBean = userProxy.find(userDetails.getUsername());
         model.addAttribute("userBean", userBean);
-
         Optional<BookBean> bookBean = bookProxy.findById(bookId);
         model.addAttribute("bookBean", bookBean.get());
-        try{
+        try {
             waitingListProxy.demandeDeReservation(bookBean.get().getId(), userBean.getId());
-        }catch (Exception e){
-            e.printStackTrace();
-            //TODO faire un catch pour chaque exception et non des if
-            if (e instanceof AddBorrowingException){
-                String message = e.getMessage();
-                redirectAttributes.addFlashAttribute("errorMessage", message);
-            }
-            if (e instanceof AddReservationException){
-                String message = e.getMessage();
-                redirectAttributes.addFlashAttribute("errorMessage", message);
-            }
-            if(e instanceof AddWaitingListException){
-                String message = e.getMessage();
-                redirectAttributes.addFlashAttribute("errorMessage", message);
-            }
-            //return la vue courante
+        } catch (AddBorrowingException | AddReservationException | AddWaitingListException exception) {
+            exception.printStackTrace();
+            String message = exception.getMessage();
+            redirectAttributes.addFlashAttribute("errorMessage", message);
+            logger.error("Une exception est levée, voici son message: "+exception.getMessage());
             return "redirect:/bookDetail/"+bookId;
         }
         logger.info("l'utilisateur : " + userBean.getUsername() + " id : " + userBean.getId() + " fait une demande de réservtion pour le livre : " + bookBean.get().getTitre());
-
         return "redirect:/reservationSuccess";
     }
 
