@@ -233,14 +233,14 @@ public class ClientController {
      * @return
      */
     @PostMapping(value = "/extend/reservation")
-    public String extendReservation (@RequestParam Long id, Model modelError) {
+    public String extendReservation (@RequestParam Long id, final RedirectAttributes redirectAttributes) {
         try {
             reservationProxy.updateReservation(id);
         } catch (Exception exception) {
             exception.printStackTrace();
             if (exception instanceof NoExtendIfEndBorrowingExceedException) {
                 String message = exception.getMessage();
-                modelError.addAttribute("message", message);
+                redirectAttributes.addFlashAttribute("errorMessageRenew", message);
             }
             logger.info("Prolongement de la reservation");
         }
@@ -303,7 +303,7 @@ public class ClientController {
      * @return
      */
     @PostMapping("/waitingList")
-    public String demandeDeReservation(Model model, @RequestParam Long bookId,  final RedirectAttributes redirectAttributes) {
+    public String demandeDeReservation(Model model, @RequestParam Long bookId, final RedirectAttributes redirectAttributes) {
 
         UserDetails userDetails = (UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         UserBean userBean = userProxy.find(userDetails.getUsername());
@@ -315,6 +315,7 @@ public class ClientController {
             waitingListProxy.demandeDeReservation(bookBean.get().getId(), userBean.getId());
         }catch (Exception e){
             e.printStackTrace();
+            //TODO faire un catch pour chaque exception et non des if
             if (e instanceof AddBorrowingException){
                 String message = e.getMessage();
                 redirectAttributes.addFlashAttribute("errorMessage", message);

@@ -121,15 +121,15 @@
                         <fmt:formatDate value="${available.endBorrowing}" type="date" pattern="dd.MM.yyyy" />
                     </td>
                     <td class="text-center" scope="row">
-                        <c:if test="${available.extend == false && available.endBorrowing gt dateDuJour}">
+                        <c:if test="${available.extend == false && errorMessageRenew == null}">
                             <form method="post" action="/extend/reservation">
                                 <button class="btn btn-outline-success" name="id" id="id" value="${available.id}">Renouveller</button>
                             </form>
                         </c:if>
-                           <c:if test="${available.extend == true && available.endBorrowing gt dateDuJour}">
+                           <c:if test="${available.extend == true && errorMessageRenew == null}">
                             <button class="btn btn-outline-danger disabled" name="id" id="id" value="${available.id}">Déjà Renouvellé</button>
                            </c:if>
-                            <c:if test="${dateDuJour gt available.endBorrowing}">
+                            <c:if test="${errorMessageRenew != null}">
                                 <button class="btn btn-outline-danger disabled">Date de fin de prêt dépassé</button>
                             </c:if>
                     </td>

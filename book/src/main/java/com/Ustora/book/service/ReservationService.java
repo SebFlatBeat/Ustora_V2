@@ -2,7 +2,11 @@ package com.Ustora.book.service;
 
 
 import com.Ustora.book.dao.ReservationDao;
+import com.Ustora.book.entities.Book;
 import com.Ustora.book.entities.Reservation;
+import com.Ustora.book.exceptions.NoExtendIfEndBorrowingExceedException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Service;
@@ -12,6 +16,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 /**
  * The type Reservation service.
@@ -24,6 +29,18 @@ public class ReservationService {
      */
     @Autowired
     ReservationDao reservationDao;
+
+    /**
+     * The Book Service
+     */
+    @Autowired
+    private BookService bookService;
+
+
+    /**
+     * The Logger.
+     */
+    Logger logger = LoggerFactory.getLogger(this.getClass());
 
     /**
      * Find reservations by user book id list.
@@ -42,9 +59,54 @@ public class ReservationService {
      * @return the optional
      */
     public Optional<Reservation> findById(Long id){
-       return reservationDao.findById(id);
+        return reservationDao.findById(id);
     }
 
+    /**
+     * Save.
+     *
+     * @param reservation the reservation
+     */
+    public void save (Reservation reservation){
+        reservationDao.save(reservation);
+    }
+
+    /**
+     * Delete.
+     *
+     * @param reservation the reservation
+     */
+    public void delete (Reservation reservation) {
+        reservationDao.delete(reservation);
+    }
+
+    /**
+     * Find all list .
+     *
+     * @return the list
+     */
+    public List <Reservation> findAll() {
+        return reservationDao.findAll();
+    }
+
+    /**
+     * Find by end borrowing after list.
+     *
+     * @param endBorrowing the end borrowing
+     * @return the list
+     */
+    public List<Reservation> findByEndBorrowingAfter(@Param("endBorrowing") Date endBorrowing){
+        return reservationDao.findByEndBorrowingAfter(endBorrowing);
+    }
+
+    /**
+     *
+     * @param bookId
+     * @return
+     */
+    public List<Reservation> findAllByBookId(@RequestParam Long bookId) {
+        return reservationDao.findAllByBookIdOrderByEndBorrowingAsc(bookId);
+    }
 
     /**
      * Add 4 weeks java . util . date.
@@ -74,44 +136,53 @@ public class ReservationService {
     }
 
     /**
-     * Save.
-     *
-     * @param reservation the reservation
+     * Extension of 8 weeks for a Loan
+     * @param id
+     * @return reservation
      */
-    public void save (Reservation reservation){
-        reservationDao.save(reservation);
+    public  Optional<Reservation> updateReservation(@RequestParam Long id){
+        Date date = new Date();
+        Optional<Reservation> reservation = reservationDao.findById(id);
+        if(reservation.get().getEndBorrowing().before(date)){
+            throw new NoExtendIfEndBorrowingExceedException("NoExtendIfEndBorrowingExceedException");
+        }
+        reservation.get().setEndBorrowing(add8Weeks(reservation.get().getBorrowing()));
+        reservation.get().setExtend(true);
+        reservationDao.save(reservation.get());
+        return reservation;
     }
 
-    /**
-     * Delete.
-     *
-     * @param reservation the reservation
-     */
-    public void delete (Reservation reservation) {
-       reservationDao.delete(reservation);
+    public Optional<Reservation> deleteReservation(@RequestParam Long id){
+        Optional<Reservation> reservation = reservationDao.findById(id);
+        Optional<Book> book = bookService.findById(reservation.get().getBook().getId());
+        book.get().setNbreExemplaire(book.get().getNbreExemplaire() + 1);
+        bookService.save(book.get());
+        reservationDao.delete(reservation.get());
+        return reservation;
     }
 
-    /**
-     * Find all list .
-     *
-     * @return the list
-     */
-    public List <Reservation> findAll() {
-      return reservationDao.findAll();
+    public Reservation saveReservation(@RequestParam Long bookId, @RequestParam Long userId){
+        List<Reservation> userReservationList = reservationDao.findReservationsByUserBookId(userId);
+        Reservation reservation = new Reservation();
+        userReservationList = userReservationList.stream().filter(reservation1 -> reservation1.getBook().getId().equals(bookId)).collect(Collectors.toList());
+        if (userReservationList != null &&  userReservationList.size()>0){
+            logger.info("Renvoi d'un objet null si objet deja présent dans la liste ");
+            return null;
+        }else {
+            java.sql.Date aujourdhui = new java.sql.Date(Calendar.getInstance().getTime().getTime());
+            reservation.setBorrowing(aujourdhui);
+            reservation.setEndBorrowing(add4Weeks(reservation.getBorrowing()));
+            reservation.setExtend(false);
+            reservation.setUserBookId(userId);
+            Optional<Book> book = bookService.findById(bookId);
+            reservation.setBook(book.get());
+            book.get().setNbreExemplaire(book.get().getNbreExemplaire() - 1);
+            logger.info("Enregistrement de la reservation");
+            reservationDao.save(reservation);
+        }
+        logger.info("Renvoi la reservation");
+        return reservation;
     }
 
-    /**
-     * Find by end borrowing after list.
-     *
-     * @param endBorrowing the end borrowing
-     * @return the list
-     */
-    public List<Reservation> findByEndBorrowingAfter(@Param("endBorrowing") Date endBorrowing){
-       return reservationDao.findByEndBorrowingAfter(endBorrowing);
-    }
-
-    public List<Reservation> findAllByBookId(@RequestParam Long bookId) {
-        return reservationDao.findAllByBookIdOrderByEndBorrowingAsc(bookId);
-    }
 }
 

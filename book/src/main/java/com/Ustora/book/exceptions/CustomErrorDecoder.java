@@ -27,6 +27,8 @@ public class CustomErrorDecoder implements ErrorDecoder{
                     return new AddReservationException("AddReservationException");
                 case "AddWaitingListException":
                     return new AddWaitingListException("AddWaitingListException");
+                case"NoExtendIfEndBorrowingExceedException":
+                    return new NoExtendIfEndBorrowingExceedException("NoExtendIfEndBorrowingExceedException");
                default: return defaultErrorDecoder.decode(methodKey, response);
             }
         } catch (JsonParseException e) {
