@@ -89,44 +89,36 @@ public class WaitingListService {
      * @param userBookId
      */
     public void waitingListReservation(Long bookId, Long userBookId){
-
         Date date = new Date();
         WaitingList waitingList = new WaitingList();
         waitingList.setBook(bookDao.findById(bookId).get());
         waitingList.setDateOfDemand(date);
         waitingList.setUserBookId(userBookId);
         waitingList.setStatus(Status.enCours);
-
         List<WaitingList> waitingLists = waitingListDao.findByBookAndStatusOrderByDateOfDemandAsc(waitingList.getBook(),Status.enCours);
-        //Determine la place dans la liste de reservation
         for(int i = 0; i<= waitingLists.size();i++){
             int place = i+1;
             waitingList.setPositionInList(place);
         }
-        //Détermine le nombre maximum dans une liste de reservation
         Optional<Book> book = bookDao.findById(bookId);
         Integer nbreMax = book.get().getNbreExemplaireTotal()*2;
-
-        //Verifie que l'utilisateur n'a pas déjà le livre en emprunt
         List<Reservation> reservationList = reservationDao.findReservationsByUserBookId(userBookId);
         for(Reservation reservation : reservationList){
             if(reservation.getBook().getId().equals(waitingList.getBook().getId())){
                 throw new AddBorrowingException("AddBorrowingException");
             }
         }
-        //Verfie que l'utilisateur n'a pas déjà reservé le livre
         List<WaitingList> waitingListsVerif = waitingListDao.findAllByUserBookIdAndStatusOrderByDateOfDemandAsc(userBookId,Status.enCours);
         for(WaitingList w : waitingListsVerif){
             if(w.getUserBookId().equals(waitingList.getUserBookId())){
                 throw new AddReservationException("AddReservationException");
             }
         }
-        //Verification de la place restante dans la liste
         if(waitingLists.size()>=nbreMax){
             throw new AddWaitingListException("AddWaitingListException");
         }
         waitingListDao.save(waitingList);
-        logger.info("Réservation demander du livre");
+        logger.info("Réservation demandée du livre");
     }
 
     /**
@@ -136,8 +128,14 @@ public class WaitingListService {
      */
     public void cancel(Long id, Long userBookId){
         Optional<WaitingList> waitingList = waitingListDao.findById(id);
+        List <WaitingList> waitingListBook = waitingListDao.findAllByBookAndStatusOrderByDateOfDemandAsc(waitingList.get().getBook(),Status.enCours);
+        for(int i =0; i<waitingListBook.size();i++){
+            if(waitingListBook.get(i).getPositionInList()>waitingList.get().getPositionInList()){
+                waitingListBook.get(i).setPositionInList(waitingListBook.get(i).getPositionInList()-1);
+            }
+        }
         WaitingList waitingListCancel = waitingList.get();
-        waitingListCancel.setStatus(Status.rejete);
+        waitingListCancel.setStatus(Status.annule);
         waitingListCancel.setPositionInList(null);
         waitingListDao.save(waitingListCancel);
         logger.info("L'utilisateur numéro " + userBookId + " a annuler sa reservation pour le livre " + waitingListCancel.getBook().getTitre());
@@ -149,10 +147,8 @@ public class WaitingListService {
      * @return waitingListBeans la liste des reservations de l'utilisateur
      */
     public List<WaitingListBean> afficherLesReservation(Long id){
-
         List<WaitingList> waitingLists = waitingListDao.findAllByUserBookIdAndStatusOrderByDateOfDemandAsc(id, Status.enCours);
         List<WaitingListBean> waitingListBeans = new ArrayList<>();
-
         for(WaitingList w : waitingLists){
             WaitingListBean listBean = new WaitingListBean();
             listBean.setWaitingList(w);
@@ -160,7 +156,6 @@ public class WaitingListService {
             listBean.setReservation(reservation);
             Optional<Book> book = bookDao.findById(w.getBook().getId());
             listBean.setBook(book);
-
             List<Date> dates = new ArrayList<>();
             List<Reservation> reservations = reservationDao.findAll();
             for(Reservation r : reservations) {
@@ -175,7 +170,6 @@ public class WaitingListService {
                 Date soonerDate = dates.get(0);
                 listBean.setDateDeRetour(soonerDate);
             }
-
             List<WaitingList> positionWaiting = waitingListDao.findAllByBookAndStatusOrderByDateOfDemandAsc(book.get(), Status.enCours);
             for(int i = 0; i< positionWaiting.size(); i++){
                 if(positionWaiting.get(i).getUserBookId() == id){
@@ -189,16 +183,6 @@ public class WaitingListService {
         return waitingListBeans;
     }
 
-    /**
-     *Afficher les reservations dont l'email a été envoyé
-     * @return waitingLists la liste des reservations
-     */
-    public List<WaitingList> pendingAndMailSent(){
-        List<WaitingList> waitingLists = waitingListDao.findByMailSendAndStatus(true,Status.enAttente);
-        return waitingLists;
-    }
-
-
     public List<WaitingListBean> findByBookId(@RequestParam Long bookId) {
         List<WaitingList> waitingLists = waitingListDao.findByBookId(bookId);
         List<WaitingListBean> waitingListBeans = new ArrayList<>();
@@ -210,7 +194,6 @@ public class WaitingListService {
             listBean.setReservation(reservation);
             Optional<Book> book = bookDao.findById(w.getBook().getId());
             listBean.setBook(book);
-
             List<Date> dates = new ArrayList<>();
             List<Reservation> reservations = reservationDao.findAll();
             for (Reservation r : reservations) {
@@ -236,4 +219,34 @@ public class WaitingListService {
         }
         return waitingListBeans;
     }
+
+    /**
+     *Afficher les reservations dont l'email a été envoyé
+     * @return waitingLists la liste des reservations
+     */
+    public List<WaitingList> pendingAndMailSent(){
+        List<WaitingList> waitingLists = waitingListDao.findByMailSendAndStatus(true,Status.enAttente);
+        return waitingLists;
+    }
+
+    /**
+     * Annulation de la reservation par batch
+     * @param id
+     * @param userBookId
+     */
+    public void cancelByBatch(Long id, Long userBookId){
+        Optional<WaitingList> waitingList = waitingListDao.findById(id);
+        List <WaitingList> waitingListBook = waitingListDao.findAllByBookAndStatusOrderByDateOfDemandAsc(waitingList.get().getBook(),Status.enCours);
+        for(int i =0; i<waitingListBook.size();i++){
+            if(waitingListBook.get(i).getPositionInList()>waitingList.get().getPositionInList()){
+                waitingListBook.get(i).setPositionInList(waitingListBook.get(i).getPositionInList()-1);
+            }
+        }
+        WaitingList waitingListCancel = waitingList.get();
+        waitingListCancel.setStatus(Status.rejete);
+        waitingListCancel.setPositionInList(null);
+        waitingListDao.save(waitingListCancel);
+        logger.info("L'utilisateur numéro "+userBookId+" n'a pas retiré le livre à sa dispostion dans les 48h");
+    }
+
 }

@@ -22,10 +22,24 @@ public interface ReservationDao extends JpaRepository<Reservation, Long> {
      */
     List<Reservation> findReservationsByUserBookId (Long userId);
 
+    /**
+     *
+     * @param id
+     * @return
+     */
     Optional<Reservation> findById(Long id);
 
+    /**
+     *
+     * @param reservation
+     * @return
+     */
     Reservation save(Reservation reservation);
 
+    /**
+     *
+     * @param reservation
+     */
     void delete(Reservation reservation);
 
     /**
@@ -37,5 +51,10 @@ public interface ReservationDao extends JpaRepository<Reservation, Long> {
     @Query("select reservation from Reservation reservation where reservation.endBorrowing>=:endBorrowing")
     List<Reservation> findByEndBorrowingAfter(@Param("endBorrowing")Date endBorrowing);
 
+    /**
+     *
+     * @param bookId
+     * @return
+     */
     List<Reservation> findAllByBookIdOrderByEndBorrowingAsc(Long bookId);
 }

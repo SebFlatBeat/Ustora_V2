@@ -1,6 +1,7 @@
 package com.Ustora.book.service;
 
 
+import com.Ustora.book.beans.WaitingListBean;
 import com.Ustora.book.dao.ReservationDao;
 import com.Ustora.book.entities.Book;
 import com.Ustora.book.entities.Reservation;
@@ -36,6 +37,12 @@ public class ReservationService {
     @Autowired
     private BookService bookService;
 
+    /**
+     * THe WaitingList Service
+     */
+    @Autowired
+    private WaitingListService waitingListService;
+
 
     /**
      * The Logger.
@@ -43,24 +50,32 @@ public class ReservationService {
     Logger logger = LoggerFactory.getLogger(this.getClass());
 
     /**
-     * Find reservations by user book id list.
+     * Add 4 weeks java . util . date.
      *
-     * @param userId the user id
-     * @return the list
+     * @param date the date
+     * @return the java . util . date
      */
-    public List<Reservation> findReservationsByUserBookId (Long userId){
-        return reservationDao.findReservationsByUserBookId(userId);
+    public java.util.Date add4Weeks(Date date){
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(date);
+        calendar.add(Calendar.WEEK_OF_MONTH, 4);
+        return calendar.getTime();
     }
 
+
     /**
-     * Find by id optional.
+     * Add 8 weeks java . util . date.
      *
-     * @param id the id
-     * @return the optional
+     * @param date the date
+     * @return the java . util . date
      */
-    public Optional<Reservation> findById(Long id){
-        return reservationDao.findById(id);
+    public java.util.Date add8Weeks(Date date){
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(date);
+        calendar.add(Calendar.WEEK_OF_MONTH, 8);
+        return calendar.getTime();
     }
+
 
     /**
      * Save.
@@ -90,6 +105,26 @@ public class ReservationService {
     }
 
     /**
+     * Find reservations by user book id list.
+     *
+     * @param userId the user id
+     * @return the list
+     */
+    public List<Reservation> findReservationsByUserBookId (Long userId){
+        return reservationDao.findReservationsByUserBookId(userId);
+    }
+
+    /**
+     * Find by id optional.
+     *
+     * @param id the id
+     * @return the optional
+     */
+    public Optional<Reservation> findById(Long id){
+        return reservationDao.findById(id);
+    }
+
+    /**
      * Find by end borrowing after list.
      *
      * @param endBorrowing the end borrowing
@@ -106,33 +141,6 @@ public class ReservationService {
      */
     public List<Reservation> findAllByBookId(@RequestParam Long bookId) {
         return reservationDao.findAllByBookIdOrderByEndBorrowingAsc(bookId);
-    }
-
-    /**
-     * Add 4 weeks java . util . date.
-     *
-     * @param date the date
-     * @return the java . util . date
-     */
-    public java.util.Date add4Weeks(Date date){
-        Calendar calendar = Calendar.getInstance();
-        calendar.setTime(date);
-        calendar.add(Calendar.WEEK_OF_MONTH, 4);
-        return calendar.getTime();
-    }
-
-
-    /**
-     * Add 8 weeks java . util . date.
-     *
-     * @param date the date
-     * @return the java . util . date
-     */
-    public java.util.Date add8Weeks(Date date){
-        Calendar calendar = Calendar.getInstance();
-        calendar.setTime(date);
-        calendar.add(Calendar.WEEK_OF_MONTH, 8);
-        return calendar.getTime();
     }
 
     /**
@@ -155,7 +163,15 @@ public class ReservationService {
     public Optional<Reservation> deleteReservation(@RequestParam Long id){
         Optional<Reservation> reservation = reservationDao.findById(id);
         Optional<Book> book = bookService.findById(reservation.get().getBook().getId());
-        book.get().setNbreExemplaire(book.get().getNbreExemplaire() + 1);
+        List <WaitingListBean> waitingList = waitingListService.findByBookId(reservation.get().getBook().getId());
+        if(waitingList.size()!=0) {
+            book.get().setNbreDispoPourLaWaitingList(book.get().getNbreDispoPourLaWaitingList() + 1);
+        }else if(waitingList.size()==0){
+            book.get().setNbreExemplaire(book.get().getNbreExemplaire()+book.get().getNbreDispoPourLaWaitingList());
+            book.get().setNbreDispoPourLaWaitingList(0);
+        }else {
+            book.get().setNbreExemplaire(book.get().getNbreExemplaire()+1);
+        }
         bookService.save(book.get());
         reservationDao.delete(reservation.get());
         return reservation;

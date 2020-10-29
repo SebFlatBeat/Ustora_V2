@@ -2,8 +2,11 @@ package com.Ustora.book.utils;
 
 import com.Ustora.book.beans.UserBean;
 import com.Ustora.book.entities.Reservation;
+import com.Ustora.book.entities.Status;
+import com.Ustora.book.entities.WaitingList;
 import com.Ustora.book.proxies.UserProxy;
 import com.Ustora.book.service.ReservationService;
+import com.Ustora.book.service.WaitingListService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,8 +25,17 @@ import java.util.Optional;
 @Configuration
 public class Batch {
 
+    /**
+     * The Reservation Service
+     */
     @Autowired
     private ReservationService reservationService;
+
+    /**
+     * The WaitingListService
+     */
+    @Autowired
+    private WaitingListService waitingListService;
 
     /**
      * The User proxy.
@@ -31,6 +43,9 @@ public class Batch {
     @Autowired
     UserProxy userProxy;
 
+    /**
+     * The Mail
+     */
     @Autowired
     private Mail mail;
 
@@ -44,7 +59,7 @@ public class Batch {
      */
     @Scheduled(cron = "0 55 09 * * *")
     public void sendingLateMail() {
-        logger.info("Démarrage du bacth");
+        logger.info("Démarrage du bacth relance mail en retard");
         List<Reservation> reservations = reservationService.findAll();
         for (Reservation reservationLate :reservations){
             logger.warn("Liste d'utilisateur pour rappel par mail");
@@ -56,5 +71,20 @@ public class Batch {
                 }
             }
         logger.info("Fin du traitement Batch");
+    }
+    @Scheduled(cron = "0 55 09 * * *")
+    public void sendingMailAvailble(){
+        logger.info("Démarrage du batch pour envoyer le mail à l'utilisateur indiquant que le livre est disponible");
+        List<WaitingList> waitingLists = waitingListService.findAll();
+        for (WaitingList w : waitingLists){
+            logger.warn("Liste des reservations en attente");
+            Date date = new Date();
+            if (w.getPositionInList().equals(1) && w.getStatus()==Status.enCours){
+              w.setStatus(Status.enAttente);
+              w.setDateMailSent(date);
+            }else if(w.getPositionInList().equals(1) && w.getStatus()==Status.enAttente){
+                //w.getDateMailSent().
+            }
+        }
     }
 }
