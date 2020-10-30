@@ -14,6 +14,9 @@ public interface WaitingListDao extends JpaRepository<WaitingList, Long> {
     //Trouver toutes les reservations
     List<WaitingList> findAll();
 
+    //Trouver toutes les reservations selon le status
+    List<WaitingList> findAllByStatus(Status status);
+
     //Trouver une reservation par son Id
     Optional<WaitingList> findById(Long id);
 

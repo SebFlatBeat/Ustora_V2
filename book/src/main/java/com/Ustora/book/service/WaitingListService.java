@@ -105,16 +105,19 @@ public class WaitingListService {
         List<Reservation> reservationList = reservationDao.findReservationsByUserBookId(userBookId);
         for(Reservation reservation : reservationList){
             if(reservation.getBook().getId().equals(waitingList.getBook().getId())){
+                logger.error("Une exception est levée ");
                 throw new AddBorrowingException("AddBorrowingException");
             }
         }
         List<WaitingList> waitingListsVerif = waitingListDao.findAllByUserBookIdAndStatusOrderByDateOfDemandAsc(userBookId,Status.enCours);
         for(WaitingList w : waitingListsVerif){
             if(w.getUserBookId().equals(waitingList.getUserBookId())){
+                logger.error("Une exception est levée ");
                 throw new AddReservationException("AddReservationException");
             }
         }
         if(waitingLists.size()>=nbreMax){
+            logger.error("Une exception est levée ");
             throw new AddWaitingListException("AddWaitingListException");
         }
         waitingListDao.save(waitingList);
@@ -249,4 +252,8 @@ public class WaitingListService {
         logger.info("L'utilisateur numéro "+userBookId+" n'a pas retiré le livre à sa dispostion dans les 48h");
     }
 
+    public List<WaitingList> findAllByStatus(Status status) {
+        List<WaitingList> waitingLists =  waitingListDao.findAllByStatus(status);
+        return waitingLists;
+    }
 }

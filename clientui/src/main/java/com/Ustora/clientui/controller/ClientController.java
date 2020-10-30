@@ -236,18 +236,21 @@ public class ClientController {
      * @return
      */
     @PostMapping(value = "/save/reservation")
-    public String reservation (@RequestParam Long bookId){
+    public String reservation (@RequestParam Long bookId, final RedirectAttributes redirectAttributes){
         User currentUser = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         UserBean userId = userProxy.find(currentUser.getUsername());
-        ReservationBean newReservation = reservationProxy.newReservation(bookId, userId.getId());
-        if (newReservation ==null){
-            logger.info("Livre déjà en la possession de l'utilisateur");
-            return "redirect:/loanNotDone";
-        }else {
+        try {
+           reservationProxy.newReservation(bookId, userId.getId());
+        }catch (AddBorrowingException exception){
+            exception.printStackTrace();
+            String message = exception.getMessage();
+            redirectAttributes.addFlashAttribute("errorMessage", message);
+            logger.error("Une exception est levée, voici son message: "+exception.getMessage());
+            return "redirect:/bookDetail/"+bookId;
+        }
             logger.info("Nouvelle reservation de livre enregitrée");
             return "redirect:/loanSuccess";
         }
-    }
 
     /**
      *

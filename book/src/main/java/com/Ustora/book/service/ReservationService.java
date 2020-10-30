@@ -5,6 +5,7 @@ import com.Ustora.book.beans.WaitingListBean;
 import com.Ustora.book.dao.ReservationDao;
 import com.Ustora.book.entities.Book;
 import com.Ustora.book.entities.Reservation;
+import com.Ustora.book.exceptions.AddBorrowingException;
 import com.Ustora.book.exceptions.NoExtendIfEndBorrowingExceedException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -181,9 +182,9 @@ public class ReservationService {
         List<Reservation> userReservationList = reservationDao.findReservationsByUserBookId(userId);
         Reservation reservation = new Reservation();
         userReservationList = userReservationList.stream().filter(reservation1 -> reservation1.getBook().getId().equals(bookId)).collect(Collectors.toList());
-        if (userReservationList != null &&  userReservationList.size()>0){
-            logger.info("Renvoi d'un objet null si objet deja présent dans la liste ");
-            return null;
+        if (userReservationList != null &&  userReservationList.size()>0) {
+            logger.error("Une exception est levée ");
+            throw new AddBorrowingException("AddBorrowingException");
         }else {
             java.sql.Date aujourdhui = new java.sql.Date(Calendar.getInstance().getTime().getTime());
             reservation.setBorrowing(aujourdhui);
