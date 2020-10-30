@@ -117,7 +117,7 @@
                 <tr>
                     <td class="text-center" scope="row">${book.nbreExemplaire}</td>
                     <td class="text-center" scope="row">
-                        <fmt:formatDate value="${waitingList[0].dateDeRetour}" type="date" pattern="dd.MM.yyyy" />
+                        <fmt:formatDate value="${reservation[0].endBorrowing}" type="date" pattern="dd.MM.yyyy" />
                     </td>
                     <td class="text-center" scope="row">${waitingList[0].nbreDeDemande}</td>
                     <td class="text-center" scope="row">${book.nbreExemplaireTotal*2}</td>

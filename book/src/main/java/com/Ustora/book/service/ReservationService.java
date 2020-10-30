@@ -201,5 +201,19 @@ public class ReservationService {
         return reservation;
     }
 
+    public Reservation saveReservationFromWaitingList(Long bookId, Long userId) {
+        Reservation reservation = new Reservation();
+        java.sql.Date aujourdhui = new java.sql.Date(Calendar.getInstance().getTime().getTime());
+        reservation.setBorrowing(aujourdhui);
+        reservation.setEndBorrowing(add4Weeks(reservation.getBorrowing()));
+        reservation.setExtend(false);
+        reservation.setUserBookId(userId);
+        Optional<Book> book = bookService.findById(bookId);
+        reservation.setBook(book.get());
+        book.get().setNbreDispoPourLaWaitingList(book.get().getNbreDispoPourLaWaitingList() - 1);
+        logger.info("Enregistrement de la reservation suite à la mise à disposition pendant 48h");
+        reservationDao.save(reservation);
+        return reservation;
+    }
 }
 

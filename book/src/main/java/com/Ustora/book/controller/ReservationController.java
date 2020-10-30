@@ -54,6 +54,12 @@ public class ReservationController {
         return reservation;
     }
 
+    @PostMapping(value = "/save/reservationFromWaitingList")
+    public Reservation saveReservationFromWaitingList(@RequestParam Long bookId, @RequestParam Long userId){
+        Reservation reservation = reservationService.saveReservationFromWaitingList(bookId,userId);
+        return reservation;
+    }
+
     /**
      * Delete reservation.
      *

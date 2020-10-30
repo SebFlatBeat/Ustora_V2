@@ -1,5 +1,7 @@
 <%@ taglib uri='http://java.sun.com/jsp/jstl/core' prefix='c'%>
 <%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@page import="com.Ustora.clientui.beans.Status" %>
 <%--
   Created by IntelliJ IDEA.
   User: I56852
@@ -170,8 +172,14 @@
                     </td>
                     <td class="text-center" scope="row">
                         <form method="post" action="/cancel">
-                            <button class="btn btn-outline-danger" name="id" id="id" value="${reservation.id}">Annuler</button>
+                            <button class="btn btn-outline-danger ml-auto mr-auto" name="id" id="id" value="${reservation.id}">Annuler</button>
                         </form>
+                        <c:if test="${reservation.status == 'enAttente'}">
+                        <form action="/save/reservationFromWaitingList" method="post">
+                            <input type="hidden" name="bookId" id="bookId" value="${reservation.book.id}"/>
+                            <button class="btn btn-outline-success ml-auto mr-auto">Emprunter</button>
+                        </form>
+                        </c:if>
                     </td>
                 </tr>
             </c:forEach>

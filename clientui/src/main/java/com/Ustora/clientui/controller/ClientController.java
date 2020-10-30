@@ -240,7 +240,7 @@ public class ClientController {
         User currentUser = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         UserBean userId = userProxy.find(currentUser.getUsername());
         try {
-           reservationProxy.newReservation(bookId, userId.getId());
+            reservationProxy.newReservation(bookId, userId.getId());
         }catch (AddBorrowingException exception){
             exception.printStackTrace();
             String message = exception.getMessage();
@@ -248,9 +248,18 @@ public class ClientController {
             logger.error("Une exception est levée, voici son message: "+exception.getMessage());
             return "redirect:/bookDetail/"+bookId;
         }
-            logger.info("Nouvelle reservation de livre enregitrée");
-            return "redirect:/loanSuccess";
-        }
+        logger.info("Nouvelle reservation de livre enregitrée");
+        return "redirect:/loanSuccess";
+    }
+
+    @PostMapping(value = "/save/reservationFromWaitingList")
+    public String reservationFromWaitingList (@RequestParam Long bookId){
+        User currentUser = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        UserBean userId = userProxy.find(currentUser.getUsername());
+        reservationProxy.reservationFromWaitingList(bookId, userId.getId());
+        logger.info("Réservation effectué suite mise à dispositon pendant 48h");
+        return "redirect:/loanSuccess";
+    }
 
     /**
      *
@@ -280,7 +289,7 @@ public class ClientController {
         }
         logger.info("Prolongement de la reservation");
         return "redirect:/espacePerso";
-}
+    }
 
     /**
      *
