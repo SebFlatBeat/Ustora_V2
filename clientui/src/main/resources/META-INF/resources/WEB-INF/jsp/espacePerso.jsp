@@ -1,5 +1,7 @@
 <%@ taglib uri='http://java.sun.com/jsp/jstl/core' prefix='c'%>
 <%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@page import="com.Ustora.clientui.beans.Status" %>
 <%--
   Created by IntelliJ IDEA.
   User: I56852
@@ -121,15 +123,15 @@
                         <fmt:formatDate value="${available.endBorrowing}" type="date" pattern="dd.MM.yyyy" />
                     </td>
                     <td class="text-center" scope="row">
-                        <c:if test="${available.extend == false && available.endBorrowing gt dateDuJour}">
+                        <c:if test="${available.extend == false && errorMessageRenew == null}">
                             <form method="post" action="/extend/reservation">
                                 <button class="btn btn-outline-success" name="id" id="id" value="${available.id}">Renouveller</button>
                             </form>
                         </c:if>
-                           <c:if test="${available.extend == true && available.endBorrowing gt dateDuJour}">
+                           <c:if test="${available.extend == true && errorMessageRenew == null}">
                             <button class="btn btn-outline-danger disabled" name="id" id="id" value="${available.id}">Déjà Renouvellé</button>
                            </c:if>
-                            <c:if test="${dateDuJour gt available.endBorrowing}">
+                            <c:if test="${errorMessageRenew != null}">
                                 <button class="btn btn-outline-danger disabled">Date de fin de prêt dépassé</button>
                             </c:if>
                     </td>
@@ -170,8 +172,14 @@
                     </td>
                     <td class="text-center" scope="row">
                         <form method="post" action="/cancel">
-                            <button class="btn btn-outline-danger" name="id" id="id" value="${reservation.id}">Annuler</button>
+                            <button class="btn btn-outline-danger ml-auto mr-auto" name="id" id="id" value="${reservation.id}">Annuler</button>
                         </form>
+                        <c:if test="${reservation.status == 'enAttente'}">
+                        <form action="/save/reservationFromWaitingList" method="post">
+                            <input type="hidden" name="bookId" id="bookId" value="${reservation.book.id}"/>
+                            <button class="btn btn-outline-success ml-auto mr-auto">Emprunter</button>
+                        </form>
+                        </c:if>
                     </td>
                 </tr>
             </c:forEach>

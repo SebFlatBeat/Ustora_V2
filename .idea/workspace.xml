@@ -11,34 +11,12 @@
       </path>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:prod" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:prod" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
     <select>
@@ -46,32 +24,25 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:prod" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/prod/bug" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/ticket1" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8b7f698-af99-4ed3-889c-f994cced6562" name="Default Changelist" comment="Implementation front de bookDetail">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/e/2e3b358c480165447c340cb5eccef5e528703274" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/0/30a0e4005ccaab31c57389192028c7846a076c47" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/0/30f428f04913bd558ce1a35dc4f7699762244c5b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/448d00999117b10b95d6708d142a41ad53c90a20" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/9/69250a3d172b51786355684e1b9f84fca02e71d1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/e/7ed9982afe8a3ddeeb9907a74bb80ca19e16efea" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/3/939999e389b1b054e5d5194cf47ad159d779c79e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/2/a2f9618c8ad821b143a07a29a9805fcb0b2df470" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/5/b5aa843524f5813d789502fd42e3b080ca499533" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/6/c64f735c861953d98b81464956936572224c14cf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/d/cdfe2e323fad8b1bcfe52f68e21783f120cd711e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/e/ce0e7119e059f07c3d04023d3fc7ce1e23bf2a41" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/c/dcc08c1c35c705fd552febefc613abc6209ca2bb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/6/e692e19b1ac9affd2e2947b1f386167d118fca0b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1e432da8-5f22-4aca-8707-111f3bb87e29/storage_v2/_src_/database/Bibliotheque.R4OgdQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1e432da8-5f22-4aca-8707-111f3bb87e29/storage_v2/_src_/database/Bibliotheque.R4OgdQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/ReservationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/ReservationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/dao/WaitingListDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/dao/WaitingListDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/ReservationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/ReservationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/WaitingListService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/WaitingListService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/test/java/com/Ustora/book/controller/BookControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/test/java/com/Ustora/book/entities/BookTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/test/java/com/Ustora/book/service/BookServiceTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/proxies/ReservationProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/proxies/ReservationProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/bookDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/bookDetail.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/espacePerso.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/espacePerso.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,14 +146,15 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="database.data.extractors.current.export.id" value="Comma-separated (CSV)_id" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/zuul-server" />
+    <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
+    <property name="database.data.extractors.current.id" value="SQL Inserts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/exceptions" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Background" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="ReactorSettings">
@@ -195,11 +167,17 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.Ustora.clientui.exceptions" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sebas\IdeaProjects\Ustora_V2\book\src\main\java\com\Ustora\book\exceptions" />
+      <recent name="C:\Users\sebas\IdeaProjects\Ustora_V2\clientui\src\main\resources\META-INF\resources\WEB-INF\jsp" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.Ustora.book.exceptions" />
+      <recent name="com.Ustora.clientui.exceptions" />
+      <recent name="com.Ustora.clientui.beans" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\sebas\IdeaProjects\Ustora_V2\clientui\src\main\resources\META-INF\resources\WEB-INF\jsp" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -365,15 +343,15 @@
       <item itemvalue="JUnit.cover-tests-run-book" />
       <item itemvalue="JUnit.cover-tests-run-user" />
       <item itemvalue="JUnit.cover-tests-run-zuul-server" />
-      <item itemvalue="Spring Boot.EurekaApplication" />
       <item itemvalue="Spring Boot.BookApplication (9002)" />
+      <item itemvalue="Spring Boot.BookApplication (9022)" />
+      <item itemvalue="Spring Boot.ClientuiApplication" />
       <item itemvalue="Spring Boot.ConfigServerApplication" />
+      <item itemvalue="Spring Boot.EurekaApplication" />
       <item itemvalue="Spring Boot.SpringAdminApplication" />
       <item itemvalue="Spring Boot.UserApplication (9003)" />
       <item itemvalue="Spring Boot.UserApplication (9033)" />
       <item itemvalue="Spring Boot.ZuulServerApplication" />
-      <item itemvalue="Spring Boot.ClientuiApplication" />
-      <item itemvalue="Spring Boot.BookApplication (9022)" />
     </list>
     <recent_temporary>
       <list>
@@ -386,6 +364,9 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\sebas\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="d8b7f698-af99-4ed3-889c-f994cced6562" name="Default Changelist" comment="" />
@@ -414,6 +395,13 @@
       <workItem from="1603233307566" duration="23675000" />
       <workItem from="1603295616774" duration="4430000" />
       <workItem from="1603304289129" duration="7458000" />
+      <workItem from="1603440705666" duration="3844000" />
+      <workItem from="1603445503555" duration="4647000" />
+      <workItem from="1603465380222" duration="11240000" />
+      <workItem from="1603499053537" duration="32532000" />
+      <workItem from="1603807374755" duration="9815000" />
+      <workItem from="1603876535794" duration="14241000" />
+      <workItem from="1603914000077" duration="29982000" />
     </task>
     <task id="LOCAL-00001" summary="Add unversionned files">
       <created>1601445594038</created>
@@ -569,7 +557,77 @@
       <option name="project" value="LOCAL" />
       <updated>1603304156845</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Creation de l'exception AddBoorowingException">
+      <created>1603367067002</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1603367067002</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Creation des exceptions dans le module book, implementation des exceptions">
+      <created>1603397854298</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1603397854298</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Corection de la valeur HttpStatus et modification sur les boutons en front">
+      <created>1603445392763</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1603445392763</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Creations implementations des classes d'exception / Implementation de CustomErrorDecoder">
+      <created>1603478771067</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1603478771067</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Suppresion de &quot;reason&quot; dans les classes d'exception du module Book // Correction de l'affichage du nombre de reservation demandée">
+      <created>1603628853270</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1603628853270</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Modification des HttpStatus / Correction nomenclature dans CustomErrorDecoder">
+      <created>1603814041997</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1603814041997</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Implémentation des exceptions / refactor des classes ReservationController &amp; ReservationService">
+      <created>1603884537537</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1603884537538</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Refactor de ClientController">
+      <created>1603896880545</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1603896880545</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Ajout d'un objet dans la classe Book / implementation de l'objet dans les differentes classes / Implementation du deuxieme Batch">
+      <created>1603990625361</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1603990625361</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Finalisation du Batch">
+      <created>1604050101314</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1604050101314</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -586,7 +644,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/prod/bug" />
+                        <option value="origin/ticket1" />
                       </list>
                     </value>
                   </entry>
@@ -601,13 +659,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Add unversionned files" />
-    <MESSAGE value="Update Project" />
-    <MESSAGE value="DiffBlue update / WaitingList entities created" />
-    <MESSAGE value="DiffBlue files" />
-    <MESSAGE value="Add booleans" />
-    <MESSAGE value="Changed variable name" />
-    <MESSAGE value="Implements WaitingListDao, WaitingListService, WaitingListController. Create ReservationServiceTest" />
     <MESSAGE value="Implementation de WaitingListController, WaitingListService. Creation de WaitingListBean et des differentes classes de Test" />
     <MESSAGE value="Ajout de Status et implementation de la couche métier" />
     <MESSAGE value="Creation du bean WaitingListBean et ajout de methode dans les dao" />
@@ -623,7 +674,17 @@
     <MESSAGE value="Refactor de la classe NoExtendIfEndBorrowingExceedException" />
     <MESSAGE value="Implémentation de la classe NoExtendIfEndBorrowingExceedException" />
     <MESSAGE value="Refactoring Implémentation de la classe NoExtendIfEndBorrowingExceedException dans le mauvais module // Implementation du message dans espacePerso" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring Implémentation de la classe NoExtendIfEndBorrowingExceedException dans le mauvais module // Implementation du message dans espacePerso" />
+    <MESSAGE value="Creation de l'exception AddBoorowingException" />
+    <MESSAGE value="Creation des exceptions dans le module book, implementation des exceptions" />
+    <MESSAGE value="Corection de la valeur HttpStatus et modification sur les boutons en front" />
+    <MESSAGE value="Creations implementations des classes d'exception / Implementation de CustomErrorDecoder" />
+    <MESSAGE value="Suppresion de &quot;reason&quot; dans les classes d'exception du module Book // Correction de l'affichage du nombre de reservation demandée" />
+    <MESSAGE value="Modification des HttpStatus / Correction nomenclature dans CustomErrorDecoder" />
+    <MESSAGE value="Implémentation des exceptions / refactor des classes ReservationController &amp; ReservationService" />
+    <MESSAGE value="Refactor de ClientController" />
+    <MESSAGE value="Ajout d'un objet dans la classe Book / implementation de l'objet dans les differentes classes / Implementation du deuxieme Batch" />
+    <MESSAGE value="Finalisation du Batch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalisation du Batch" />
   </component>
   <component name="WindowStateProjectService">
     <state x="267" y="19" key="#Inspections" timestamp="1603144174219">
@@ -646,14 +707,18 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1603309013439" />
+    <state x="385" y="131" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603627612185">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="385" y="131" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1603627612185" />
     <state x="421" y="45" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1603094246939">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="45" key="#com.intellij.ide.macro.MacrosDialog/0.0.1280.680@0.0.1280.680" timestamp="1603094246939" />
-    <state x="446" y="33" key="#com.intellij.ide.util.MemberChooser" timestamp="1603271698799">
+    <state x="446" y="33" key="#com.intellij.ide.util.MemberChooser" timestamp="1604060458287">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="33" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1603271698799" />
+    <state x="446" y="33" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1604060458287" />
     <state x="371" y="116" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1602624446449">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -666,22 +731,26 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="321" y="77" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.680@0.0.1280.680" timestamp="1602321244327" />
-    <state x="386" y="196" width="609" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1603303465153">
+    <state x="386" y="196" width="609" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1604060375842">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="386" y="196" width="609" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1603303465153" />
+    <state x="386" y="196" width="609" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1604060375842" />
     <state x="406" y="158" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1603266188097">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="406" y="158" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.0.1280.680@0.0.1280.680" timestamp="1603266188097" />
+    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603883584404">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1603883584404" />
     <state x="371" y="95" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1601019835357">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="95" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1280.680@0.0.1280.680" timestamp="1601019835357" />
-    <state x="396" y="0" key="#xdebugger.evaluate" timestamp="1603268322773">
+    <state x="396" y="0" width="879" height="680" key="#xdebugger.evaluate" timestamp="1604055686006">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="396" y="0" key="#xdebugger.evaluate/0.0.1280.680@0.0.1280.680" timestamp="1603268322773" />
+    <state x="396" y="0" width="879" height="680" key="#xdebugger.evaluate/0.0.1280.680@0.0.1280.680" timestamp="1604055686006" />
     <state x="385" y="150" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1602683147735">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -690,54 +759,54 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="348" y="82" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1603293090406" />
-    <state width="948" height="280" key="GridCell.Tab.0.bottom" timestamp="1603313548436">
+    <state width="951" height="222" key="GridCell.Tab.0.bottom" timestamp="1604061117221">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="280" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603313548436" />
-    <state width="948" height="280" key="GridCell.Tab.0.center" timestamp="1603313548435">
+    <state width="951" height="222" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604061117221" />
+    <state width="951" height="222" key="GridCell.Tab.0.center" timestamp="1604061117220">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="280" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1603313548435" />
-    <state width="948" height="280" key="GridCell.Tab.0.left" timestamp="1603313548435">
+    <state width="951" height="222" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1604061117220" />
+    <state width="951" height="222" key="GridCell.Tab.0.left" timestamp="1604061117220">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="280" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1603313548435" />
-    <state width="948" height="280" key="GridCell.Tab.0.right" timestamp="1603313548436">
+    <state width="951" height="222" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1604061117220" />
+    <state width="951" height="222" key="GridCell.Tab.0.right" timestamp="1604061117220">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="280" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1603313548435" />
-    <state width="948" height="280" key="GridCell.Tab.1.bottom" timestamp="1603313548436">
+    <state width="951" height="222" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1604061117220" />
+    <state width="951" height="222" key="GridCell.Tab.1.bottom" timestamp="1604061117894">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="280" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603313548436" />
-    <state width="948" height="280" key="GridCell.Tab.1.center" timestamp="1603313548436">
+    <state width="951" height="222" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604061117894" />
+    <state width="951" height="222" key="GridCell.Tab.1.center" timestamp="1604061117894">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="280" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1603313548436" />
-    <state width="948" height="280" key="GridCell.Tab.1.left" timestamp="1603313548436">
+    <state width="951" height="222" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1604061117894" />
+    <state width="951" height="222" key="GridCell.Tab.1.left" timestamp="1604061117894">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="280" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1603313548436" />
-    <state width="948" height="280" key="GridCell.Tab.1.right" timestamp="1603313548436">
+    <state width="951" height="222" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1604061117894" />
+    <state width="951" height="222" key="GridCell.Tab.1.right" timestamp="1604061117894">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="280" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1603313548436" />
-    <state width="948" height="343" key="GridCell.Tab.2.bottom" timestamp="1603295543555">
+    <state width="951" height="222" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1604061117894" />
+    <state width="951" height="222" key="GridCell.Tab.2.bottom" timestamp="1604061007984">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="343" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603295543555" />
-    <state width="948" height="343" key="GridCell.Tab.2.center" timestamp="1603295543554">
+    <state width="951" height="222" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604061007984" />
+    <state width="951" height="222" key="GridCell.Tab.2.center" timestamp="1604061007983">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="343" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1603295543554" />
-    <state width="948" height="343" key="GridCell.Tab.2.left" timestamp="1603295543554">
+    <state width="951" height="222" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1604061007983" />
+    <state width="951" height="222" key="GridCell.Tab.2.left" timestamp="1604061007983">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="343" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1603295543554" />
-    <state width="948" height="343" key="GridCell.Tab.2.right" timestamp="1603295543555">
+    <state width="951" height="222" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1604061007983" />
+    <state width="951" height="222" key="GridCell.Tab.2.right" timestamp="1604061007984">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="948" height="343" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1603295543555" />
+    <state width="951" height="222" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1604061007984" />
     <state x="221" y="84" key="IDE.errors.dialog" timestamp="1602058491751">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -750,26 +819,42 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="314" y="0" key="NewModule_or_Project.wizard/0.0.1280.680@0.0.1280.680" timestamp="1603293092323" />
-    <state x="121" y="0" key="SettingsEditor" timestamp="1603295435455">
+    <state x="121" y="0" key="SettingsEditor" timestamp="1603463746729">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1603295435455" />
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1603463746729" />
     <state x="423" y="0" key="SpringBootCustomization" timestamp="1600975482655">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="423" y="0" key="SpringBootCustomization/0.0.1280.680@0.0.1280.680" timestamp="1600975482655" />
-    <state x="233" y="55" key="Vcs.Push.Dialog.v2" timestamp="1603304160624">
+    <state x="362" y="82" width="540" height="524" key="StructurePopup" timestamp="1604014605490">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="55" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1603304160624" />
-    <state x="516" y="212" width="307" height="262" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1603093273652">
+    <state x="362" y="82" width="540" height="524" key="StructurePopup/0.0.1280.680@0.0.1280.680" timestamp="1604014605490" />
+    <state width="498" height="508" key="SwitcherDM" timestamp="1603877868905">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="516" y="212" width="307" height="262" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1280.680@0.0.1280.680" timestamp="1603093273652" />
-    <state x="371" y="146" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1603309141575">
+    <state width="498" height="508" key="SwitcherDM/0.0.1280.680@0.0.1280.680" timestamp="1603877868905" />
+    <state x="233" y="55" key="Vcs.Push.Dialog.v2" timestamp="1604050103464">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="371" y="146" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/0.0.1280.680@0.0.1280.680" timestamp="1603309141575" />
+    <state x="233" y="55" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1604050103464" />
+    <state x="420" y="185" key="cloudConfig.PluginsDialog" timestamp="1603440666259">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="420" y="185" key="cloudConfig.PluginsDialog/0.0.1280.680@0.0.1280.680" timestamp="1603440666259" />
+    <state x="516" y="212" width="307" height="262" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1604014749189">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="516" y="212" width="307" height="262" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1280.680@0.0.1280.680" timestamp="1604014749189" />
+    <state x="371" y="146" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1604014610286">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="146" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/0.0.1280.680@0.0.1280.680" timestamp="1604014610286" />
+    <state x="48" y="16" width="489" height="641" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1604014838305">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="48" y="16" width="489" height="641" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1280.680@0.0.1280.680" timestamp="1604014838305" />
     <state x="375" y="229" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1603284711928">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -782,6 +867,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="412" y="0" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.680@0.0.1280.680" timestamp="1602624453557" />
+    <state x="344" y="92" key="refactoring.ChangeSignatureDialog" timestamp="1604050860377">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="344" y="92" key="refactoring.ChangeSignatureDialog/0.0.1280.680@0.0.1280.680" timestamp="1604050860377" />
     <state x="297" y="151" width="672" height="677" key="run.anything.popup" timestamp="1603190436685">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -794,6 +883,47 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="321" y="0" key="spring file set editor/0.0.1280.680@0.0.1280.680" timestamp="1603292631078" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/ReservationController.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/utils/Batch.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/utils/Batch.java</url>
+          <line>77</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/utils/Batch.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/utils/Batch.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java</url>
+          <line>225</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java</url>
+          <line>226</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/config_server$EmailConfigTest.ic" NAME="EmailConfigTest Coverage Results" MODIFIED="1602660198381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

@@ -42,6 +42,8 @@ public class Book {
 
     private int nbreExemplaireTotal;
 
+    private int nbreDispoPourLaWaitingList;
+
 
     /**
      * Instantiates a new Book.
@@ -63,6 +65,7 @@ public class Book {
      * @param section               the section
      * @param nbreExemplaire        the nbre exemplaire
      * @param nbreExemplaireTotal   the nbre exemplaire total
+     * @param nbreDispoPourLaWaitingList
      */
     public Book(Long id,
                 @Size( max = 100, min = 3, message = "Le nom du livre doit contenir entre 3 et 50 charactères." )
@@ -81,7 +84,8 @@ public class Book {
                 @NotNull
                         String section,
                 int nbreExemplaire,
-                int nbreExemplaireTotal){
+                int nbreExemplaireTotal,
+                int nbreDispoPourLaWaitingList){
 
     }
 
@@ -247,12 +251,36 @@ public class Book {
         this.nbreExemplaire = nbreExemplaire;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getNbreExemplaireTotal() {
         return nbreExemplaireTotal;
     }
 
+    /**
+     *
+     * @param nbreExemplaireTotal
+     */
     public void setNbreExemplaireTotal(int nbreExemplaireTotal) {
         this.nbreExemplaireTotal = nbreExemplaireTotal;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public int getNbreDispoPourLaWaitingList() {
+        return nbreDispoPourLaWaitingList;
+    }
+
+    /**
+     *
+     * @param nbreDispoPourLaWaitingList
+     */
+    public void setNbreDispoPourLaWaitingList(int nbreDispoPourLaWaitingList) {
+        this.nbreDispoPourLaWaitingList = nbreDispoPourLaWaitingList;
     }
 
     @Override
@@ -267,6 +295,7 @@ public class Book {
                 ", section=" + section +
                 ", nbreExemplaire=" + nbreExemplaire +
                 ", nbreExemplaireTotal=" + nbreExemplaireTotal +
+                ", nbreDispoPourLaWaitingList" + nbreDispoPourLaWaitingList +
                 "]";
     }
 }

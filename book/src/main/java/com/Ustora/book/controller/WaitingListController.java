@@ -1,6 +1,7 @@
 package com.Ustora.book.controller;
 
 import com.Ustora.book.beans.WaitingListBean;
+import com.Ustora.book.entities.Status;
 import com.Ustora.book.entities.WaitingList;
 import com.Ustora.book.service.BookService;
 import com.Ustora.book.service.ReservationService;
@@ -55,4 +56,5 @@ public class WaitingListController {
     public List<WaitingListBean> waitingListByBookId(@RequestParam Long bookId){
         return  waitingListService.findByBookId(bookId);
     }
+
 }

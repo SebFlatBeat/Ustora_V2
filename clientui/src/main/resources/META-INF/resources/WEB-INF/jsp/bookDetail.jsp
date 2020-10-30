@@ -1,6 +1,7 @@
 <%@ taglib uri='http://java.sun.com/jsp/jstl/core' prefix='c'%>
 <%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%--
   Created by IntelliJ IDEA.
   User: I56852
@@ -116,70 +117,72 @@
                 <tr>
                     <td class="text-center" scope="row">${book.nbreExemplaire}</td>
                     <td class="text-center" scope="row">
-                        <fmt:formatDate value="${waitingList[0].dateDeRetour}" type="date" pattern="dd.MM.yyyy" />
+                        <fmt:formatDate value="${reservation[0].endBorrowing}" type="date" pattern="dd.MM.yyyy" />
                     </td>
-                    <td class="text-center" scope="row">${fn:length(waitingList)}</td>
+                    <td class="text-center" scope="row">${waitingList[0].nbreDeDemande}</td>
                     <td class="text-center" scope="row">${book.nbreExemplaireTotal*2}</td>
                 </tr>
                 </tbody>
             </table>
         </div>
+        <c:if test="${errorMessage != null}">
+            <div class="alert alert-warning col-lg-12 text-center" role="alert">
+                <p align="center">${errorMessage}</p>
+            </div>
+        </c:if>
         <div class="col-lg-12">
             <div class="btn-group-justified">
-            <form action="/save/reservation" method="post">
-                <input type="hidden" name="bookId" id="bookId" value="${book.id}"/>
                 <c:if test="${book.nbreExemplaire!=0}">
-                <button class="btn btn-outline-success btn-lg aligncenter ml-auto mr-auto">Emprunter</button>
+                    <form action="/save/reservation" method="post">
+                        <input type="hidden" name="bookId" id="bookId" value="${book.id}"/>
+                        <button class="btn btn-outline-success btn-lg aligncenter ml-auto mr-auto">Emprunter</button>
+                    </form>
                 </c:if>
                 <c:if test="${book.nbreExemplaire==0}">
                     <button class="btn btn-outline-dark btn-lg disabled aligncenter ml-auto mr-auto">Emprunter</button>
                 </c:if>
-            </form>
-            <form action="/waitingList" method="post">
-                <input type="hidden" name="bookId" id="bookId" value="${book.id}"/>
-                <c:if test="${book.nbreExemplaire==0}">
-                <button class="btn btn-outline-warning btn-lg aligncenter ml-auto mr-auto">Réserver</button>
+                <c:if test="${book.nbreExemplaire==0 && book.nbreExemplaireTotal*2 ne waitingList[0].nbreDeDemande}">
+                    <form action="/waitingList" method="post">
+                        <input type="hidden" name="bookId" id="bookId" value="${book.id}"/>
+                        <button class="btn btn-outline-warning btn-lg aligncenter ml-auto mr-auto">Réserver</button>
+                    </form>
                 </c:if>
-                <c:if test="${book.nbreExemplaire!=0}">
+                <c:if test="${book.nbreExemplaire!=0 || book.nbreExemplaireTotal*2==waitingList[0].nbreDeDemande}">
                     <button class="btn btn-outline-dark disabled btn-lg aligncenter ml-auto mr-auto">Réserver</button>
                 </c:if>
-                <c:if test="${book.nbreExemplaireTotal*2==fn:length(waitingList)}">
-                    <button class="btn btn-outline-dark disabled btn-lg aligncente rml-auto mr-auto">Réserver</button>
-                </c:if>
-            </form>
                 <button class="btn btn-outline-primary btn-lg aligncenter ml-auto mr-auto"><a href="<c:url value="/index"/>">Retour</a></button>
+            </div>
         </div>
     </div>
-</div>
 
-<!-- Latest jQuery form server -->
-<script src="https://code.jquery.com/jquery.min.js"></script>
+    <!-- Latest jQuery form server -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
 
-<!-- jQuery popper -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- jQuery popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
-<!-- Bootstrap JS form CDN -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Bootstrap JS form CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-<!-- jQuery sticky menu -->
-<script src="../../js/owl.carousel.min.js"></script>
-<script src="../../js/jquery.sticky.js"></script>
+    <!-- jQuery sticky menu -->
+    <script src="../../js/owl.carousel.min.js"></script>
+    <script src="../../js/jquery.sticky.js"></script>
 
-<!-- jQuery easing -->
-<script src="../../js/jquery.easing.1.3.min.js"></script>
+    <!-- jQuery easing -->
+    <script src="../../js/jquery.easing.1.3.min.js"></script>
 
-<!-- Main Script -->
-<script src="../../js/main.js"></script>
+    <!-- Main Script -->
+    <script src="../../js/main.js"></script>
 
-<!-- Slider -->
-<script type="text/javascript" src="../../js/bxslider.min.js"></script>
-<script type="text/javascript" src="../../js/script.slider.js"></script>
+    <!-- Slider -->
+    <script type="text/javascript" src="../../js/bxslider.min.js"></script>
+    <script type="text/javascript" src="../../js/script.slider.js"></script>
 
-<!-- jQuery UI -->
-<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <!-- jQuery UI -->
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 
-<!-- jQuery anchor -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+    <!-- jQuery anchor -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
 
 </body>
 </html>

@@ -14,6 +14,9 @@ public interface WaitingListDao extends JpaRepository<WaitingList, Long> {
     //Trouver toutes les reservations
     List<WaitingList> findAll();
 
+    //Trouver toutes les reservations selon le status
+    List<WaitingList> findAllByStatus(Status status);
+
     //Trouver une reservation par son Id
     Optional<WaitingList> findById(Long id);
 
@@ -26,11 +29,17 @@ public interface WaitingListDao extends JpaRepository<WaitingList, Long> {
     //Trouver les reservations pour un user et ranger par date de la demande
     List<WaitingList> findByUserBookIdAndStatusOrderByDateOfDemandAsc(Long userBookId, Status status);
 
-    //Trouver toutes les reservations pour un user et ranger par date de la demande
+    //Trouver toutes les reservations pour un user avec un status et ranger par date de la demande
     List<WaitingList> findAllByUserBookIdAndStatusOrderByDateOfDemandAsc(Long userBookId, Status status);
 
-    //Trouver toutes les reservations d'un livre
+    //Trouver toutes les reservations pour un user avec un status et ranger par date de la demande
+    List<WaitingList> findAllByUserBookIdOrderByDateOfDemandAsc(Long userBookId);
+
+    //Trouver toutes les reservations d'un livre avec un status
     List<WaitingList> findAllByBookAndStatusOrderByDateOfDemandAsc(Book book, Status status);
+
+    //Trouver toutes les reservations d'un livre
+    List<WaitingList> findAllByBookOrderByDateOfDemandAsc(Book book);
 
     //Trouver une reservation pour un livre
     List<WaitingList> findByBookAndStatusOrderByDateOfDemandAsc(Book book, Status status);
@@ -43,4 +52,7 @@ public interface WaitingListDao extends JpaRepository<WaitingList, Long> {
 
     //Trouver les reservations par l'id du livre
     List<WaitingList> findByBookId(Long bookId);
+
+    //Trouver les reservations par l'id du livre et son status
+    List<WaitingList> findByBookIdAndStatus(Long bookId, Status status);
 }

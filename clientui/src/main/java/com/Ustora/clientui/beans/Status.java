@@ -1,9 +1,8 @@
-package com.Ustora.book.entities;
+package com.Ustora.clientui.beans;
 
 public enum Status {
     enCours,
     enAttente,
     rejete,
-    annule,
-    termine
+    valide
 }
