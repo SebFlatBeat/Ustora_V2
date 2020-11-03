@@ -89,6 +89,40 @@ public class Book {
 
     }
 
+    public Book(Long id,
+                @Size( max = 100, min = 3, message = "Le nom du livre doit contenir entre 3 et 50 charactères." )
+                @NotEmpty( message = "Veuillez saisir le nom de livre" )
+                        String titre,
+                @Size( max = 100, min = 3)
+                        String auteurPrincipalNom,
+                @Size( max = 100, min = 3)
+                        String auteurPrincipalPrenom,
+                @NotNull
+                        String isbn,
+                @NotNull
+                        String editeur,
+                @NotNull
+                        String anneeEdition,
+                @NotNull
+                        String section,
+                int nbreExemplaire,
+                int nbreExemplaireTotal,
+                int nbreDispoPourLaWaitingList){
+
+        this.id = id;
+        this.titre = titre;
+        this.auteurPrincipalNom = auteurPrincipalNom;
+        this.auteurPrincipalPrenom = auteurPrincipalPrenom;
+        this.isbn = isbn;
+        this.editeur = editeur;
+        this.anneeEdition = anneeEdition;
+        this.section = section;
+        this.nbreExemplaire = nbreExemplaire;
+        this.nbreExemplaireTotal = nbreExemplaireTotal;
+        this.nbreDispoPourLaWaitingList = nbreDispoPourLaWaitingList;
+
+    }
+
     /**
      * Gets id.
      *
