@@ -123,11 +123,11 @@ class BookServiceTest {
     @Test
     void testFindByTitre() {
         // Setup
-        final List<Book> bookList = Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0));
+        final List<Book> bookList = Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0, 0));
 
         // Configure BookDao.findByTitre(...).
-        final List<Book> books = Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0));
-        when(bookServiceUnderTest.bookDao.findByTitre("titre", Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0)))).thenReturn(books);
+        final List<Book> books = Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0, 0));
+        when(bookServiceUnderTest.bookDao.findByTitre("titre", Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0, 0)))).thenReturn(books);
 
         // Run the test
         final List<Book> result = bookServiceUnderTest.findByTitre("titre", bookList);
@@ -138,11 +138,11 @@ class BookServiceTest {
     @Test
     void testFindByAuteurPrincipalNom() {
         // Setup
-        final List<Book> bookList = Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0));
+        final List<Book> bookList = Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0, 0));
 
         // Configure BookDao.findByAuteurPrincipalNom(...).
-        final List<Book> books = Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0));
-        when(bookServiceUnderTest.bookDao.findByAuteurPrincipalNom("auteurPrincipalNom", Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0)))).thenReturn(books);
+        final List<Book> books = Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0, 0));
+        when(bookServiceUnderTest.bookDao.findByAuteurPrincipalNom("auteurPrincipalNom", Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0, 0)))).thenReturn(books);
 
         // Run the test
         final List<Book> result = bookServiceUnderTest.findByAuteurPrincipalNom("auteurPrincipalNom", bookList);
@@ -153,11 +153,11 @@ class BookServiceTest {
     @Test
     void testFindByAuteurPrincipalPrenom() {
         // Setup
-        final List<Book> bookList = Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0));
+        final List<Book> bookList = Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0, 0));
 
         // Configure BookDao.findByAuteurPrincipalPrenom(...).
-        final List<Book> books = Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0));
-        when(bookServiceUnderTest.bookDao.findByAuteurPrincipalPrenom("auteurPrincipalPrenom", Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0)))).thenReturn(books);
+        final List<Book> books = Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0, 0));
+        when(bookServiceUnderTest.bookDao.findByAuteurPrincipalPrenom("auteurPrincipalPrenom", Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0, 0)))).thenReturn(books);
 
         // Run the test
         final List<Book> result = bookServiceUnderTest.findByAuteurPrincipalPrenom("auteurPrincipalPrenom", bookList);
@@ -168,11 +168,11 @@ class BookServiceTest {
     @Test
     void testFindByEditeur() {
         // Setup
-        final List<Book> bookList = Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0));
+        final List<Book> bookList = Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0, 0));
 
         // Configure BookDao.findByEditeur(...).
-        final List<Book> books = Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0));
-        when(bookServiceUnderTest.bookDao.findByEditeur("editeur", Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0)))).thenReturn(books);
+        final List<Book> books = Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0, 0));
+        when(bookServiceUnderTest.bookDao.findByEditeur("editeur", Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0, 0)))).thenReturn(books);
 
         // Run the test
         final List<Book> result = bookServiceUnderTest.findByEditeur("editeur", bookList);
@@ -183,11 +183,11 @@ class BookServiceTest {
     @Test
     void testFindByAnneeEdition() {
         // Setup
-        final List<Book> bookList = Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0));
+        final List<Book> bookList = Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0, 0));
 
         // Configure BookDao.findByAnneeEdition(...).
-        final List<Book> books = Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0));
-        when(bookServiceUnderTest.bookDao.findByAnneeEdition("anneeEdition", Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0)))).thenReturn(books);
+        final List<Book> books = Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0, 0));
+        when(bookServiceUnderTest.bookDao.findByAnneeEdition("anneeEdition", Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0, 0)))).thenReturn(books);
 
         // Run the test
         final List<Book> result = bookServiceUnderTest.findByAnneeEdition("anneeEdition", bookList);
@@ -198,11 +198,11 @@ class BookServiceTest {
     @Test
     void testFindBySection() {
         // Setup
-        final List<Book> bookList = Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0));
+        final List<Book> bookList = Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0, 0));
 
         // Configure BookDao.findBySection(...).
-        final List<Book> books = Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0));
-        when(bookServiceUnderTest.bookDao.findBySection("section", Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0)))).thenReturn(books);
+        final List<Book> books = Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0, 0));
+        when(bookServiceUnderTest.bookDao.findBySection("section", Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0, 0)))).thenReturn(books);
 
         // Run the test
         final List<Book> result = bookServiceUnderTest.findBySection("section", bookList);
@@ -213,11 +213,11 @@ class BookServiceTest {
     @Test
     void testFindByIsbn() {
         // Setup
-        final List<Book> bookList = Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0));
+        final List<Book> bookList = Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0, 0));
 
         // Configure BookDao.findByIsbn(...).
-        final List<Book> books = Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0));
-        when(bookServiceUnderTest.bookDao.findByIsbn("isbn", Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0)))).thenReturn(books);
+        final List<Book> books = Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0, 0));
+        when(bookServiceUnderTest.bookDao.findByIsbn("isbn", Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0, 0)))).thenReturn(books);
 
         // Run the test
         final List<Book> result = bookServiceUnderTest.findByIsbn("isbn", bookList);
@@ -230,7 +230,7 @@ class BookServiceTest {
         // Setup
 
         // Configure BookDao.findAll(...).
-        final Page<Book> books = new PageImpl<>(Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0)));
+        final Page<Book> books = new PageImpl<>(Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0, 0)));
         when(bookServiceUnderTest.bookDao.findAll(any(Pageable.class))).thenReturn(books);
 
         // Run the test
@@ -244,7 +244,7 @@ class BookServiceTest {
         // Setup
 
         // Configure BookDao.findAll(...).
-        final List<Book> books = Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0));
+        final List<Book> books = Arrays.asList(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0, 0));
         when(bookServiceUnderTest.bookDao.findAll()).thenReturn(books);
 
         // Run the test
@@ -258,7 +258,7 @@ class BookServiceTest {
         // Setup
 
         // Configure BookDao.findById(...).
-        final Optional<Book> book = Optional.of(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0));
+        final Optional<Book> book = Optional.of(new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0, 0));
         when(bookServiceUnderTest.bookDao.findById(0L)).thenReturn(book);
 
         // Run the test
@@ -270,10 +270,10 @@ class BookServiceTest {
     @Test
     void testSave() {
         // Setup
-        final Book book = new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0);
+        final Book book = new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0, 0);
 
         // Configure BookDao.save(...).
-        final Book book1 = new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0);
+        final Book book1 = new Book(0L, "titre", "auteurPrincipalNom", "auteurPrincipalPrenom", "isbn", "editeur", new Date(0L), "section", 0, 0, 0);
         when(bookServiceUnderTest.bookDao.save(any(Book.class))).thenReturn(book1);
 
         // Run the test

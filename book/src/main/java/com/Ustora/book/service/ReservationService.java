@@ -186,7 +186,7 @@ public class ReservationService {
             logger.error("Une exception est levée ");
             throw new AddBorrowingException("AddBorrowingException");
         }else {
-            java.sql.Date aujourdhui = new java.sql.Date(Calendar.getInstance().getTime().getTime());
+            java.util.Date aujourdhui = new java.util.Date(Calendar.getInstance().getTime().getTime());
             reservation.setBorrowing(aujourdhui);
             reservation.setEndBorrowing(add4Weeks(reservation.getBorrowing()));
             reservation.setExtend(false);
@@ -203,7 +203,7 @@ public class ReservationService {
 
     public Reservation saveReservationFromWaitingList(Long bookId, Long userId) {
         Reservation reservation = new Reservation();
-        java.sql.Date aujourdhui = new java.sql.Date(Calendar.getInstance().getTime().getTime());
+        Date aujourdhui = new Date();
         reservation.setBorrowing(aujourdhui);
         reservation.setEndBorrowing(add4Weeks(reservation.getBorrowing()));
         reservation.setExtend(false);

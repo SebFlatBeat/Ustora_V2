@@ -41,15 +41,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8b7f698-af99-4ed3-889c-f994cced6562" name="Default Changelist" comment="Implementation front de bookDetail">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_2_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/entities/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/entities/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/ReservationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/ReservationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/test/java/com/Ustora/book/beans/UserBeanTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/test/java/com/Ustora/book/configurations/EmailConfigTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/test/java/com/Ustora/book/configurations/FeignConfigTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/test/java/com/Ustora/book/configurations/SleuthConfigTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/book/src/test/java/com/Ustora/book/controller/BookControllerTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/book/src/test/java/com/Ustora/book/entities/BookTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/book/src/test/java/com/Ustora/book/entities/ReservationTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/src/test/java/com/Ustora/book/service/BookServiceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/src/test/java/com/Ustora/book/service/ReservationServiceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/proxies/ReservationProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/proxies/ReservationProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/espacePerso.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/espacePerso.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/test/java/com/Ustora/book/service/BookServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/test/java/com/Ustora/book/service/BookServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/test/java/com/Ustora/book/service/ReservationServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/test/java/com/Ustora/book/service/ReservationServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/test/java/com/Ustora/book/utils/BatchTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/test/java/com/Ustora/book/utils/MailTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,7 +232,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JAR Application.zipkin-server-2.6.1-exec.jar">
+  <component name="RunManager" selected="JUnit.ReservationServiceTest.testFindAllByBookId">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -235,14 +244,84 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="generated-requests#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" runType="Run single request">
-      <method v="2" />
+    <configuration name="ReservationServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="book" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Ustora.book.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.Ustora.book.service" />
+      <option name="MAIN_CLASS_NAME" value="com.Ustora.book.service.ReservationServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="generated-requests#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" runType="Run single request">
-      <method v="2" />
+    <configuration name="ReservationServiceTest.testDeleteReservation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="book" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Ustora.book.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.Ustora.book.service" />
+      <option name="MAIN_CLASS_NAME" value="com.Ustora.book.service.ReservationServiceTest" />
+      <option name="METHOD_NAME" value="testDeleteReservation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="generated-requests#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="3" runType="Run single request">
-      <method v="2" />
+    <configuration name="ReservationServiceTest.testFindAllByBookId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="book" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Ustora.book.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.Ustora.book.service" />
+      <option name="MAIN_CLASS_NAME" value="com.Ustora.book.service.ReservationServiceTest" />
+      <option name="METHOD_NAME" value="testFindAllByBookId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReservationServiceTest.testSaveReservation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="book" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Ustora.book.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.Ustora.book.service" />
+      <option name="MAIN_CLASS_NAME" value="com.Ustora.book.service.ReservationServiceTest" />
+      <option name="METHOD_NAME" value="testSaveReservation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReservationServiceTest.testSaveReservationFromWaitingList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="book" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Ustora.book.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.Ustora.book.service" />
+      <option name="MAIN_CLASS_NAME" value="com.Ustora.book.service.ReservationServiceTest" />
+      <option name="METHOD_NAME" value="testSaveReservationFromWaitingList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="cover-tests-run-book" type="JUnit" factoryName="JUnit">
       <module name="book" />
@@ -264,14 +343,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="jstl-1.2.jar" type="JarApplication" temporary="true">
-      <option name="JAR_PATH" value="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/lib/jstl-1.2.jar" />
-      <method v="2" />
-    </configuration>
-    <configuration name="zipkin-server-2.6.1-exec.jar" type="JarApplication" temporary="true">
-      <option name="JAR_PATH" value="$PROJECT_DIR$/zipkin-server-2.6.1-exec.jar" />
-      <method v="2" />
     </configuration>
     <configuration name="BookApplication (9002)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="book" />
@@ -345,11 +416,6 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="HTTP Request.generated-requests#1" />
-      <item itemvalue="HTTP Request.generated-requests#2" />
-      <item itemvalue="HTTP Request.generated-requests#3" />
-      <item itemvalue="JAR Application.jstl-1.2.jar" />
-      <item itemvalue="JAR Application.zipkin-server-2.6.1-exec.jar" />
       <item itemvalue="JUnit.cover-tests-run-book" />
       <item itemvalue="JUnit.cover-tests-run-user" />
       <item itemvalue="JUnit.cover-tests-run-zuul-server" />
@@ -362,14 +428,19 @@
       <item itemvalue="Spring Boot.UserApplication (9003)" />
       <item itemvalue="Spring Boot.UserApplication (9033)" />
       <item itemvalue="Spring Boot.ZuulServerApplication" />
+      <item itemvalue="JUnit.ReservationServiceTest.testSaveReservationFromWaitingList" />
+      <item itemvalue="JUnit.ReservationServiceTest.testSaveReservation" />
+      <item itemvalue="JUnit.ReservationServiceTest.testDeleteReservation" />
+      <item itemvalue="JUnit.ReservationServiceTest" />
+      <item itemvalue="JUnit.ReservationServiceTest.testFindAllByBookId" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JAR Application.zipkin-server-2.6.1-exec.jar" />
-        <item itemvalue="JAR Application.jstl-1.2.jar" />
-        <item itemvalue="HTTP Request.generated-requests#3" />
-        <item itemvalue="HTTP Request.generated-requests#2" />
-        <item itemvalue="HTTP Request.generated-requests#1" />
+        <item itemvalue="JUnit.ReservationServiceTest.testFindAllByBookId" />
+        <item itemvalue="JUnit.ReservationServiceTest" />
+        <item itemvalue="JUnit.ReservationServiceTest.testSaveReservation" />
+        <item itemvalue="JUnit.ReservationServiceTest.testDeleteReservation" />
+        <item itemvalue="JUnit.ReservationServiceTest.testSaveReservationFromWaitingList" />
       </list>
     </recent_temporary>
   </component>
@@ -637,7 +708,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604050101314</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Correction anomalie sur l'emprunt suite à dispo sous 48h">
+      <created>1604317334858</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1604317334858</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -669,7 +747,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Implementation de WaitingListController, WaitingListService. Creation de WaitingListBean et des differentes classes de Test" />
     <MESSAGE value="Ajout de Status et implementation de la couche métier" />
     <MESSAGE value="Creation du bean WaitingListBean et ajout de methode dans les dao" />
     <MESSAGE value="Implementation de la methode afficherLesReservation dans WaitingListService" />
@@ -694,7 +771,8 @@
     <MESSAGE value="Refactor de ClientController" />
     <MESSAGE value="Ajout d'un objet dans la classe Book / implementation de l'objet dans les differentes classes / Implementation du deuxieme Batch" />
     <MESSAGE value="Finalisation du Batch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finalisation du Batch" />
+    <MESSAGE value="Correction anomalie sur l'emprunt suite à dispo sous 48h" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correction anomalie sur l'emprunt suite à dispo sous 48h" />
   </component>
   <component name="WindowStateProjectService">
     <state x="267" y="19" key="#Inspections" timestamp="1603144174219">
@@ -761,10 +839,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="95" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1280.680@0.0.1280.680" timestamp="1601019835357" />
-    <state x="396" y="0" width="879" height="680" key="#xdebugger.evaluate" timestamp="1604317103768">
+    <state x="396" y="0" width="879" height="680" key="#xdebugger.evaluate" timestamp="1604362812914">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="396" y="0" width="879" height="680" key="#xdebugger.evaluate/0.0.1280.680@0.0.1280.680" timestamp="1604317103768" />
+    <state x="396" y="0" width="879" height="680" key="#xdebugger.evaluate/0.0.1280.680@0.0.1280.680" timestamp="1604362812914" />
     <state x="385" y="150" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1602683147735">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -773,54 +851,54 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="348" y="82" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1603293090406" />
-    <state width="951" height="336" key="GridCell.Tab.0.bottom" timestamp="1604317032754">
+    <state width="1237" height="197" key="GridCell.Tab.0.bottom" timestamp="1604364332830">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="951" height="336" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604317032754" />
-    <state width="951" height="336" key="GridCell.Tab.0.center" timestamp="1604317032753">
+    <state width="1237" height="197" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604364332830" />
+    <state width="1237" height="197" key="GridCell.Tab.0.center" timestamp="1604364332830">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="951" height="336" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1604317032753" />
-    <state width="951" height="336" key="GridCell.Tab.0.left" timestamp="1604317032753">
+    <state width="1237" height="197" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1604364332830" />
+    <state width="1237" height="197" key="GridCell.Tab.0.left" timestamp="1604364332830">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="951" height="336" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1604317032753" />
-    <state width="951" height="336" key="GridCell.Tab.0.right" timestamp="1604317032753">
+    <state width="1237" height="197" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1604364332830" />
+    <state width="1237" height="197" key="GridCell.Tab.0.right" timestamp="1604364332830">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="951" height="336" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1604317032753" />
-    <state width="951" height="336" key="GridCell.Tab.1.bottom" timestamp="1604317086147">
+    <state width="1237" height="197" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1604364332830" />
+    <state width="1237" height="197" key="GridCell.Tab.1.bottom" timestamp="1604364332830">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="951" height="336" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604317086147" />
-    <state width="951" height="336" key="GridCell.Tab.1.center" timestamp="1604317086147">
+    <state width="1237" height="197" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604364332830" />
+    <state width="1237" height="197" key="GridCell.Tab.1.center" timestamp="1604364332830">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="951" height="336" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1604317086147" />
-    <state width="951" height="336" key="GridCell.Tab.1.left" timestamp="1604317086147">
+    <state width="1237" height="197" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1604364332830" />
+    <state width="1237" height="197" key="GridCell.Tab.1.left" timestamp="1604364332830">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="951" height="336" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1604317086147" />
-    <state width="951" height="336" key="GridCell.Tab.1.right" timestamp="1604317086147">
+    <state width="1237" height="197" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1604364332830" />
+    <state width="1237" height="197" key="GridCell.Tab.1.right" timestamp="1604364332830">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="951" height="336" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1604317086147" />
-    <state width="0" height="0" key="GridCell.Tab.2.bottom" timestamp="1604317032679">
+    <state width="1237" height="197" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1604364332830" />
+    <state width="951" height="336" key="GridCell.Tab.2.bottom" timestamp="1604323661146">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="0" height="0" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604317032679" />
-    <state width="0" height="0" key="GridCell.Tab.2.center" timestamp="1604317032679">
+    <state width="951" height="336" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604323661146" />
+    <state width="951" height="336" key="GridCell.Tab.2.center" timestamp="1604323661146">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="0" height="0" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1604317032679" />
-    <state width="0" height="0" key="GridCell.Tab.2.left" timestamp="1604317032679">
+    <state width="951" height="336" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1604323661146" />
+    <state width="951" height="336" key="GridCell.Tab.2.left" timestamp="1604323661145">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="0" height="0" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1604317032679" />
-    <state width="0" height="0" key="GridCell.Tab.2.right" timestamp="1604317032679">
+    <state width="951" height="336" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1604323661145" />
+    <state width="951" height="336" key="GridCell.Tab.2.right" timestamp="1604323661146">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="0" height="0" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1604317032679" />
+    <state width="951" height="336" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1604323661146" />
     <state x="221" y="84" key="IDE.errors.dialog" timestamp="1602058491751">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -849,14 +927,14 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="498" height="508" key="SwitcherDM/0.0.1280.680@0.0.1280.680" timestamp="1603877868905" />
-    <state x="233" y="55" key="Vcs.Push.Dialog.v2" timestamp="1604050103464">
+    <state x="233" y="55" key="Vcs.Push.Dialog.v2" timestamp="1604317336558">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="55" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1604050103464" />
-    <state width="647" height="347" key="XDebugger.FullValuePopup" timestamp="1604316927445">
+    <state x="233" y="55" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1604317336558" />
+    <state width="647" height="347" key="XDebugger.FullValuePopup" timestamp="1604360020685">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="647" height="347" key="XDebugger.FullValuePopup/0.0.1280.680@0.0.1280.680" timestamp="1604316927445" />
+    <state width="647" height="347" key="XDebugger.FullValuePopup/0.0.1280.680@0.0.1280.680" timestamp="1604360020685" />
     <state x="420" y="185" key="cloudConfig.PluginsDialog" timestamp="1603440666259">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -949,6 +1027,94 @@
           <url>file://$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java</url>
           <line>259</line>
           <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/test/java/com/Ustora/book/beans/UserBeanTest.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/test/java/com/Ustora/book/beans/UserBeanTest.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/test/java/com/Ustora/book/configurations/EmailConfigTest.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/test/java/com/Ustora/book/configurations/EmailConfigTest.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/test/java/com/Ustora/book/utils/MailTest.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/test/java/com/Ustora/book/utils/MailTest.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/test/java/com/Ustora/book/utils/MailTest.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/test/java/com/Ustora/book/utils/MailTest.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/ReservationService.java</url>
+          <line>183</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/ReservationService.java</url>
+          <line>181</line>
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/ReservationService.java</url>
+          <line>182</line>
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/ReservationService.java</url>
+          <line>165</line>
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/test/java/com/Ustora/book/service/ReservationServiceTest.java</url>
+          <line>210</line>
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/test/java/com/Ustora/book/service/ReservationServiceTest.java</url>
+          <line>211</line>
+          <option name="timeStamp" value="115" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/ReservationService.java</url>
+          <line>164</line>
+          <option name="timeStamp" value="117" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/test/java/com/Ustora/book/service/ReservationServiceTest.java</url>
+          <line>263</line>
+          <option name="timeStamp" value="119" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/test/java/com/Ustora/book/service/ReservationServiceTest.java</url>
+          <line>248</line>
+          <option name="timeStamp" value="120" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
