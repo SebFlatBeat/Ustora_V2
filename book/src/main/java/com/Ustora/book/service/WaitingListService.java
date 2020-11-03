@@ -196,35 +196,37 @@ public class WaitingListService {
         List<WaitingList> waitingLists = waitingListDao.findByBookId(bookId);
         List<WaitingListBean> waitingListBeans = new ArrayList<>();
         for (WaitingList w : waitingLists) {
-            WaitingListBean listBean = new WaitingListBean();
-            listBean.setWaitingList(w);
-            listBean.setStatus(w.getStatus());
-            Optional<Reservation> reservation = reservationDao.findById(w.getBook().getId());
-            listBean.setReservation(reservation);
-            Optional<Book> book = bookDao.findById(w.getBook().getId());
-            listBean.setBook(book);
-            List<Date> dates = new ArrayList<>();
-            List<Reservation> reservations = reservationDao.findAll();
-            for (Reservation r : reservations) {
-                List<Reservation> reservationList = reservationDao.findAllByBookIdOrderByEndBorrowingAsc(book.get().getId());
-                if (reservationList.size() > 0) {
-                    Reservation resa = reservationList.get(0);
-                    dates.add(resa.getEndBorrowing());
+            if(w.getStatus().equals(enCours) || w.getStatus().equals(enAttente)) {
+                WaitingListBean listBean = new WaitingListBean();
+                listBean.setWaitingList(w);
+                listBean.setStatus(w.getStatus());
+                Optional<Reservation> reservation = reservationDao.findById(w.getBook().getId());
+                listBean.setReservation(reservation);
+                Optional<Book> book = bookDao.findById(w.getBook().getId());
+                listBean.setBook(book);
+                List<Date> dates = new ArrayList<>();
+                List<Reservation> reservations = reservationDao.findAll();
+                for (Reservation r : reservations) {
+                    List<Reservation> reservationList = reservationDao.findAllByBookIdOrderByEndBorrowingAsc(book.get().getId());
+                    if (reservationList.size() > 0) {
+                        Reservation resa = reservationList.get(0);
+                        dates.add(resa.getEndBorrowing());
+                    }
                 }
-            }
-            Collections.sort(dates);
-            if (dates.size() > 0) {
-                Date soonerDate = dates.get(0);
-                listBean.setDateDeRetour(soonerDate);
-            }
-            int nbreDeDemande = 0;
-            for(int i = 0; i<waitingLists.size();i++){
-                if(waitingLists.get(i).getStatus() == enCours){
-                    nbreDeDemande++;
+                Collections.sort(dates);
+                if (dates.size() > 0) {
+                    Date soonerDate = dates.get(0);
+                    listBean.setDateDeRetour(soonerDate);
                 }
+                int nbreDeDemande = 0;
+                for (int i = 0; i < waitingLists.size(); i++) {
+                    if (waitingLists.get(i).getStatus() == enCours) {
+                        nbreDeDemande++;
+                    }
+                }
+                listBean.setNbreDeDemande(nbreDeDemande);
+                waitingListBeans.add(listBean);
             }
-            listBean.setNbreDeDemande(nbreDeDemande);
-            waitingListBeans.add(listBean);
         }
         return waitingListBeans;
     }
