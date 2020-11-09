@@ -49,6 +49,23 @@ public class Reservation implements Serializable {
     }
 
     /**
+     *
+     * @param id
+     * @param userBookId
+     * @param borrowing
+     * @param endBorrowing
+     * @param extend
+     */
+    public Reservation(Long id, Long userBookId, Date borrowing,Date endBorrowing, boolean extend) {
+        this.id = id;
+        this.userBookId = userBookId;
+        this.borrowing = borrowing;
+        this.endBorrowing = endBorrowing;
+        this.extend = extend;
+
+    }
+
+    /**
      * Gets id.
      *
      * @return the id

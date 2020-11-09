@@ -11,39 +11,499 @@
       </path>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/ticket1" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:feature/tests" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8b7f698-af99-4ed3-889c-f994cced6562" name="Default Changelist" comment="Implementation front de bookDetail">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1e432da8-5f22-4aca-8707-111f3bb87e29/storage_v2/_src_/database/Bibliotheque.R4OgdQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1e432da8-5f22-4aca-8707-111f3bb87e29/storage_v2/_src_/database/Bibliotheque.R4OgdQ/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000000000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000000800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000000g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000000o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000001000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000001800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000001g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000001o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000002000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000002800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000002g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000002o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000003000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000003800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000003g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000003o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000004000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000004800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000004g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000004o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000005000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000005800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000005g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000005o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000006000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000006800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000006g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000006o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000007000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000007800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000007g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000007o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000008000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000008800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000008g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000000000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000000800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000000g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000000o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000001000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000001800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000001g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000001o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000002000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000002800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000002g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000002o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000003000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000003800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000003g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000003o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000004000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000004800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000004g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000004o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000005000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000005800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000005g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000005o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000006000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000006800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000006g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000006o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000007000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000007800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000007g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000007o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000008000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000008800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/00000000000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/00000000800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/00000000g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/00000000o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/00000001000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/00000001800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/00000001g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/00000001o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/00000002000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/00000002800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/00000002g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/00000002o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/00000003000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/00000003800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/00000003g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/00000003o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/00000004000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/00000004800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/00000004g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/00000004o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/00000005000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/00000005800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/00000005g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/00000005o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/00000000000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/00000000800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/00000000g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/00000000o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/00000001000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/00000001800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/00000001g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/00000001o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/00000002000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/00000002800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/00000002g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/00000002o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/00000003000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/00000003800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/00000003g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/00000003o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/00000004000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/00000004800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/00000004g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/00000004o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/00000005000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/00000005800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/00000005g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/00000005o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/00000006000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/00000006800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/00000006g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/00000006o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/00000007000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/00000000000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/00000000800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/00000000g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/00000000o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/00000001000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/00000001800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/00000001g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/00000001o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/00000002000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/00000002800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/00000002g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/00000002o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/00000003000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/00000003800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/00000003g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/00000003o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/00000004000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/00000004800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/00000004g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/00000004o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/00000005000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/00000005800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/00000005g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/00000005o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/00000006000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/00000006800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/00000006g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/00000006o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000000000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000000800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000000g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000000o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000001000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000001800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000001g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000001o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000002000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000002800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000002g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000002o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000003000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000003800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000003g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000003o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000004000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000004800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000004g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000004o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000005000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000005800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000005g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000005o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000006000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000006800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000006g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000006o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000007000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000007800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000007g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000007o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000008000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/00000000000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/00000000800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/00000000g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/00000000o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/00000001000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/00000001800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/00000001g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/00000001o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/00000002000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/00000002800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/00000002g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/00000002o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/00000003000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/00000003800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/00000003g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/00000003o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/00000004000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/00000004800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/00000004g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/00000004o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/00000005000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/00000005800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/00000005g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/00000005o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/00000006000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/00000006800.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/00000006g00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/00000006o00.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/00000007000.xd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/Ustora_V2/00000007000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/Ustora_V2/00000007g00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/Ustora_V2/00000007o00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/Ustora_V2/00000008000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/Ustora_V2/00000008800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/Ustora_V2/00000008g00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/Ustora_V2/00000008o00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/Ustora_V2/00000009000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/Ustora_V2/00000009800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/Ustora_V2/00000009g00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/Ustora_V2/00000009o00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/Ustora_V2/0000000a000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/Ustora_V2/0000000a800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/Ustora_V2/0000000ag00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/Ustora_V2/0000000ao00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/Ustora_V2/0000000b000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/Ustora_V2/xd.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000015000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000015800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000015g00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000015o00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000016000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000016800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000016g00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000016o00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000017000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000017800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000017g00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000017o00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000018000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000018800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000018g00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000018o00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000019000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000019800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000019g00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/book/00000019o00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/book/0000001a000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/book/0000001a800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/book/0000001ag00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/book/0000001ao00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/book/0000001b000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/book/0000001b800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/book/0000001bg00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/book/0000001bo00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/book/0000001c000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/book/0000001c800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/book/0000001cg00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/book/0000001co00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/book/0000001d000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/book/0000001d800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/book/0000001dg00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/book/0000001do00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/book/0000001e000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/book/xd.lck" beforeDir="false" afterPath="$PROJECT_DIR$/.diffblue/index-plugin/book/xd.lck" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000012o00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000013000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000013800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000013g00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000013o00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000014000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000014800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000014g00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000014o00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000015000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000015800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000015g00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000015o00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000016000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000016800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000016g00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000016o00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000017000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000017800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000017g00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000017o00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000018000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000018800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000018g00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000018o00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000019000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000019800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000019g00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/00000019o00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/0000001a000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/0000001a800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/0000001ag00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/0000001ao00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/0000001b000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/0000001b800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/0000001bg00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/xd.lck" beforeDir="false" afterPath="$PROJECT_DIR$/.diffblue/index-plugin/clientui/xd.lck" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/0000000k000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/0000000k800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/0000000kg00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/0000000ko00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/0000000l000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/0000000l800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/0000000lg00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/0000000lo00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/0000000m000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/0000000m800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/0000000mg00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/0000000mo00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/0000000n000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/0000000n800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/0000000ng00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/0000000no00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/0000000o000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/0000000o800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/0000000og00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/0000000oo00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/0000000p000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/0000000p800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/0000000pg00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/0000000po00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/0000000q000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/xd.lck" beforeDir="false" afterPath="$PROJECT_DIR$/.diffblue/index-plugin/config-server/xd.lck" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/0000000pg00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/0000000po00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/0000000q000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/0000000q800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/0000000qg00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/0000000qo00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/0000000r000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/0000000r800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/0000000rg00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/0000000ro00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/0000000s000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/0000000s800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/0000000sg00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/0000000so00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/0000000t000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/0000000t800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/0000000tg00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/0000000to00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/0000000u000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/0000000u800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/0000000ug00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/0000000uo00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/0000000v000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/0000000v800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/0000000vg00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/0000000vo00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/00000010000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/00000010800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/00000010g00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/00000010o00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/xd.lck" beforeDir="false" afterPath="$PROJECT_DIR$/.diffblue/index-plugin/eureka/xd.lck" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/0000000po00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/0000000q000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/0000000q800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/0000000qg00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/0000000qo00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/0000000r000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/0000000r800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/0000000rg00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/0000000ro00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/0000000s000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/0000000s800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/0000000sg00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/0000000so00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/0000000t000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/0000000t800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/0000000tg00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/0000000to00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/0000000u000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/0000000u800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/0000000ug00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/0000000uo00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/0000000v000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/0000000v800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/0000000vg00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/0000000vo00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/00000010000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/00000010800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/00000010g00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/00000010o00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/xd.lck" beforeDir="false" afterPath="$PROJECT_DIR$/.diffblue/index-plugin/spring-admin/xd.lck" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000012g00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000012o00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000013000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000013800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000013g00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000013o00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000014000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000014800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000014g00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000014o00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000015000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000015800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000015g00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000015o00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000016000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000016800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000016g00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000016o00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000017000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000017800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000017g00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000017o00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000018000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000018800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000018g00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000018o00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000019000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000019800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000019g00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/user/00000019o00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/user/0000001a000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/user/0000001a800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/user/0000001ag00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/user/0000001ao00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/user/xd.lck" beforeDir="false" afterPath="$PROJECT_DIR$/.diffblue/index-plugin/user/xd.lck" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/0000000no00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/0000000po00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/0000000q000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/0000000qg00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/0000000qo00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/0000000r000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/0000000r800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/0000000rg00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/0000000ro00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/0000000s000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/0000000s800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/0000000sg00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/0000000so00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/0000000t000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/0000000t800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/0000000tg00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/0000000to00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/0000000u000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/0000000u800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/0000000ug00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/0000000uo00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/0000000v000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/0000000v800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/0000000vg00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/0000000vo00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/00000010000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/00000010800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/00000010g00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/00000010o00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/00000011000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/00000011800.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/00000011g00.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/xd.lck" beforeDir="false" afterPath="$PROJECT_DIR$/.diffblue/index-plugin/zuul-server/xd.lck" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/ReservationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/ReservationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/dao/WaitingListDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/dao/WaitingListDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/ReservationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/ReservationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/WaitingListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/WaitingListController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/WaitingListService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/WaitingListService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/src/test/java/com/Ustora/book/controller/BookControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/src/test/java/com/Ustora/book/entities/BookTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/src/test/java/com/Ustora/book/service/BookServiceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/proxies/ReservationProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/proxies/ReservationProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/bookDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/bookDetail.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/espacePerso.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/jsp/espacePerso.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +540,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="feature/tests" />
+                    <option name="lastUsedInstant" value="1604316412" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="prod/bug" />
                     <option name="lastUsedInstant" value="1603294110" />
@@ -150,11 +614,11 @@
     <property name="database.data.extractors.current.id" value="SQL Inserts" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/book/src/main/java/com/Ustora/book/exceptions" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="com.diffblue.cover.intellij" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="ReactorSettings">
@@ -213,26 +677,97 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JAR Application.zipkin-server-2.6.1-exec.jar">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.WaitingListServiceTest.testAfficherLesReservation">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="book" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Ustora.book.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.Ustora.book.service" />
+      <option name="MAIN_CLASS_NAME" value="com.Ustora.book.service.BookServiceTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="generated-requests#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" runType="Run single request">
-      <method v="2" />
+    <configuration name="ReservationServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="book" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Ustora.book.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.Ustora.book.service" />
+      <option name="MAIN_CLASS_NAME" value="com.Ustora.book.service.ReservationServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="generated-requests#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" runType="Run single request">
-      <method v="2" />
+    <configuration name="ReservationServiceTest.testFindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="book" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Ustora.book.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.Ustora.book.service" />
+      <option name="MAIN_CLASS_NAME" value="com.Ustora.book.service.ReservationServiceTest" />
+      <option name="METHOD_NAME" value="testFindAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="generated-requests#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="3" runType="Run single request">
-      <method v="2" />
+    <configuration name="ReservationServiceTest.testUpdateReservationException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="book" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Ustora.book.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.Ustora.book.service" />
+      <option name="MAIN_CLASS_NAME" value="com.Ustora.book.service.ReservationServiceTest" />
+      <option name="METHOD_NAME" value="testUpdateReservationException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WaitingListServiceTest.testAfficherLesReservation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="book" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Ustora.book.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.Ustora.book.service" />
+      <option name="MAIN_CLASS_NAME" value="com.Ustora.book.service.WaitingListServiceTest" />
+      <option name="METHOD_NAME" value="testAfficherLesReservation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="cover-tests-run-book" type="JUnit" factoryName="JUnit">
       <module name="book" />
@@ -254,14 +789,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="jstl-1.2.jar" type="JarApplication" temporary="true">
-      <option name="JAR_PATH" value="$PROJECT_DIR$/clientui/src/main/resources/META-INF/resources/WEB-INF/lib/jstl-1.2.jar" />
-      <method v="2" />
-    </configuration>
-    <configuration name="zipkin-server-2.6.1-exec.jar" type="JarApplication" temporary="true">
-      <option name="JAR_PATH" value="$PROJECT_DIR$/zipkin-server-2.6.1-exec.jar" />
-      <method v="2" />
     </configuration>
     <configuration name="BookApplication (9002)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="book" />
@@ -335,11 +862,6 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="HTTP Request.generated-requests#1" />
-      <item itemvalue="HTTP Request.generated-requests#2" />
-      <item itemvalue="HTTP Request.generated-requests#3" />
-      <item itemvalue="JAR Application.jstl-1.2.jar" />
-      <item itemvalue="JAR Application.zipkin-server-2.6.1-exec.jar" />
       <item itemvalue="JUnit.cover-tests-run-book" />
       <item itemvalue="JUnit.cover-tests-run-user" />
       <item itemvalue="JUnit.cover-tests-run-zuul-server" />
@@ -352,14 +874,19 @@
       <item itemvalue="Spring Boot.UserApplication (9003)" />
       <item itemvalue="Spring Boot.UserApplication (9033)" />
       <item itemvalue="Spring Boot.ZuulServerApplication" />
+      <item itemvalue="JUnit.BookServiceTest" />
+      <item itemvalue="JUnit.ReservationServiceTest.testFindAll" />
+      <item itemvalue="JUnit.ReservationServiceTest" />
+      <item itemvalue="JUnit.ReservationServiceTest.testUpdateReservationException" />
+      <item itemvalue="JUnit.WaitingListServiceTest.testAfficherLesReservation" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JAR Application.zipkin-server-2.6.1-exec.jar" />
-        <item itemvalue="JAR Application.jstl-1.2.jar" />
-        <item itemvalue="HTTP Request.generated-requests#3" />
-        <item itemvalue="HTTP Request.generated-requests#2" />
-        <item itemvalue="HTTP Request.generated-requests#1" />
+        <item itemvalue="JUnit.WaitingListServiceTest.testAfficherLesReservation" />
+        <item itemvalue="JUnit.ReservationServiceTest.testUpdateReservationException" />
+        <item itemvalue="JUnit.ReservationServiceTest" />
+        <item itemvalue="JUnit.BookServiceTest" />
+        <item itemvalue="JUnit.ReservationServiceTest.testFindAll" />
       </list>
     </recent_temporary>
   </component>
@@ -402,6 +929,13 @@
       <workItem from="1603807374755" duration="9815000" />
       <workItem from="1603876535794" duration="14241000" />
       <workItem from="1603914000077" duration="29982000" />
+      <workItem from="1604406375685" duration="9286000" />
+      <workItem from="1604569222614" duration="21062000" />
+      <workItem from="1604619381984" duration="474000" />
+      <workItem from="1604619904999" duration="919000" />
+      <workItem from="1604620855849" duration="1231000" />
+      <workItem from="1604650937760" duration="3104000" />
+      <workItem from="1604670678729" duration="15360000" />
     </task>
     <task id="LOCAL-00001" summary="Add unversionned files">
       <created>1601445594038</created>
@@ -627,7 +1161,42 @@
       <option name="project" value="LOCAL" />
       <updated>1604050101314</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Correction anomalie sur l'emprunt suite à dispo sous 48h">
+      <created>1604317334858</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1604317334858</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Implementation des tests">
+      <created>1604365074323</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1604365074323</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Correction bug">
+      <created>1604396892737</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1604396892737</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Ajout d'un nouveau constructeur">
+      <created>1604396915876</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1604396915876</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Ajout et creation de tests">
+      <created>1604913479377</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1604913479377</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -644,7 +1213,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/ticket1" />
+                        <option value="feature/tests" />
                       </list>
                     </value>
                   </entry>
@@ -659,11 +1228,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Implementation de WaitingListController, WaitingListService. Creation de WaitingListBean et des differentes classes de Test" />
-    <MESSAGE value="Ajout de Status et implementation de la couche métier" />
-    <MESSAGE value="Creation du bean WaitingListBean et ajout de methode dans les dao" />
-    <MESSAGE value="Implementation de la methode afficherLesReservation dans WaitingListService" />
-    <MESSAGE value="Implementation de la methode pendingAndMailSent dans WaitingListService" />
     <MESSAGE value="Implementation de la methode afficherLesReservations" />
     <MESSAGE value="Implementation des methodes dans les couches meties / Ajout d'une date dans l'entite WaitingList et modification d'un enum dans Status" />
     <MESSAGE value="Implementation des methodes dans les couches metiers / Ajout d'une date dans l'entite WaitingList et modification d'un enum dans Status" />
@@ -684,17 +1248,22 @@
     <MESSAGE value="Refactor de ClientController" />
     <MESSAGE value="Ajout d'un objet dans la classe Book / implementation de l'objet dans les differentes classes / Implementation du deuxieme Batch" />
     <MESSAGE value="Finalisation du Batch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finalisation du Batch" />
+    <MESSAGE value="Correction anomalie sur l'emprunt suite à dispo sous 48h" />
+    <MESSAGE value="Implementation des tests" />
+    <MESSAGE value="Correction bug" />
+    <MESSAGE value="Ajout d'un nouveau constructeur" />
+    <MESSAGE value="Ajout et creation de tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout et creation de tests" />
   </component>
   <component name="WindowStateProjectService">
     <state x="267" y="19" key="#Inspections" timestamp="1603144174219">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="267" y="19" key="#Inspections/0.0.1280.680@0.0.1280.680" timestamp="1603144174219" />
-    <state x="393" y="161" key="#Notifications" timestamp="1601827985596">
+    <state x="393" y="161" key="#Notifications" timestamp="1604619864623">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="393" y="161" key="#Notifications/0.0.1280.680@0.0.1280.680" timestamp="1601827985596" />
+    <state x="393" y="161" key="#Notifications/0.0.1280.680@0.0.1280.680" timestamp="1604619864623" />
     <state x="233" y="0" key="#Plugins" timestamp="1602321429038">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -707,10 +1276,14 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1603309013439" />
-    <state x="385" y="131" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603627612185">
+    <state x="93" y="93" width="1095" height="495" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1604399337626">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="385" y="131" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1603627612185" />
+    <state x="93" y="93" width="1095" height="495" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1280.680@0.0.1280.680" timestamp="1604399337626" />
+    <state x="385" y="131" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604670551192">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="385" y="131" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1604670551192" />
     <state x="421" y="45" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1603094246939">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -731,6 +1304,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="321" y="77" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.680@0.0.1280.680" timestamp="1602321244327" />
+    <state x="264" y="257" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1604316013638">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="264" y="257" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1280.680@0.0.1280.680" timestamp="1604316013638" />
     <state x="386" y="196" width="609" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1604060375842">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -747,66 +1324,70 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="95" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1280.680@0.0.1280.680" timestamp="1601019835357" />
-    <state x="396" y="0" width="879" height="680" key="#xdebugger.evaluate" timestamp="1604055686006">
+    <state x="396" y="0" width="879" height="680" key="#xdebugger.evaluate" timestamp="1604911093878">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="396" y="0" width="879" height="680" key="#xdebugger.evaluate/0.0.1280.680@0.0.1280.680" timestamp="1604055686006" />
+    <state x="396" y="0" width="879" height="680" key="#xdebugger.evaluate/0.0.1280.680@0.0.1280.680" timestamp="1604911093878" />
     <state x="385" y="150" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1602683147735">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="385" y="150" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.680@0.0.1280.680" timestamp="1602683147735" />
+    <state width="477" height="466" key="DebuggerActiveHint" timestamp="1604394304189">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="477" height="466" key="DebuggerActiveHint/0.0.1280.680@0.0.1280.680" timestamp="1604394304189" />
     <state x="348" y="82" key="FileChooserDialogImpl" timestamp="1603293090406">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="348" y="82" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1603293090406" />
-    <state width="951" height="222" key="GridCell.Tab.0.bottom" timestamp="1604061117221">
+    <state width="951" height="252" key="GridCell.Tab.0.bottom" timestamp="1604922104891">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="951" height="222" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604061117221" />
-    <state width="951" height="222" key="GridCell.Tab.0.center" timestamp="1604061117220">
+    <state width="951" height="252" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604922104891" />
+    <state width="951" height="252" key="GridCell.Tab.0.center" timestamp="1604922104891">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="951" height="222" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1604061117220" />
-    <state width="951" height="222" key="GridCell.Tab.0.left" timestamp="1604061117220">
+    <state width="951" height="252" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1604922104891" />
+    <state width="951" height="252" key="GridCell.Tab.0.left" timestamp="1604922104891">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="951" height="222" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1604061117220" />
-    <state width="951" height="222" key="GridCell.Tab.0.right" timestamp="1604061117220">
+    <state width="951" height="252" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1604922104890" />
+    <state width="951" height="252" key="GridCell.Tab.0.right" timestamp="1604922104891">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="951" height="222" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1604061117220" />
-    <state width="951" height="222" key="GridCell.Tab.1.bottom" timestamp="1604061117894">
+    <state width="951" height="252" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1604922104891" />
+    <state width="951" height="252" key="GridCell.Tab.1.bottom" timestamp="1604922104892">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="951" height="222" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604061117894" />
-    <state width="951" height="222" key="GridCell.Tab.1.center" timestamp="1604061117894">
+    <state width="951" height="252" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604922104892" />
+    <state width="951" height="252" key="GridCell.Tab.1.center" timestamp="1604922104892">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="951" height="222" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1604061117894" />
-    <state width="951" height="222" key="GridCell.Tab.1.left" timestamp="1604061117894">
+    <state width="951" height="252" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1604922104892" />
+    <state width="951" height="252" key="GridCell.Tab.1.left" timestamp="1604922104891">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="951" height="222" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1604061117894" />
-    <state width="951" height="222" key="GridCell.Tab.1.right" timestamp="1604061117894">
+    <state width="951" height="252" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1604922104891" />
+    <state width="951" height="252" key="GridCell.Tab.1.right" timestamp="1604922104892">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="951" height="222" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1604061117894" />
-    <state width="951" height="222" key="GridCell.Tab.2.bottom" timestamp="1604061007984">
+    <state width="951" height="252" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1604922104892" />
+    <state width="951" height="252" key="GridCell.Tab.2.bottom" timestamp="1604922104893">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="951" height="222" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604061007984" />
-    <state width="951" height="222" key="GridCell.Tab.2.center" timestamp="1604061007983">
+    <state width="951" height="252" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604922104893" />
+    <state width="951" height="252" key="GridCell.Tab.2.center" timestamp="1604922104893">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="951" height="222" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1604061007983" />
-    <state width="951" height="222" key="GridCell.Tab.2.left" timestamp="1604061007983">
+    <state width="951" height="252" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1604922104893" />
+    <state width="951" height="252" key="GridCell.Tab.2.left" timestamp="1604922104892">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="951" height="222" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1604061007983" />
-    <state width="951" height="222" key="GridCell.Tab.2.right" timestamp="1604061007984">
+    <state width="951" height="252" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1604922104892" />
+    <state width="951" height="252" key="GridCell.Tab.2.right" timestamp="1604922104893">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="951" height="222" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1604061007984" />
+    <state width="951" height="252" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1604922104893" />
     <state x="221" y="84" key="IDE.errors.dialog" timestamp="1602058491751">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -819,10 +1400,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="314" y="0" key="NewModule_or_Project.wizard/0.0.1280.680@0.0.1280.680" timestamp="1603293092323" />
-    <state x="121" y="0" key="SettingsEditor" timestamp="1603463746729">
+    <state x="121" y="0" key="SettingsEditor" timestamp="1604668382894">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1603463746729" />
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1604668382894" />
     <state x="423" y="0" key="SpringBootCustomization" timestamp="1600975482655">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -831,14 +1412,18 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="362" y="82" width="540" height="524" key="StructurePopup/0.0.1280.680@0.0.1280.680" timestamp="1604014605490" />
-    <state width="498" height="508" key="SwitcherDM" timestamp="1603877868905">
+    <state width="498" height="557" key="SwitcherDM" timestamp="1604617050504">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="498" height="508" key="SwitcherDM/0.0.1280.680@0.0.1280.680" timestamp="1603877868905" />
-    <state x="233" y="55" key="Vcs.Push.Dialog.v2" timestamp="1604050103464">
+    <state width="498" height="557" key="SwitcherDM/0.0.1280.680@0.0.1280.680" timestamp="1604617050504" />
+    <state x="233" y="55" key="Vcs.Push.Dialog.v2" timestamp="1604365076583">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="55" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1604050103464" />
+    <state x="233" y="55" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1604365076583" />
+    <state width="647" height="347" key="XDebugger.FullValuePopup" timestamp="1604360020685">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="647" height="347" key="XDebugger.FullValuePopup/0.0.1280.680@0.0.1280.680" timestamp="1604360020685" />
     <state x="420" y="185" key="cloudConfig.PluginsDialog" timestamp="1603440666259">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -859,10 +1444,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="375" y="229" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1280.680@0.0.1280.680" timestamp="1603284711928" />
-    <state x="459" y="251" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603294932613">
+    <state x="459" y="251" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604315871105">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="459" y="251" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1603294932613" />
+    <state x="459" y="251" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1604315871105" />
     <state x="412" y="0" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1602624453557">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -888,52 +1473,119 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/ReservationController.java</url>
-          <line>69</line>
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/utils/Batch.java</url>
-          <line>78</line>
-          <option name="timeStamp" value="49" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/utils/Batch.java</url>
-          <line>77</line>
-          <option name="timeStamp" value="50" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/utils/Batch.java</url>
-          <line>96</line>
-          <option name="timeStamp" value="51" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/utils/Batch.java</url>
-          <line>99</line>
-          <option name="timeStamp" value="52" />
+          <url>file://$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java</url>
+          <line>258</line>
+          <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java</url>
-          <line>225</line>
-          <option name="timeStamp" value="65" />
+          <line>259</line>
+          <option name="timeStamp" value="71" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/clientui/src/main/java/com/Ustora/clientui/controller/ClientController.java</url>
-          <line>226</line>
-          <option name="timeStamp" value="66" />
+          <url>file://$PROJECT_DIR$/book/src/test/java/com/Ustora/book/beans/UserBeanTest.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/test/java/com/Ustora/book/beans/UserBeanTest.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/test/java/com/Ustora/book/configurations/EmailConfigTest.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/test/java/com/Ustora/book/configurations/EmailConfigTest.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/test/java/com/Ustora/book/utils/MailTest.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/test/java/com/Ustora/book/utils/MailTest.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/test/java/com/Ustora/book/utils/MailTest.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/test/java/com/Ustora/book/utils/MailTest.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/test/java/com/Ustora/book/service/ReservationServiceTest.java</url>
+          <line>117</line>
+          <option name="timeStamp" value="168" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/test/java/com/Ustora/book/service/ReservationServiceTest.java</url>
+          <line>211</line>
+          <option name="timeStamp" value="193" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/test/java/com/Ustora/book/service/WaitingListServiceTest.java</url>
+          <line>111</line>
+          <option name="timeStamp" value="194" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/BookController.java</url>
+          <line>211</line>
+          <option name="timeStamp" value="195" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/WaitingListService.java</url>
+          <line>135</line>
+          <option name="timeStamp" value="197" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/service/WaitingListService.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="198" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/book/src/main/java/com/Ustora/book/controller/BookController.java</url>
+          <line>210</line>
+          <properties class="com.Ustora.book.controller.BookController" method="searchAnneeEdition">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="196" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.Ustora.book.entities.Reservation" memberName="book" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/config_server$EmailConfigTest.ic" NAME="EmailConfigTest Coverage Results" MODIFIED="1602660198381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.Ustora.book.configurations.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/config_server$ReservationServiceTest.ic" NAME="ReservationServiceTest Coverage Results" MODIFIED="1604579021882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.Ustora.book.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/config_server$ReservationServiceTest_testDeleteReservation.ic" NAME="ReservationServiceTest.testDeleteReservation Coverage Results" MODIFIED="1604393432062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.Ustora.book.service.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/config_server$UserBeanTest.ic" NAME="UserBeanTest Coverage Results" MODIFIED="1602663425713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.Ustora.book.beans.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/config_server$ReservationServiceTest_testAdd4Weeks_and_1_more.ic" NAME="ReservationServiceTest,testAdd4Weeks and 1 more Coverage Results" MODIFIED="1602662305695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/config_server$BookServiceTest.ic" NAME="BookServiceTest Coverage Results" MODIFIED="1602660132612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/config_server$BookServiceTest.ic" NAME="BookServiceTest Coverage Results" MODIFIED="1604062859388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.Ustora.book.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/config_server$WaitingListServiceTest.ic" NAME="WaitingListServiceTest Coverage Results" MODIFIED="1604062917216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.Ustora.book.service.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/config_server$ReservationControllerTest.ic" NAME="ReservationControllerTest Coverage Results" MODIFIED="1602660404987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

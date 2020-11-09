@@ -42,7 +42,7 @@ public class WaitingListController {
         return waitingListService.pendingAndMailSent();
     }
 
-    @PostMapping("/waitingListAdd")
+        @PostMapping("/waitingListAdd")
     public void demandeDeReservation(@RequestParam Long bookId, @RequestParam Long userBookId){
         waitingListService.waitingListReservation(bookId,userBookId);
     }

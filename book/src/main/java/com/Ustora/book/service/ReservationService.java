@@ -161,7 +161,7 @@ public class ReservationService {
         return reservation;
     }
 
-    public Optional<Reservation> deleteReservation(@RequestParam Long id){
+    public Optional <Reservation> deleteReservation(@RequestParam Long id){
         Optional<Reservation> reservation = reservationDao.findById(id);
         Optional<Book> book = bookService.findById(reservation.get().getBook().getId());
         List <WaitingListBean> waitingList = waitingListService.findByBookId(reservation.get().getBook().getId());
@@ -175,18 +175,18 @@ public class ReservationService {
         }
         bookService.save(book.get());
         reservationDao.delete(reservation.get());
-        return reservation;
+        return null;
     }
 
     public Reservation saveReservation(@RequestParam Long bookId, @RequestParam Long userId){
         List<Reservation> userReservationList = reservationDao.findReservationsByUserBookId(userId);
         Reservation reservation = new Reservation();
         userReservationList = userReservationList.stream().filter(reservation1 -> reservation1.getBook().getId().equals(bookId)).collect(Collectors.toList());
-        if (userReservationList != null &&  userReservationList.size()>0) {
+        if (userReservationList != null &&  userReservationList.size()>0 && userReservationList.get(0).getBook().getId().equals(bookId)) {
             logger.error("Une exception est levée ");
             throw new AddBorrowingException("AddBorrowingException");
         }else {
-            java.sql.Date aujourdhui = new java.sql.Date(Calendar.getInstance().getTime().getTime());
+            java.util.Date aujourdhui = new java.util.Date(Calendar.getInstance().getTime().getTime());
             reservation.setBorrowing(aujourdhui);
             reservation.setEndBorrowing(add4Weeks(reservation.getBorrowing()));
             reservation.setExtend(false);
@@ -203,7 +203,7 @@ public class ReservationService {
 
     public Reservation saveReservationFromWaitingList(Long bookId, Long userId) {
         Reservation reservation = new Reservation();
-        java.sql.Date aujourdhui = new java.sql.Date(Calendar.getInstance().getTime().getTime());
+        Date aujourdhui = new Date();
         reservation.setBorrowing(aujourdhui);
         reservation.setEndBorrowing(add4Weeks(reservation.getBorrowing()));
         reservation.setExtend(false);

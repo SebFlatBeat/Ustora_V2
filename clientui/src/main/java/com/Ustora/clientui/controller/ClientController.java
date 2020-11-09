@@ -253,10 +253,11 @@ public class ClientController {
     }
 
     @PostMapping(value = "/save/reservationFromWaitingList")
-    public String reservationFromWaitingList (@RequestParam Long bookId){
+    public String reservationFromWaitingList (@RequestParam Long bookId, @RequestParam Long id){
         User currentUser = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         UserBean userId = userProxy.find(currentUser.getUsername());
         reservationProxy.reservationFromWaitingList(bookId, userId.getId());
+        waitingListProxy.cancelReservation(id, userId.getId());
         logger.info("Réservation effectué suite mise à dispositon pendant 48h");
         return "redirect:/loanSuccess";
     }

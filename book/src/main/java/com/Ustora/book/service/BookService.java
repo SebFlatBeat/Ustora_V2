@@ -2,7 +2,6 @@ package com.Ustora.book.service;
 
 import com.Ustora.book.dao.BookDao;
 import com.Ustora.book.entities.Book;
-import com.Ustora.book.entities.Reservation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

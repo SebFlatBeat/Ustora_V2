@@ -64,5 +64,5 @@ public interface ReservationProxy {
      * @return
      */
     @PostMapping(value = "/book/save/reservationFromWaitingList")
-    ReservationBean reservationFromWaitingList(@RequestParam Long bookId, @RequestParam Long id);
+    ReservationBean reservationFromWaitingList(@RequestParam Long bookId, @RequestParam Long userId);
 }

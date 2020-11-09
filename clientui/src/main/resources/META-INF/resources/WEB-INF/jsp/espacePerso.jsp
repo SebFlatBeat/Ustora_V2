@@ -177,6 +177,7 @@
                         <c:if test="${reservation.status == 'enAttente'}">
                         <form action="/save/reservationFromWaitingList" method="post">
                             <input type="hidden" name="bookId" id="bookId" value="${reservation.book.id}"/>
+                            <input type="hidden" name="id" id="id" value="${reservation.id}">
                             <button class="btn btn-outline-success ml-auto mr-auto">Emprunter</button>
                         </form>
                         </c:if>
