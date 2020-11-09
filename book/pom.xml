@@ -18,11 +18,12 @@
 		<java.version>1.8</java.version>
 		<spring-cloud.version>Hoxton.SR3</spring-cloud.version>
 		<dep.junit.version>5.6.2</dep.junit.version>
-		<dep.mockito-junit-jupiter.version>3.5.13</dep.mockito-junit-jupiter.version>
+		<dep.mockito-junit-jupiter.version>3.3.3</dep.mockito-junit-jupiter.version>
 		<dep.assertj.version>3.17.2</dep.assertj.version>
 		<dep.jacoco.version>0.8.5</dep.jacoco.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+
 
 	<dependencies>
 		<dependency>

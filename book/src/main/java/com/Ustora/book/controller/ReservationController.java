@@ -67,7 +67,7 @@ public class ReservationController {
      */
     @PostMapping(value = "/delete/reservation")
     public void  deleteReservation (@RequestParam Long id){
-        Optional<Reservation> reservation = reservationService.deleteReservation(id);
+        reservationService.deleteReservation(id);
         logger.info("Suppression de la réservation");
     }
 

@@ -161,7 +161,7 @@ public class ReservationService {
         return reservation;
     }
 
-    public Optional<Reservation> deleteReservation(@RequestParam Long id){
+    public Optional <Reservation> deleteReservation(@RequestParam Long id){
         Optional<Reservation> reservation = reservationDao.findById(id);
         Optional<Book> book = bookService.findById(reservation.get().getBook().getId());
         List <WaitingListBean> waitingList = waitingListService.findByBookId(reservation.get().getBook().getId());
@@ -175,14 +175,14 @@ public class ReservationService {
         }
         bookService.save(book.get());
         reservationDao.delete(reservation.get());
-        return reservation;
+        return null;
     }
 
     public Reservation saveReservation(@RequestParam Long bookId, @RequestParam Long userId){
         List<Reservation> userReservationList = reservationDao.findReservationsByUserBookId(userId);
         Reservation reservation = new Reservation();
         userReservationList = userReservationList.stream().filter(reservation1 -> reservation1.getBook().getId().equals(bookId)).collect(Collectors.toList());
-        if (userReservationList != null &&  userReservationList.size()>0) {
+        if (userReservationList != null &&  userReservationList.size()>0 && userReservationList.get(0).getBook().getId().equals(bookId)) {
             logger.error("Une exception est levée ");
             throw new AddBorrowingException("AddBorrowingException");
         }else {
