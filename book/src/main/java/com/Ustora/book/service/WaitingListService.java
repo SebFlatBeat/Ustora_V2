@@ -114,7 +114,7 @@ public class WaitingListService {
         }
         List<WaitingList> waitingListsVerif = waitingListDao.findAllByUserBookIdAndStatusOrderByDateOfDemandAsc(userBookId, enCours);
         for(WaitingList w : waitingListsVerif){
-            if(w.getUserBookId().equals(waitingList.getUserBookId())){
+            if(w.getBook().getId().equals(waitingList.getBook().getId())){
                 logger.error("Une exception est levée ");
                 throw new AddReservationException("AddReservationException");
             }
