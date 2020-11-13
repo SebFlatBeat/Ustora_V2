@@ -11,6 +11,7 @@ import com.Ustora.book.entities.WaitingList;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
+import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
 import java.util.*;
@@ -24,7 +25,9 @@ import static org.mockito.Mockito.when;
 class WaitingListServiceTest {
 
     private WaitingListService waitingListServiceUnderTest;
-    private ReservationService reservationServiceUnderTest;
+
+    @Mock
+    private ReservationService reservationServiceUnderTest = new ReservationService();
 
     @BeforeEach
     void setUp() {
@@ -188,19 +191,6 @@ class WaitingListServiceTest {
 
         // Verify the results
         assertThat(result.size()).isEqualTo(1);
-    }
-
-    @Test
-    void testWaitingListAddReservationException(){
-
-        // Setup
-        Date dateTest = new GregorianCalendar(2020,Calendar.OCTOBER,29).getTime();
-        Date add4Weeks = reservationServiceUnderTest.add4Weeks(dateTest);
-        // Run the test
-        waitingListServiceUnderTest.waitingListReservation(0L, 0L);
-
-        // Verify the results
-
     }
 
 }
