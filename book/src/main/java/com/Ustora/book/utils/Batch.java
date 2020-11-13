@@ -57,7 +57,7 @@ public class Batch {
     /**
      * Sending late mail.
      */
-    @Scheduled(cron = "0 55 09 * * *")
+    @Scheduled(cron = "0 55 15 * * *")
     public void sendingLateMail() {
         logger.info("Démarrage du bacth relance mail en retard");
         List<Reservation> reservations = reservationService.findAll();
@@ -73,14 +73,14 @@ public class Batch {
         logger.info("Fin du traitement Batch");
     }
 
-    @Scheduled(cron = "0 08 01 * * *")
+    @Scheduled(cron = "0 10 16 * * *")
     public void sendingMailAvailble(){
         logger.info("Démarrage du batch pour envoyer le mail à l'utilisateur indiquant que le livre est disponible");
         List<WaitingList> waitingLists = waitingListService.findAllByStatus(Status.enCours);
         for (WaitingList w : waitingLists){
             logger.warn("Liste des reservations en attente");
             Date date = new Date();
-            if (w.getPositionInList().equals(1)){
+            if (w.getPositionInList().equals(1) && w.getBook().getNbreDispoPourLaWaitingList()!=0){
                 w.setStatus(Status.enAttente);
                 w.setDateMailSent(date);
                 w.setMailSend(true);
@@ -92,7 +92,7 @@ public class Batch {
         }logger.info("Fin du traitement Batch");
     }
 
-    @Scheduled(cron = "0 15 01 * * *")
+    @Scheduled(cron = "0 35 16 * * *")
     public void cancellingReservation(){
         List <WaitingList> waitingLists = waitingListService.pendingAndMailSent();
         for (WaitingList w : waitingLists){

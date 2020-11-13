@@ -138,6 +138,7 @@ public class WaitingListService {
         for(int i =0; i<waitingListBook.size();i++){
             if(waitingListBook.get(i).getPositionInList()>waitingList.get().getPositionInList()){
                 waitingListBook.get(i).setPositionInList(waitingListBook.get(i).getPositionInList()-1);
+                waitingListDao.save(waitingListBook.get(i));
             }
         }
         WaitingList waitingListCancel = waitingList.get();
@@ -251,12 +252,14 @@ public class WaitingListService {
         for(int i =0; i<waitingListBook.size();i++){
             if(waitingListBook.get(i).getPositionInList()>waitingList.get().getPositionInList()){
                 waitingListBook.get(i).setPositionInList(waitingListBook.get(i).getPositionInList()-1);
+                waitingListDao.save(waitingListBook.get(i));
             }
         }
         WaitingList waitingListCancel = waitingList.get();
         waitingListCancel.setStatus(Status.rejete);
         waitingListCancel.setPositionInList(null);
         waitingListDao.save(waitingListCancel);
+
         logger.info("L'utilisateur numéro "+userBookId+" n'a pas retiré le livre à sa dispostion dans les 48h");
     }
 
