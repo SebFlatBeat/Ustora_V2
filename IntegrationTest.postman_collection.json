@@ -136,7 +136,7 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:9002/extend/reservation?id=70",
+									"raw": "http://localhost:9002/extend/reservation?id=75",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -149,7 +149,7 @@
 									"query": [
 										{
 											"key": "id",
-											"value": "70"
+											"value": "75"
 										}
 									]
 								},
@@ -220,7 +220,7 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:9002/delete/reservation?id=70",
+									"raw": "http://localhost:9002/delete/reservation?id=82",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -233,7 +233,7 @@
 									"query": [
 										{
 											"key": "id",
-											"value": "70"
+											"value": "82"
 										}
 									]
 								},
@@ -263,7 +263,7 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:9002/save/reservationFromWaitingList?bookId=31376&userId=6",
+									"raw": "http://localhost:9002/save/reservationFromWaitingList?bookId=30612&userId=6",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -276,7 +276,7 @@
 									"query": [
 										{
 											"key": "bookId",
-											"value": "31376"
+											"value": "30612"
 										},
 										{
 											"key": "userId",
@@ -421,7 +421,7 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:9002/cancel?id=32&userBookId=1",
+									"raw": "http://localhost:9002/cancel?id=74&userBookId=6",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -433,11 +433,11 @@
 									"query": [
 										{
 											"key": "id",
-											"value": "32"
+											"value": "74"
 										},
 										{
 											"key": "userBookId",
-											"value": "1"
+											"value": "6"
 										}
 									]
 								}
