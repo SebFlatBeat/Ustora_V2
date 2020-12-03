@@ -93,9 +93,9 @@ Ou depuis le panel gauche de IntelliJ, vous faites clique droit sur le fichier "
   Il faut donc faire dans le terminal la commande suivante :
   ```sh
   npm install -g newman
-    ```
-    ensuite faites la commande suivante pour executer les tests :
-    ```sh
+  ```
+  ensuite faites la commande suivante pour executer les tests :
+  ```sh
     newman run IntegrationTest.postman_collection.json
   ```
   
