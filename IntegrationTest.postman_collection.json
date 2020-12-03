@@ -1,0 +1,456 @@
+{
+	"info": {
+		"_postman_id": "874c4459-1697-44cb-9150-50999491c778",
+		"name": "IntegrationTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Book",
+			"item": [
+				{
+					"name": "Reservation",
+					"item": [
+						{
+							"name": "saveReservation",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "7e663767-7fb6-4198-92fa-a6cfb024fe89",
+										"exec": [
+											"pm.test(\"saveReservation\", function(){\r",
+											"    pm.response.to.be.ok;\r",
+											"    var dataJson = pm.response.json();\r",
+											"    pm.expect(dataJson.book.id).to.equal(6);\r",
+											"})"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Cookie",
+										"value": "JSESSIONID.a2f3112c=node0wnyuz4r7gviredc5zht1b1nz1.node0; screenResolution=1280x720; JSESSIONID.22290603=node01079sas5r31pm1fx32kvkih9wp2.node0; JSESSIONID.dec836b4=node0bqpr1cifoua8otkddf6y0r651.node0; JSESSIONID.583b369a=node01wsu2rxfnlkyo50x7a2p8hze11.node0; JSESSIONID.69ff793b=node0fs8je4oabhi833cro9h84xlk1.node0; jenkins-timestamper-offset=-7200000; JSESSIONID.925b23c4=node01vjbebjsuyu7fhbhwlna5y49x2.node0; JSESSIONID.08ac7757=node01rpbhic205rkj1u403x60r8zuz3.node0; JSESSIONID.0d88ae2b=node01hn64jkg8d3zysn57283asyi70.node0; JSESSIONID.b1b38b03=node01uhg66t89kxvtyg1od470t5ym8.node0; JSESSIONID.ec7457da=node01e15bq816w3dc1vcwz5m86cjzv0.node0; _ga=GA1.1.1539555100.1601554765; JSESSIONID.8758bc83=node01dw0b2ddyoocr9hhz7iixvrya1.node0; _gid=GA1.1.707541955.1603110893; JSESSIONID=55F79CE3CE8E8BDA4B178642016196AD; _gat=1",
+										"type": "text"
+									},
+									{
+										"key": "userBookId",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "http://localhost:9002/save/reservation?bookId=6&userId=2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9002",
+									"path": [
+										"save",
+										"reservation"
+									],
+									"query": [
+										{
+											"key": "bookId",
+											"value": "6"
+										},
+										{
+											"key": "userId",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "saveReservationAddBorrowingException",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "1a99f602-8268-47fc-a648-8dec87f9d3a7",
+										"exec": [
+											"pm.test(\"saveReservationAddBorrowingException\", function(){\r",
+											"    pm.response.to.have.status(422);\r",
+											"    pm.expect.fail;\r",
+											"})"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9002/save/reservation?bookId=6&userId=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9002",
+									"path": [
+										"save",
+										"reservation"
+									],
+									"query": [
+										{
+											"key": "bookId",
+											"value": "6"
+										},
+										{
+											"key": "userId",
+											"value": "1"
+										}
+									]
+								},
+								"description": "Catch Borrowing Exception"
+							},
+							"response": []
+						},
+						{
+							"name": "updateReservationException",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "e427346f-ea6c-4b3c-a3bc-aeca8dad33d2",
+										"exec": [
+											"pm.test(\"updateReservationException\", function(){\r",
+											"    pm.response.to.have.status(422);\r",
+											"    pm.expect.fail;\r",
+											"})"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9002/extend/reservation?id=70",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9002",
+									"path": [
+										"extend",
+										"reservation"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "70"
+										}
+									]
+								},
+								"description": "Update a reservation"
+							},
+							"response": []
+						},
+						{
+							"name": "updateReservation",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "6e3c0020-050a-4853-9024-4af5ea5b41c1",
+										"exec": [
+											"pm.test(\"updateReservation\", function(){\r",
+											"    pm.response.to.be.ok;\r",
+											"    var dataJson = pm.response.json();\r",
+											"    pm.expect(dataJson.extend).to.equal(true);\r",
+											"})"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9002/extend/reservation?id=82",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9002",
+									"path": [
+										"extend",
+										"reservation"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "82"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteById",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "9c0943b6-9a1c-4873-a577-1c462d6091e9",
+										"exec": [
+											"pm.test(\"delete une reservation by id\", function(){\r",
+											"      pm.response.to.have.status(200);\r",
+											"    pm.response.to.be.ok;\r",
+											"})"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9002/delete/reservation?id=70",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9002",
+									"path": [
+										"delete",
+										"reservation"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "70"
+										}
+									]
+								},
+								"description": "Delete a reservation by id"
+							},
+							"response": []
+						},
+						{
+							"name": "saveReservationFromWaitingList",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "f1b80cc3-da32-4e87-98c2-7a5801a47aa8",
+										"exec": [
+											"pm.test(\"saveReservationFromWaitingList\", function(){\r",
+											"    pm.response.to.be.ok;\r",
+											"    var dataJson = pm.response.json();\r",
+											"    pm.expect(dataJson.book.id).to.equal(30612);\r",
+											"})"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9002/save/reservationFromWaitingList?bookId=31376&userId=6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9002",
+									"path": [
+										"save",
+										"reservationFromWaitingList"
+									],
+									"query": [
+										{
+											"key": "bookId",
+											"value": "31376"
+										},
+										{
+											"key": "userId",
+											"value": "6"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Book",
+					"item": [
+						{
+							"name": "findById",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "f5d7c367-0506-44f2-adc5-a5cd63ff6f03",
+										"exec": [
+											"pm.test(\"findId\", function(){\r",
+											"    pm.response.to.be.ok;\r",
+											"    var dataJson = pm.response.json();\r",
+											"    pm.expect(dataJson.id).to.equal(6);\r",
+											"    pm.expect(dataJson.titre).to.equal(\"arche des ombres (L')\")\r",
+											"})"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9002/find/id?bookId=6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9002",
+									"path": [
+										"find",
+										"id"
+									],
+									"query": [
+										{
+											"key": "bookId",
+											"value": "6"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "WaitingList",
+					"item": [
+						{
+							"name": "waitingListAdd",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "0c3e29f9-060b-4c63-bd0e-67ad38fb5834",
+										"exec": [
+											"pm.test(\"waitingListAdd\", function(){\r",
+											"    pm.response.to.have.status(200);\r",
+											"    pm.response.to.be.ok;\r",
+											"})"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9002/waitingListAdd?bookId=14032&userBookId=3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9002",
+									"path": [
+										"waitingListAdd"
+									],
+									"query": [
+										{
+											"key": "bookId",
+											"value": "14032"
+										},
+										{
+											"key": "userBookId",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "cancel",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "54472db5-4588-46a1-8ef3-252dfddb82e7",
+										"exec": [
+											"pm.test(\"cancel un waitingList\", function(){\r",
+											"    pm.response.to.have.status(200);\r",
+											"    pm.response.to.be.ok;\r",
+											"})"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9002/cancel?id=32&userBookId=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9002",
+									"path": [
+										"cancel"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "32"
+										},
+										{
+											"key": "userBookId",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
