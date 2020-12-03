@@ -88,4 +88,16 @@ Ou depuis le panel gauche de IntelliJ, vous faites clique droit sur le fichier "
   
   Maintenant rendez-vous sur localhost:/8095 pour accèder au site web
   
+  Pour lancer les tests d'integration en CLI, il faut installer dans le dossier du projet l'outil developpé par Postman appelé Newman.
+  
+  Il faut donc faire dans le terminal la commande suivante :
+  ```sh
+  npm install -g newman
+    ```
+    ensuite faites la commande suivante pour executer les tests :
+    ```sh
+    newman run IntegrationTest.postman_collection.json
+  ```
+  
+ 
 "# Ustora_V2" 
